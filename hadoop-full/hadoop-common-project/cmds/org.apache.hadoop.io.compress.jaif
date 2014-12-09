@@ -1,0 +1,4354 @@
+
+package ostrusted.quals:
+annotation @OsUntrusted:
+package ostrusted.quals:
+annotation @OsTrusted:
+
+
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method getDefaultExtension()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method <init>(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;I)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method createDecompressor()Lorg/apache/hadoop/io/compress/Decompressor;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method main([Ljava/lang/String;)V:
+local inFilename:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionOutputStream:
+method write([BII)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream$ResetableGZIPOutputStream:
+method finish()V:
+local arrayOfByte:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockCompressorStream:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method toString()Ljava/lang/String;:
+local itr:
+type:
+inner-type 3,0, 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createOutputStream(Ljava/io/OutputStream;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method createOutputStream(Ljava/io/OutputStream;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method setCodecClasses(Lorg/apache/hadoop/conf/Configuration;Ljava/util/List;)V:
+local cls:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipZlibCompressor:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Compressor:
+method setDictionary([BII)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method getCompressorType()Ljava/lang/Class;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method checkStream()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method read([BII)I:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method borrow(Ljava/util/Map;Ljava/lang/Class;)Ljava/lang/Object;:
+parameter 1:
+type:
+inner-type 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method getCompressorType()Ljava/lang/Class;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method getConf()Lorg/apache/hadoop/conf/Configuration;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodec:
+method getDefaultExtension()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClasses(Lorg/apache/hadoop/conf/Configuration;)Ljava/util/List;:
+local codecSubstring:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+local compressionOverhead:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+field skipBytes:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method borrow(Ljava/util/Map;Ljava/lang/Class;)Ljava/lang/Object;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method decompress([BII)I:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method decompress([BII)I:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+method write(I)V:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecByClassName(Ljava/lang/String;)Lorg/apache/hadoop/io/compress/CompressionCodec;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SplitCompressionInputStream:
+method getAdjustedStart()J:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method updateLeaseCount(Lcom/google/common/cache/LoadingCache;Ljava/lang/Object;I)V:
+insert-annotation Block.statement 0, If.thenStatement, Block.statement 0, Variable.initializer, MethodInvocation.typeArgument 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream$ResetableGZIPOutputStream:
+method <init>(Ljava/io/OutputStream;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream$ResetableGZIPOutputStream:
+method writeInt(I[BI)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field compressorPool:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+field originalBlockSize:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method rawReadInt()I:
+local b3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method createDecompressor()Lorg/apache/hadoop/io/compress/Decompressor;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+field oneByte:
+new *0:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+field oneByte:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method getDefaultExtension()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionOutputStream:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createDecompressor()Lorg/apache/hadoop/io/compress/Decompressor;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+field conf:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)Lorg/apache/hadoop/io/compress/SplitCompressionInputStream;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodec:
+method getDefaultExtension()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockCompressorStream:
+method write([BII)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method createOutputStream(Ljava/io/OutputStream;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method read()I:
+local result:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method createDecompressor()Lorg/apache/hadoop/io/compress/Decompressor;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method updateLeaseCount(Lcom/google/common/cache/LoadingCache;Ljava/lang/Object;I)V:
+parameter 0:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SplitCompressionInputStream:
+method setEnd(J)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field compressorCounts:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionOutputStream:
+method resetState()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method getCompressedData()I:
+local count:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+field SUB_HEADER_LEN:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+field oneByte:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method updatePos(Z)V:
+local addOn:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+implements 1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method createInputStream(Ljava/io/InputStream;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SplitCompressionInputStream:
+method getAdjustedEnd()J:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+field skipBytes:
+new *0:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method read([BII)I:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+local codecClasses:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field compressorCounts:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method getDecompressorType()Ljava/lang/Class;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method updatePos(Z)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method <init>(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;I)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method getDecompressorType()Ljava/lang/Class;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method getDefaultExtension()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+field oneByte:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+field codecsByClassName:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)Lorg/apache/hadoop/io/compress/SplitCompressionInputStream;:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+field lastBytesSent:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method getConf()Lorg/apache/hadoop/conf/Configuration;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method setConf(Lorg/apache/hadoop/conf/Configuration;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method main([Ljava/lang/String;)V:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field compressorPool:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream:
+method <init>(Ljava/io/OutputStream;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method skip(J)J:
+local skipped:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockCompressorStream:
+method <init>(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;II)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+field bufferedIn:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method getDefaultExtension()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getLeasedCompressorsCount(Lorg/apache/hadoop/io/compress/CompressionCodec;)I:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+field codecs:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockCompressorStream:
+method <init>(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;II)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method decompress([BII)I:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method getCompressedData()I:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method getConf()Lorg/apache/hadoop/conf/Configuration;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockCompressorStream:
+method write([BII)V:
+local limlen:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream$ResetableGZIPOutputStream:
+method resetState()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClasses(Lorg/apache/hadoop/conf/Configuration;)Ljava/util/List;:
+local result:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method updateLeaseCount(Lcom/google/common/cache/LoadingCache;Ljava/lang/Object;I)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method checkNativeCodeLoaded()V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Compressor:
+method getBytesWritten()J:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionOutputStream:
+method write([BII)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method internalReset()V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method createCompressor()Lorg/apache/hadoop/io/compress/Compressor;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method resetState()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method rawReadInt()I:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+new *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClasses(Lorg/apache/hadoop/conf/Configuration;)Ljava/util/List;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method createCompressor()Lorg/apache/hadoop/io/compress/Compressor;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SplitCompressionInputStream:
+method <init>(Ljava/io/InputStream;JJ)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClasses(Lorg/apache/hadoop/conf/Configuration;)Ljava/util/List;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method main([Ljava/lang/String;)V:
+local out:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+method <init>(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;I)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionInputStream:
+method <init>(Ljava/io/InputStream;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+new *0:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method <init>(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method setConf(Lorg/apache/hadoop/conf/Configuration;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method readStreamHeader()Ljava/io/BufferedInputStream;:
+local headerBytes:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getLeasedCompressorsCount(Lorg/apache/hadoop/io/compress/CompressionCodec;)I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SplittableCompressionCodec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)Lorg/apache/hadoop/io/compress/SplitCompressionInputStream;:
+parameter 4:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+field skipBytes:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClassByName(Ljava/lang/String;)Ljava/lang/Class;:
+local codec:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method setConf(Lorg/apache/hadoop/conf/Configuration;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+method write([BII)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getCompressor(Lorg/apache/hadoop/io/compress/CompressionCodec;Lorg/apache/hadoop/conf/Configuration;)Lorg/apache/hadoop/io/compress/Compressor;:
+local compressor:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Compressor:
+method setInput([BII)V:
+parameter 0:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method updateLeaseCount(Lcom/google/common/cache/LoadingCache;Ljava/lang/Object;I)V:
+typeparam 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method rawReadInt()I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method getCompressorType()Ljava/lang/Class;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool$1:
+method load(Ljava/lang/Class;)Ljava/util/concurrent/atomic/AtomicInteger;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method createInputStream(Ljava/io/InputStream;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream$ResetableGZIPOutputStream:
+method finish()V:
+new *0:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipZlibDecompressor:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)Lorg/apache/hadoop/io/compress/SplitCompressionInputStream;:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method createCache(Ljava/lang/Class;)Lcom/google/common/cache/LoadingCache;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method decompress([BII)I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method skip(J)J:
+local len:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+method compress()V:
+local len:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method createCache(Ljava/lang/Class;)Lcom/google/common/cache/LoadingCache;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createCompressor()Lorg/apache/hadoop/io/compress/Compressor;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method borrow(Ljava/util/Map;Ljava/lang/Class;)Ljava/lang/Object;:
+parameter 0:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method decompress([BII)I:
+local ioe:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method <init>(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;I)V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodec:
+method getCompressorType()Ljava/lang/Class;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClasses(Lorg/apache/hadoop/conf/Configuration;)Ljava/util/List;:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getLeaseCount(Lcom/google/common/cache/LoadingCache;Ljava/lang/Class;)I:
+parameter 0:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method getConf()Lorg/apache/hadoop/conf/Configuration;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method main([Ljava/lang/String;)V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+method <init>(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;I)V:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method getDecompressorType()Ljava/lang/Class;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream$ResetableGZIPOutputStream:
+method writeInt(I[BI)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool$1:
+method load(Ljava/lang/Class;)Ljava/util/concurrent/atomic/AtomicInteger;:
+parameter 0:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method skip(J)J:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field decompressorPool:
+type:
+inner-type 3,1, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method skip(J)J:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClasses(Lorg/apache/hadoop/conf/Configuration;)Ljava/util/List;:
+local codec:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method payback(Ljava/util/Map;Ljava/lang/Object;)V:
+parameter 0:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+field oneByte:
+new *0:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionOutputStream:
+method write([BII)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field LOG:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionInputStream:
+method getPos()J:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method resetState()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method updateLeaseCount(Lcom/google/common/cache/LoadingCache;Ljava/lang/Object;I)V:
+parameter 0:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method borrow(Ljava/util/Map;Ljava/lang/Class;)Ljava/lang/Object;:
+local codecList:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+field oneByte:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method payback(Ljava/util/Map;Ljava/lang/Object;)V:
+local codecList:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Compressor:
+method finished()Z:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method payback(Ljava/util/Map;Ljava/lang/Object;)V:
+local codecClass:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method createOutputStream(Ljava/io/OutputStream;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockCompressorStream:
+method write([BII)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream$ResetableGZIPOutputStream:
+method writeTrailer([BI)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Decompressor:
+method getRemaining()I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClasses(Lorg/apache/hadoop/conf/Configuration;)Ljava/util/List;:
+local ex:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method payback(Ljava/util/Map;Ljava/lang/Object;)V:
+parameter 0:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field decompressorPool:
+new *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)Lorg/apache/hadoop/io/compress/SplitCompressionInputStream;:
+local FIRST_BZIP2_BLOCK_MARKER_POSITION:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)Lorg/apache/hadoop/io/compress/SplitCompressionInputStream;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodec:
+method createCompressor()Lorg/apache/hadoop/io/compress/Compressor;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method decompress([BII)I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SplitCompressionInputStream:
+method <init>(Ljava/io/InputStream;JJ)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method isNativeCodeLoaded()Z:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method getDecompressorType()Ljava/lang/Class;:
+return:
+inner-type 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method createOutputStream(Ljava/io/OutputStream;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method <init>(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;I)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SplittableCompressionCodec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)Lorg/apache/hadoop/io/compress/SplitCompressionInputStream;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionOutputStream:
+method write([BII)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+method write(I)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field decompressorCounts:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method payback(Ljava/util/Map;Ljava/lang/Object;)V:
+new *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method main([Ljava/lang/String;)V:
+local buffer:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method main([Ljava/lang/String;)V:
+local in *1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SplittableCompressionCodec:
+implements 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+field codecsByName:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method createInputStream(Ljava/io/InputStream;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method main([Ljava/lang/String;)V:
+local encode:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SplittableCompressionCodec$READ_MODE:
+field BYBLOCK:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getCompressor(Lorg/apache/hadoop/io/compress/CompressionCodec;)Lorg/apache/hadoop/io/compress/Compressor;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method toString()Ljava/lang/String;:
+local entry:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Compressor:
+method reset()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method getDecompressorType()Ljava/lang/Class;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream:
+method write([BII)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecByName(Ljava/lang/String;)Lorg/apache/hadoop/io/compress/CompressionCodec;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getLeasedDecompressorsCount(Lorg/apache/hadoop/io/compress/CompressionCodec;)I:
+insert-annotation Block.statement 0, Return.expression, ConditionalExpression.falseExpression, MethodInvocation.typeArgument 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockCompressorStream:
+field MAX_INPUT_SIZE:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+local codecClasses:
+type:
+inner-type 3,0, 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream:
+method <init>(Ljava/io/OutputStream;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream:
+method flush()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method createCompressor()Lorg/apache/hadoop/io/compress/Compressor;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method createCompressor()Lorg/apache/hadoop/io/compress/Compressor;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method payback(Ljava/util/Map;Ljava/lang/Object;)V:
+insert-annotation Block.statement 0, If.thenStatement, Block.statement 0, Variable.initializer, MethodInvocation.typeArgument 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method read([BII)I:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionInputStream:
+method read([BII)I:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method decompress([BII)I:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method toString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method setConf(Lorg/apache/hadoop/conf/Configuration;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockCompressorStream:
+method write([BII)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodec(Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/io/compress/CompressionCodec;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SplittableCompressionCodec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)Lorg/apache/hadoop/io/compress/SplitCompressionInputStream;:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method borrow(Ljava/util/Map;Ljava/lang/Class;)Ljava/lang/Object;:
+parameter 0:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getCompressor(Lorg/apache/hadoop/io/compress/CompressionCodec;Lorg/apache/hadoop/conf/Configuration;)Lorg/apache/hadoop/io/compress/Compressor;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method main([Ljava/lang/String;)V:
+local buffer *1:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Compressor:
+method setInput([BII)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method main([Ljava/lang/String;)V:
+local buffer *1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method setCodecClasses(Lorg/apache/hadoop/conf/Configuration;Ljava/util/List;)V:
+local itr:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method payback(Ljava/util/Map;Ljava/lang/Object;)V:
+parameter 0:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)Lorg/apache/hadoop/io/compress/SplitCompressionInputStream;:
+typecast *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method <init>(Ljava/io/InputStream;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field decompressorCounts:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method readStreamHeader()Ljava/io/BufferedInputStream;:
+local headerBytes:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getCompressor(Lorg/apache/hadoop/io/compress/CompressionCodec;Lorg/apache/hadoop/conf/Configuration;)Lorg/apache/hadoop/io/compress/Compressor;:
+insert-annotation Block.statement 0, Variable.initializer, MethodInvocation.typeArgument 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method main([Ljava/lang/String;)V:
+local factory:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field compressorCounts:
+insert-annotation Variable.initializer, MethodInvocation.typeArgument 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionInputStream:
+implements 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+field buffer:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field decompressorPool:
+new *0:
+inner-type 3,1, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionOutputStream:
+method write(I)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method getCompressedData()I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+method write([BII)V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+field HEADER:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Compressor:
+method setInput([BII)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+field compressor:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClasses(Lorg/apache/hadoop/conf/Configuration;)Ljava/util/List;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+field codecs:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+method finish()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method createCache(Ljava/lang/Class;)Lcom/google/common/cache/LoadingCache;:
+return:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method borrow(Ljava/util/Map;Ljava/lang/Class;)Ljava/lang/Object;:
+parameter 0:
+type:
+inner-type 3,1, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+new *1:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method createOutputStream(Ljava/io/OutputStream;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionOutputStream:
+method write([BII)V:
+parameter 0:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createCompressor()Lorg/apache/hadoop/io/compress/Compressor;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream$ResetableGZIPOutputStream:
+method writeShort(I[BI)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method read([BII)I:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClasses(Lorg/apache/hadoop/conf/Configuration;)Ljava/util/List;:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+field HEADER_LEN:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodec:
+method createDecompressor()Lorg/apache/hadoop/io/compress/Decompressor;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method reset()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Compressor:
+method getBytesRead()J:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method createOutputStream(Ljava/io/OutputStream;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Decompressor:
+method setDictionary([BII)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method borrow(Ljava/util/Map;Ljava/lang/Class;)Ljava/lang/Object;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodec:
+method createInputStream(Ljava/io/InputStream;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method <init>(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method decompress([BII)I:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method markSupported()Z:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream:
+method write([BII)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method createCache(Ljava/lang/Class;)Lcom/google/common/cache/LoadingCache;:
+insert-annotation Block.statement 0, Return.expression, MethodInvocation.typeArgument 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field decompressorPool:
+new *0:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method getDecompressorType()Ljava/lang/Class;:
+return:
+inner-type 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodec(Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/io/compress/CompressionCodec;:
+local filename:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getLeaseCount(Lcom/google/common/cache/LoadingCache;Ljava/lang/Class;)I:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream:
+method write([BII)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method <init>(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;I)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method getCompressorType()Ljava/lang/Class;:
+return:
+inner-type 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getLeaseCount(Lcom/google/common/cache/LoadingCache;Ljava/lang/Class;)I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionOutputStream:
+field out:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)Lorg/apache/hadoop/io/compress/SplitCompressionInputStream;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream$ResetableGZIPOutputStream:
+field HAS_BROKEN_FINISH:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockCompressorStream:
+method write([BII)V:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method getCompressorType()Ljava/lang/Class;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionInputStream:
+method read([BII)I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getLeaseCount(Lcom/google/common/cache/LoadingCache;Ljava/lang/Class;)I:
+bound 0 & 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream$ResetableGZIPOutputStream:
+method writeTrailer([BI)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SplittableCompressionCodec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)Lorg/apache/hadoop/io/compress/SplitCompressionInputStream;:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method borrow(Ljava/util/Map;Ljava/lang/Class;)Ljava/lang/Object;:
+parameter 1:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method setConf(Lorg/apache/hadoop/conf/Configuration;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field decompressorCounts:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+field oneByte:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClasses(Lorg/apache/hadoop/conf/Configuration;)Ljava/util/List;:
+return:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Compressor:
+method compress([BII)I:
+parameter 0:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method read([BII)I:
+parameter 0:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodec(Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/io/compress/CompressionCodec;:
+local subMap:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method read()I:
+new *0:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createDecompressor()Lorg/apache/hadoop/io/compress/Decompressor;:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+method compress()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method main([Ljava/lang/String;)V:
+local len *1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Decompressor:
+method reset()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Decompressor:
+method decompress([BII)I:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method toString()Ljava/lang/String;:
+local buf:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method getDefaultExtension()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method getCompressedData()I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getCompressor(Lorg/apache/hadoop/io/compress/CompressionCodec;Lorg/apache/hadoop/conf/Configuration;)Lorg/apache/hadoop/io/compress/Compressor;:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method decompress([BII)I:
+local e:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method createDecompressor()Lorg/apache/hadoop/io/compress/Decompressor;:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+field closed:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method decompress([BII)I:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method readStreamHeader()Ljava/io/BufferedInputStream;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream$ResetableGZIPOutputStream:
+method finish()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method main([Ljava/lang/String;)V:
+local conf:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Compressor:
+method needsInput()Z:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getLeaseCount(Lcom/google/common/cache/LoadingCache;Ljava/lang/Class;)I:
+typecast *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method read([BII)I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method getCompressorType()Ljava/lang/Class;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodec:
+method createOutputStream(Ljava/io/OutputStream;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createOutputStream(Ljava/io/OutputStream;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Decompressor:
+method decompress([BII)I:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Decompressor:
+method setDictionary([BII)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream$ResetableGZIPOutputStream:
+method writeShort(I[BI)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method getCompressedData()I:
+new *0:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+field CODEC_PROVIDERS:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method decompress([BII)I:
+local n:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecByName(Ljava/lang/String;)Lorg/apache/hadoop/io/compress/CompressionCodec;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method getLibraryName()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+field skipBytes:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Decompressor:
+method end()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionInputStream:
+method read([BII)I:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method getDecompressorType()Ljava/lang/Class;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method getCompressorType()Ljava/lang/Class;:
+return:
+inner-type 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Compressor:
+method setInput([BII)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionOutputStream:
+method <init>(Ljava/io/OutputStream;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodec:
+method createInputStream(Ljava/io/InputStream;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+method <init>(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;I)V:
+new *2:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createInputStream(Ljava/io/InputStream;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream$ResetableGZIPOutputStream:
+field JVMVersion:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionInputStream:
+method close()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionInputStream:
+method read([BII)I:
+parameter 0:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionInputStream:
+method read([BII)I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method createCache(Ljava/lang/Class;)Lcom/google/common/cache/LoadingCache;:
+typeparam 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+field startingPos:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method getCompressorType()Ljava/lang/Class;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream$ResetableGZIPOutputStream:
+method writeShort(I[BI)V:
+parameter 1:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method borrow(Ljava/util/Map;Ljava/lang/Class;)Ljava/lang/Object;:
+local codec:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createDecompressor()Lorg/apache/hadoop/io/compress/Decompressor;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodec:
+method getDecompressorType()Ljava/lang/Class;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field compressorPool:
+type:
+inner-type 3,1, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method <init>(Ljava/io/InputStream;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method reset()V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream$ResetableGZIPOutputStream:
+method writeTrailer([BI)V:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createCompressor()Lorg/apache/hadoop/io/compress/Compressor;:
+local bufferSize:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method read()I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method close()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method createDecompressor()Lorg/apache/hadoop/io/compress/Decompressor;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method getDefaultExtension()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method decompress([BII)I:
+local m:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionOutputStream:
+method internalReset()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionOutputStream:
+field needsReset:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method getDecompressorType()Ljava/lang/Class;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method getDefaultExtension()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClassByName(Ljava/lang/String;)Ljava/lang/Class;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+field codecsByClassName:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodec:
+method createOutputStream(Ljava/io/OutputStream;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method decompress([BII)I:
+parameter 0:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method read([BII)I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodec:
+method createDecompressor()Lorg/apache/hadoop/io/compress/Decompressor;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Compressor:
+method needsInput()Z:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method createDecompressor()Lorg/apache/hadoop/io/compress/Decompressor;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method getDecompressorType()Ljava/lang/Class;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClasses(Lorg/apache/hadoop/conf/Configuration;)Ljava/util/List;:
+local cls:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method createCache(Ljava/lang/Class;)Lcom/google/common/cache/LoadingCache;:
+bound 0 & 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method getConf()Lorg/apache/hadoop/conf/Configuration;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClasses(Lorg/apache/hadoop/conf/Configuration;)Ljava/util/List;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method getDefaultExtension()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionInputStream:
+method resetState()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream:
+method close()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method getDecompressorType()Ljava/lang/Class;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Compressor:
+method getBytesWritten()J:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method isNativeCodeLoaded()Z:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method createOutputStream(Ljava/io/OutputStream;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClasses(Lorg/apache/hadoop/conf/Configuration;)Ljava/util/List;:
+new *0:
+inner-type 3,0, 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method payback(Ljava/util/Map;Ljava/lang/Object;)V:
+local codecList:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method updateLeaseCount(Lcom/google/common/cache/LoadingCache;Ljava/lang/Object;I)V:
+parameter 0:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Compressor:
+method setDictionary([BII)V:
+parameter 0:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method createOutputStream(Ljava/io/OutputStream;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method createCompressor()Lorg/apache/hadoop/io/compress/Compressor;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockCompressorStream:
+method compress()V:
+local len:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockCompressorStream:
+method write([BII)V:
+local bufLen:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method createDecompressor()Lorg/apache/hadoop/io/compress/Decompressor;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method <init>(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream$ResetableGZIPOutputStream:
+method writeInt(I[BI)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method getDecompressorType()Ljava/lang/Class;:
+return:
+inner-type 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipZlibCompressor:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)Lorg/apache/hadoop/io/compress/SplitCompressionInputStream;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+method write([BII)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Compressor:
+method finished()Z:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+method close()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method readStreamHeader()Ljava/io/BufferedInputStream;:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockCompressorStream:
+method <init>(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;II)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method getLibraryName()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field compressorCounts:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field decompressorPool:
+new *0:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionOutputStream:
+method <init>(Ljava/io/OutputStream;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionOutputStream:
+method finish()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClasses(Lorg/apache/hadoop/conf/Configuration;)Ljava/util/List;:
+new *0:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream$ResetableGZIPOutputStream:
+method finish()V:
+local i:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method updatePos(Z)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)Lorg/apache/hadoop/io/compress/SplitCompressionInputStream;:
+local in:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method getDecompressorType()Ljava/lang/Class;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+field conf:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method main([Ljava/lang/String;)V:
+new *6:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream:
+method finish()V:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method returnCompressor(Lorg/apache/hadoop/io/compress/Compressor;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+new *3: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method <init>(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)Lorg/apache/hadoop/io/compress/SplitCompressionInputStream;:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Decompressor:
+method setDictionary([BII)V:
+parameter 0:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionOutputStream:
+method writeStreamHeader()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method createInputStream(Ljava/io/InputStream;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method createCache(Ljava/lang/Class;)Lcom/google/common/cache/LoadingCache;:
+new *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+method write([BII)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method getCompressorType()Ljava/lang/Class;:
+return:
+inner-type 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getCompressor(Lorg/apache/hadoop/io/compress/CompressionCodec;)Lorg/apache/hadoop/io/compress/Compressor;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionOutputStream:
+method <init>(Ljava/io/OutputStream;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method updateLeaseCount(Lcom/google/common/cache/LoadingCache;Ljava/lang/Object;I)V:
+local codecClass:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createInputStream(Ljava/io/InputStream;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+field eof:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method returnDecompressor(Lorg/apache/hadoop/io/compress/Decompressor;)V:
+insert-annotation Block.statement 3, ExpressionStatement.expression, MethodInvocation.typeArgument 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getLeasedDecompressorsCount(Lorg/apache/hadoop/io/compress/CompressionCodec;)I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method updateLeaseCount(Lcom/google/common/cache/LoadingCache;Ljava/lang/Object;I)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+field LOG:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method toString()Ljava/lang/String;:
+local entry:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method getDecompressorType()Ljava/lang/Class;:
+return:
+inner-type 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createOutputStream(Ljava/io/OutputStream;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Decompressor:
+method decompress([BII)I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClassByName(Ljava/lang/String;)Ljava/lang/Class;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Compressor:
+method end()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method <init>(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;I)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createOutputStream(Ljava/io/OutputStream;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockCompressorStream:
+method write([BII)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method toString()Ljava/lang/String;:
+local itr:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+method write(I)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method main([Ljava/lang/String;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method <init>(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;I)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createDecompressor()Lorg/apache/hadoop/io/compress/Decompressor;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionOutputStream:
+method <init>(Ljava/io/OutputStream;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SplittableCompressionCodec$READ_MODE:
+field CONTINUOUS:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method getCompressedData()I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+field isHeaderStripped:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method checkStream()V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method getCompressorType()Ljava/lang/Class;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getLeaseCount(Lcom/google/common/cache/LoadingCache;Ljava/lang/Class;)I:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecByName(Ljava/lang/String;)Lorg/apache/hadoop/io/compress/CompressionCodec;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field decompressorPool:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method read()I:
+local b:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodec:
+method getCompressorType()Ljava/lang/Class;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method skip(J)J:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method <init>(Ljava/io/InputStream;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecByClassName(Ljava/lang/String;)Lorg/apache/hadoop/io/compress/CompressionCodec;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field compressorPool:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method internalReset()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionOutputStream:
+field output:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClasses(Lorg/apache/hadoop/conf/Configuration;)Ljava/util/List;:
+local result:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method getDecompressorType()Ljava/lang/Class;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method <init>(Ljava/io/InputStream;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method readStreamHeader()Ljava/io/BufferedInputStream;:
+local header:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method read()I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method <init>(Ljava/io/InputStream;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method getCompressorType()Ljava/lang/Class;:
+return:
+inner-type 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method createCache(Ljava/lang/Class;)Lcom/google/common/cache/LoadingCache;:
+new *0:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method createCache(Ljava/lang/Class;)Lcom/google/common/cache/LoadingCache;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+method <init>(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;I)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method readStreamHeader()Ljava/io/BufferedInputStream;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Decompressor:
+method setInput([BII)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionInputStream:
+method getPos()J:
+instanceof *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field compressorPool:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createDecompressor()Lorg/apache/hadoop/io/compress/Decompressor;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Decompressor:
+method setDictionary([BII)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+method <init>(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method borrow(Ljava/util/Map;Ljava/lang/Class;)Ljava/lang/Object;:
+parameter 0:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionInputStream:
+method <init>(Ljava/io/InputStream;)V:
+instanceof *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method addCodec(Lorg/apache/hadoop/io/compress/CompressionCodec;)V:
+local suffix:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method payback(Ljava/util/Map;Ljava/lang/Object;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodec(Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/io/compress/CompressionCodec;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method setCodecClasses(Lorg/apache/hadoop/conf/Configuration;Ljava/util/List;)V:
+parameter 1:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field compressorPool:
+new *0:
+inner-type 3,1, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionOutputStream:
+method write([BII)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream$ResetableGZIPOutputStream:
+method writeShort(I[BI)V:
+typecast *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+local codecClasses:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+implements 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method payback(Ljava/util/Map;Ljava/lang/Object;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+field buffer:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+field oneByte:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method getDecompressorType()Ljava/lang/Class;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method toString()Ljava/lang/String;:
+local itr:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream$ResetableGZIPOutputStream:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method getConf()Lorg/apache/hadoop/conf/Configuration;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+method <init>(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;I)V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Decompressor:
+method setInput([BII)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field compressorPool:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method addCodec(Lorg/apache/hadoop/io/compress/CompressionCodec;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method <init>(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method addCodec(Lorg/apache/hadoop/io/compress/CompressionCodec;)V:
+local codecName:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)Lorg/apache/hadoop/io/compress/SplitCompressionInputStream;:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+field decompressor:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream:
+method resetState()V:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream:
+method <init>(Lorg/apache/hadoop/io/compress/CompressorStream;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getDecompressor(Lorg/apache/hadoop/io/compress/CompressionCodec;)Lorg/apache/hadoop/io/compress/Decompressor;:
+insert-annotation Block.statement 2, ExpressionStatement.expression, MethodInvocation.typeArgument 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method getCompressorType()Ljava/lang/Class;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionOutputStream:
+method write([BII)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream$ResetableGZIPOutputStream:
+method writeTrailer([BI)V:
+parameter 0:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method skip(J)J:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method <init>(Ljava/io/InputStream;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream:
+method write([BII)V:
+parameter 0:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method createInputStream(Ljava/io/InputStream;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method createInputStream(Ljava/io/InputStream;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockCompressorStream:
+method write([BII)V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method removeSuffix(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method borrow(Ljava/util/Map;Ljava/lang/Class;)Ljava/lang/Object;:
+bound 0 & 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+method <init>(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method getCompressorType()Ljava/lang/Class;:
+return:
+inner-type 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionInputStream:
+method seekToNewSource(J)Z:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method read()I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getDecompressor(Lorg/apache/hadoop/io/compress/CompressionCodec;)Lorg/apache/hadoop/io/compress/Decompressor;:
+insert-annotation Block.statement 0, Variable.initializer, MethodInvocation.typeArgument 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream$ResetableGZIPOutputStream:
+method finish()V:
+local arrayOfByte:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method addCodec(Lorg/apache/hadoop/io/compress/CompressionCodec;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Compressor:
+method setDictionary([BII)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field decompressorPool:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method read()I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method createCache(Ljava/lang/Class;)Lcom/google/common/cache/LoadingCache;:
+insert-annotation Block.statement 0, Return.expression, MethodInvocation.typeArgument 1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method available()I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+method write([BII)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionInputStream:
+method getPos()J:
+instanceof *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field decompressorPool:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method createCompressor()Lorg/apache/hadoop/io/compress/Compressor;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+implements 1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockCompressorStream:
+method <init>(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;II)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream$ResetableGZIPOutputStream:
+method writeShort(I[BI)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+field codecsByName:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockCompressorStream:
+method compress()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Decompressor:
+method needsInput()Z:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createDecompressor()Lorg/apache/hadoop/io/compress/Decompressor;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createDecompressor()Lorg/apache/hadoop/io/compress/Decompressor;:
+local bufferSize:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionInputStream:
+method seekToNewSource(J)Z:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream:
+method resetState()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getLeaseCount(Lcom/google/common/cache/LoadingCache;Ljava/lang/Class;)I:
+parameter 0:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+field codecs:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Compressor:
+method compress([BII)I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getLeaseCount(Lcom/google/common/cache/LoadingCache;Ljava/lang/Class;)I:
+parameter 0:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionInputStream:
+method read([BII)I:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)Lorg/apache/hadoop/io/compress/SplitCompressionInputStream;:
+local adjStart:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method createInputStream(Ljava/io/InputStream;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipZlibDecompressor:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method read([BII)I:
+parameter 0:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionOutputStream:
+method write([BII)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SplitCompressionInputStream:
+method getAdjustedStart()J:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field decompressorPool:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool$1:
+method load(Ljava/lang/Class;)Ljava/util/concurrent/atomic/AtomicInteger;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+field SUB_HEADER:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method setConf(Lorg/apache/hadoop/conf/Configuration;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream$ResetableGZIPOutputStream:
+method <init>(Ljava/io/OutputStream;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method main([Ljava/lang/String;)V:
+new *5:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecByName(Ljava/lang/String;)Lorg/apache/hadoop/io/compress/CompressionCodec;:
+local codec:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionOutputStream:
+method internalReset()V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+method resetState()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClasses(Lorg/apache/hadoop/conf/Configuration;)Ljava/util/List;:
+local cls:
+type:
+inner-type 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method createCompressor()Lorg/apache/hadoop/io/compress/Compressor;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method getDecompressorType()Ljava/lang/Class;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Decompressor:
+method needsInput()Z:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream:
+method <init>(Lorg/apache/hadoop/io/compress/CompressorStream;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getLeasedCompressorsCount(Lorg/apache/hadoop/io/compress/CompressionCodec;)I:
+insert-annotation Block.statement 0, Return.expression, ConditionalExpression.falseExpression, MethodInvocation.typeArgument 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+implements 1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionOutputStream:
+method write([BII)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method createDecompressor()Lorg/apache/hadoop/io/compress/Decompressor;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method updateLeaseCount(Lcom/google/common/cache/LoadingCache;Ljava/lang/Object;I)V:
+bound 0 & 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream:
+method finish()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getCompressor(Lorg/apache/hadoop/io/compress/CompressionCodec;Lorg/apache/hadoop/conf/Configuration;)Lorg/apache/hadoop/io/compress/Compressor;:
+insert-annotation Block.statement 2, ExpressionStatement.expression, MethodInvocation.typeArgument 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method getPos()J:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool$1:
+method load(Ljava/lang/Class;)Ljava/util/concurrent/atomic/AtomicInteger;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method getDecompressorType()Ljava/lang/Class;:
+return:
+inner-type 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipZlibCompressor:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method <init>(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;I)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Decompressor:
+method setInput([BII)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method getCompressedData()I:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method createCompressor()Lorg/apache/hadoop/io/compress/Compressor;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method <init>(Ljava/io/InputStream;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipZlibCompressor:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+field codecsByClassName:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Decompressor:
+method finished()Z:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method getCompressorType()Ljava/lang/Class;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method updateLeaseCount(Lcom/google/common/cache/LoadingCache;Ljava/lang/Object;I)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SplitCompressionInputStream:
+method setStart(J)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method rawReadInt()I:
+local b4:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method readStreamHeader()Ljava/io/BufferedInputStream;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getLeaseCount(Lcom/google/common/cache/LoadingCache;Ljava/lang/Class;)I:
+parameter 1:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method decompress([BII)I:
+local nRemaining:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+implements 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method <init>(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;I)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Compressor:
+method setInput([BII)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+method write([BII)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method getCompressedData()I:
+local n:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method checkNativeCodeLoaded()V:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method removeSuffix(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SplittableCompressionCodec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)Lorg/apache/hadoop/io/compress/SplitCompressionInputStream;:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionInputStream:
+method getPos()J:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClasses(Lorg/apache/hadoop/conf/Configuration;)Ljava/util/List;:
+local codecSplit:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+method <init>(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;I)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method payback(Ljava/util/Map;Ljava/lang/Object;)V:
+typeparam 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method getCompressorType()Ljava/lang/Class;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+local compressionOverhead:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method available()I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Decompressor:
+method decompress([BII)I:
+parameter 0:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getDecompressor(Lorg/apache/hadoop/io/compress/CompressionCodec;)Lorg/apache/hadoop/io/compress/Decompressor;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodec:
+method getCompressorType()Ljava/lang/Class;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodec:
+method createOutputStream(Ljava/io/OutputStream;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionInputStream:
+method seekToNewSource(J)Z:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Compressor:
+method compress([BII)I:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method skip(J)J:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+new *2:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+field CODEC_PROVIDERS:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecByClassName(Ljava/lang/String;)Lorg/apache/hadoop/io/compress/CompressionCodec;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodec:
+method getDecompressorType()Ljava/lang/Class;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)Lorg/apache/hadoop/io/compress/SplitCompressionInputStream;:
+instanceof *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Compressor:
+method getBytesRead()J:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+field posSM:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+field noUncompressedBytes:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream$ResetableGZIPOutputStream:
+method writeShort(I[BI)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method main([Ljava/lang/String;)V:
+local buffer:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+field CODEC_PROVIDERS:
+insert-annotation Variable.initializer, MethodInvocation.typeArgument 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Decompressor:
+method decompress([BII)I:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field decompressorCounts:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field compressorCounts:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+local bufferSize:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method <init>(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;I)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+field LOG:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockCompressorStream:
+method rawWriteInt(I)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method read([BII)I:
+local result:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method getConf()Lorg/apache/hadoop/conf/Configuration;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionInputStream:
+field maxAvailableData:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockCompressorStream:
+method write([BII)V:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method createOutputStream(Ljava/io/OutputStream;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodec:
+method getDecompressorType()Ljava/lang/Class;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method <init>(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;I)V:
+new *2:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+field needsReset:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockCompressorStream:
+method rawWriteInt(I)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionOutputStream:
+method resetState()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method main([Ljava/lang/String;)V:
+new *4: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SplittableCompressionCodec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)Lorg/apache/hadoop/io/compress/SplitCompressionInputStream;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method getCompressorType()Ljava/lang/Class;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+field codecsByName:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+local codecClass:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method getCompressorType()Ljava/lang/Class;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+method <init>(Ljava/io/OutputStream;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method <init>(Ljava/io/InputStream;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SplitCompressionInputStream:
+method getAdjustedEnd()J:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream$ResetableGZIPOutputStream:
+method writeInt(I[BI)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodec:
+method getCompressorType()Ljava/lang/Class;:
+return:
+inner-type 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method main([Ljava/lang/String;)V:
+parameter 0:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodec:
+method createInputStream(Ljava/io/InputStream;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Compressor:
+method setDictionary([BII)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method createOutputStream(Ljava/io/OutputStream;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+method <init>(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createInputStream(Ljava/io/InputStream;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+field compressedStreamPosition:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodec(Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/io/compress/CompressionCodec;:
+local subMap:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionOutputStream:
+method close()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method createCompressor()Lorg/apache/hadoop/io/compress/Compressor;:
+local bufferSize:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClasses(Lorg/apache/hadoop/conf/Configuration;)Ljava/util/List;:
+local cls:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream$POS_ADVERTISEMENT_STATE_MACHINE:
+field HOLD:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream$ResetableGZIPOutputStream:
+method finish()V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method returnCompressor(Lorg/apache/hadoop/io/compress/Compressor;)V:
+insert-annotation Block.statement 3, ExpressionStatement.expression, MethodInvocation.typeArgument 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method readStreamHeader()Ljava/io/BufferedInputStream;:
+new *0:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method main([Ljava/lang/String;)V:
+local len:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+method <init>(Ljava/io/OutputStream;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockCompressorStream:
+method finish()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Compressor:
+method reinit(Lorg/apache/hadoop/conf/Configuration;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getLeasedDecompressorsCount(Lorg/apache/hadoop/io/compress/CompressionCodec;)I:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SplitCompressionInputStream:
+field end:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method toString()Ljava/lang/String;:
+local entry:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method borrow(Ljava/util/Map;Ljava/lang/Class;)Ljava/lang/Object;:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getCompressor(Lorg/apache/hadoop/io/compress/CompressionCodec;Lorg/apache/hadoop/conf/Configuration;)Lorg/apache/hadoop/io/compress/Compressor;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SplitCompressionInputStream:
+method <init>(Ljava/io/InputStream;JJ)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SplitCompressionInputStream:
+method setEnd(J)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClasses(Lorg/apache/hadoop/conf/Configuration;)Ljava/util/List;:
+local result:
+type:
+inner-type 3,0, 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockCompressorStream:
+method write([BII)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method addCodec(Lorg/apache/hadoop/io/compress/CompressionCodec;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool$1:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+field conf:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createOutputStream(Ljava/io/OutputStream;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createCompressor()Lorg/apache/hadoop/io/compress/Compressor;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionInputStream:
+method <init>(Ljava/io/InputStream;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method createDecompressor()Lorg/apache/hadoop/io/compress/Decompressor;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream:
+method write(I)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool$1:
+method load(Ljava/lang/Class;)Ljava/util/concurrent/atomic/AtomicInteger;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClasses(Lorg/apache/hadoop/conf/Configuration;)Ljava/util/List;:
+new *3: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionOutputStream:
+method finish()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream$POS_ADVERTISEMENT_STATE_MACHINE:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method mark(I)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Compressor:
+method setDictionary([BII)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method borrow(Ljava/util/Map;Ljava/lang/Class;)Ljava/lang/Object;:
+local codecList:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Decompressor:
+method setInput([BII)V:
+parameter 0:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method mark(I)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method getDefaultExtension()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClasses(Lorg/apache/hadoop/conf/Configuration;)Ljava/util/List;:
+local codecsString:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method setCodecClasses(Lorg/apache/hadoop/conf/Configuration;Ljava/util/List;)V:
+local buf:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method setCodecClasses(Lorg/apache/hadoop/conf/Configuration;Ljava/util/List;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getDecompressor(Lorg/apache/hadoop/io/compress/CompressionCodec;)Lorg/apache/hadoop/io/compress/Decompressor;:
+local decompressor:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SplitCompressionInputStream:
+field start:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+field readMode:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method read([BII)I:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodec(Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/io/compress/CompressionCodec;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method resetState()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method getCompressedData()I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodec(Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/io/compress/CompressionCodec;:
+local subMap:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionOutputStream:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method getCompressedData()I:
+local len:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method createCache(Ljava/lang/Class;)Lcom/google/common/cache/LoadingCache;:
+new *0:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getDecompressor(Lorg/apache/hadoop/io/compress/CompressionCodec;)Lorg/apache/hadoop/io/compress/Decompressor;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Decompressor:
+method needsDictionary()Z:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method payback(Ljava/util/Map;Ljava/lang/Object;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method createDecompressor()Lorg/apache/hadoop/io/compress/Decompressor;:
+local bufferSize:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method createCache(Ljava/lang/Class;)Lcom/google/common/cache/LoadingCache;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method read()I:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createCompressor()Lorg/apache/hadoop/io/compress/Compressor;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)Lorg/apache/hadoop/io/compress/SplitCompressionInputStream;:
+parameter 4:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Decompressor:
+method finished()Z:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method createOutputStream(Ljava/io/OutputStream;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Decompressor:
+method needsDictionary()Z:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method <init>(Ljava/io/InputStream;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method getCompressorType()Ljava/lang/Class;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream:
+method <init>(Ljava/io/OutputStream;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClasses(Lorg/apache/hadoop/conf/Configuration;)Ljava/util/List;:
+new *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method <init>(Ljava/io/InputStream;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method read([BII)I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method removeSuffix(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method <init>(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;I)V:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method main([Ljava/lang/String;)V:
+local in:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method main([Ljava/lang/String;)V:
+new *3:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method toString()Ljava/lang/String;:
+local itr:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method getConf()Lorg/apache/hadoop/conf/Configuration;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method main([Ljava/lang/String;)V:
+local i:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method main([Ljava/lang/String;)V:
+local codec:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field decompressorPool:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodec:
+method createCompressor()Lorg/apache/hadoop/io/compress/Compressor;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method getCompressorType()Ljava/lang/Class;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method createInputStream(Ljava/io/InputStream;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method markSupported()Z:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method setConf(Lorg/apache/hadoop/conf/Configuration;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+local bufferSize:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field compressorPool:
+new *0:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method getDecompressorType()Ljava/lang/Class;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method toString()Ljava/lang/String;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method returnDecompressor(Lorg/apache/hadoop/io/compress/Decompressor;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method main([Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method createOutputStream(Ljava/io/OutputStream;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionOutputStream:
+method close()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method rawReadInt()I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method getDecompressorType()Ljava/lang/Class;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionInputStream:
+method getPos()J:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createCompressor()Lorg/apache/hadoop/io/compress/Compressor;:
+local useLz4HC:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method <init>(Ljava/io/InputStream;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method createCache(Ljava/lang/Class;)Lcom/google/common/cache/LoadingCache;:
+parameter 0:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodec:
+method getDecompressorType()Ljava/lang/Class;:
+return:
+inner-type 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClasses(Lorg/apache/hadoop/conf/Configuration;)Ljava/util/List;:
+insert-annotation Block.statement 3, If.thenStatement, Block.statement 1, WhileLoop.statement, Block.statement 1, If.thenStatement, Block.statement 0, Try.block, Block.statement 2, ExpressionStatement.expression, MethodInvocation.argument 0, MethodInvocation.typeArgument 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method decompress([BII)I:
+local m:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createCompressor()Lorg/apache/hadoop/io/compress/Compressor;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method setCodecClasses(Lorg/apache/hadoop/conf/Configuration;Ljava/util/List;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Compressor:
+method finish()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream$ResetableGZIPOutputStream:
+method writeInt(I[BI)V:
+parameter 1:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DeflateCodec:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createCompressor()Lorg/apache/hadoop/io/compress/Compressor;:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)Lorg/apache/hadoop/io/compress/SplitCompressionInputStream;:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream:
+method write(I)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method rawReadInt()I:
+local b1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method createInputStream(Ljava/io/InputStream;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionInputStream:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockCompressorStream:
+method write([BII)V:
+parameter 0:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec:
+method getDecompressorType()Ljava/lang/Class;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodec(Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/io/compress/CompressionCodec;:
+local result:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodec(Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/io/compress/CompressionCodec;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Compressor:
+method compress([BII)I:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method getPos()J:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method setCodecClasses(Lorg/apache/hadoop/conf/Configuration;Ljava/util/List;)V:
+local itr:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionInputStream:
+field in:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClasses(Lorg/apache/hadoop/conf/Configuration;)Ljava/util/List;:
+local result:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+method <init>(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;I)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockCompressorStream:
+method finish()V:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method decompress([BII)I:
+local m *1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method decompress([BII)I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createOutputStream(Ljava/io/OutputStream;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getLeaseCount(Lcom/google/common/cache/LoadingCache;Ljava/lang/Class;)I:
+typeparam 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockCompressorStream:
+method <init>(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Decompressor:
+method setDictionary([BII)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Decompressor:
+method decompress([BII)I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+local codecClass:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+implements 1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+new *1:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Compressor:
+method compress([BII)I:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method payback(Ljava/util/Map;Ljava/lang/Object;)V:
+parameter 0:
+type:
+inner-type 3,1, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createInputStream(Ljava/io/InputStream;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method decompress([BII)I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getLeaseCount(Lcom/google/common/cache/LoadingCache;Ljava/lang/Class;)I:
+parameter 1:
+type:
+inner-type 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionOutputStream:
+method flush()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method createCache(Ljava/lang/Class;)Lcom/google/common/cache/LoadingCache;:
+return:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+implements 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SplittableCompressionCodec$READ_MODE:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method getDefaultExtension()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)Lorg/apache/hadoop/io/compress/SplitCompressionInputStream;:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodec(Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/io/compress/CompressionCodec;:
+local reversedFilename:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClassByName(Ljava/lang/String;)Ljava/lang/Class;:
+return:
+inner-type 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream$ResetableGZIPOutputStream:
+field TRAILER_SIZE:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method read([BII)I:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+field closed:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SplittableCompressionCodec$READ_MODE:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method readStreamHeader()Ljava/io/BufferedInputStream;:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+local codecClass:
+type:
+inner-type 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SplitCompressionInputStream:
+method setStart(J)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Compressor:
+method compress([BII)I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionInputStream:
+method <init>(Ljava/io/InputStream;)V:
+instanceof *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockCompressorStream:
+method <init>(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;II)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+field input:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+new *2:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+local codecClasses:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream:
+method write([BII)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+method <init>(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;I)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method internalReset()V:
+local bufferedIn:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockCompressorStream:
+method <init>(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method <init>(Ljava/io/InputStream;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DeflateCodec:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+new *4: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+field conf:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method read()I:
+local b:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field decompressorCounts:
+insert-annotation Variable.initializer, MethodInvocation.typeArgument 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method <init>(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method decompress([BII)I:
+parameter 0:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionOutputStream:
+method write([BII)V:
+parameter 0:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method returnCompressor(Lorg/apache/hadoop/io/compress/Compressor;)V:
+insert-annotation Block.statement 4, ExpressionStatement.expression, MethodInvocation.typeArgument 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+insert-annotation Block.statement 5, If.elseStatement, Block.statement 0, EnhancedForLoop.statement, Block.statement 0, ExpressionStatement.expression, MethodInvocation.argument 0, MethodInvocation.typeArgument 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClasses(Lorg/apache/hadoop/conf/Configuration;)Ljava/util/List;:
+return:
+inner-type 3,0, 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Decompressor:
+method setInput([BII)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method decompress([BII)I:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method getDecompressorType()Ljava/lang/Class;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method setCodecClasses(Lorg/apache/hadoop/conf/Configuration;Ljava/util/List;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createInputStream(Ljava/io/InputStream;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionInputStream:
+method seekToNewSource(J)Z:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SplitCompressionInputStream:
+method <init>(Ljava/io/InputStream;JJ)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionInputStream:
+method seek(J)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionInputStream:
+method seek(J)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method <init>(Ljava/io/InputStream;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method borrow(Ljava/util/Map;Ljava/lang/Class;)Ljava/lang/Object;:
+typeparam 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClassByName(Ljava/lang/String;)Ljava/lang/Class;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method payback(Ljava/util/Map;Ljava/lang/Object;)V:
+bound 0 & 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method main([Ljava/lang/String;)V:
+new *7: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method getLeaseCount(Lcom/google/common/cache/LoadingCache;Ljava/lang/Class;)I:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream$POS_ADVERTISEMENT_STATE_MACHINE:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method getCompressorType()Ljava/lang/Class;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method setConf(Lorg/apache/hadoop/conf/Configuration;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+implements 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method getCompressorType()Ljava/lang/Class;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method createInputStream(Ljava/io/InputStream;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SplitCompressionInputStream:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createInputStream(Ljava/io/InputStream;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressorStream:
+method write([BII)V:
+parameter 0:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SplittableCompressionCodec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)Lorg/apache/hadoop/io/compress/SplitCompressionInputStream;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DefaultCodec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;)Lorg/apache/hadoop/io/compress/CompressionInputStream;:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method decompress([BII)I:
+local n:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodecClassByName(Ljava/lang/String;)Ljava/lang/Class;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionOutputStream:
+method write(I)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Decompressor:
+method getRemaining()I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method close()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream$POS_ADVERTISEMENT_STATE_MACHINE:
+field ADVERTISE:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+field buffer:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method updateLeaseCount(Lcom/google/common/cache/LoadingCache;Ljava/lang/Object;I)V:
+local codecClass:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method main([Ljava/lang/String;)V:
+new *7:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockDecompressorStream:
+method rawReadInt()I:
+local b2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+field isSubHeaderStripped:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createOutputStream(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)Lorg/apache/hadoop/io/compress/CompressionOutputStream;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BlockCompressorStream:
+method <init>(Ljava/io/OutputStream;Lorg/apache/hadoop/io/compress/Compressor;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method toString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method read([BII)I:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream$ResetableGZIPOutputStream:
+method writeShort(I[BI)V:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionInputStream:
+method seek(J)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class GzipCodec$GzipOutputStream$ResetableGZIPOutputStream:
+method writeTrailer([BI)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Compressor:
+method reinit(Lorg/apache/hadoop/conf/Configuration;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method getCodec(Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/io/compress/CompressionCodec;:
+local potentialSuffix:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method payback(Ljava/util/Map;Ljava/lang/Object;)V:
+local codecClass:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field compressorPool:
+new *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class SnappyCodec:
+method checkNativeCodeLoaded()V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec:
+method createInputStream(Ljava/io/InputStream;Lorg/apache/hadoop/io/compress/Decompressor;JJLorg/apache/hadoop/io/compress/SplittableCompressionCodec$READ_MODE;)Lorg/apache/hadoop/io/compress/SplitCompressionInputStream;:
+typecast *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method read([BII)I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+field buffer:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CompressionCodecFactory:
+method main([Ljava/lang/String;)V:
+new *4:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class BZip2Codec$BZip2CompressionInputStream:
+method readStreamHeader()Ljava/io/BufferedInputStream;:
+local actualRead:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class Lz4Codec:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+field compressorPool:
+new *0:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class DecompressorStream:
+method decompress([BII)I:
+local leftoverOffset:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.compress:
+class CodecPool:
+method returnDecompressor(Lorg/apache/hadoop/io/compress/Decompressor;)V:
+insert-annotation Block.statement 4, ExpressionStatement.expression, MethodInvocation.typeArgument 0: @ostrusted.quals.OsUntrusted
+

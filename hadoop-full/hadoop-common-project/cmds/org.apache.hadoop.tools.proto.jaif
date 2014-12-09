@@ -1,0 +1,2564 @@
+
+package ostrusted.quals:
+annotation @OsUntrusted:
+package ostrusted.quals:
+annotation @OsTrusted:
+
+
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method clearUser()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method clear()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$1:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;Lcom/google/protobuf/RpcCallback;)V:
+parameter 2:
+type:
+inner-type 1,0, 1,0, 1,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method hashCode()I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method buildPartial()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+local to_bitField0_:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method getGroups(I)Ljava/lang/String;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method getGroupsCount()I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method getDescriptorForType()Lcom/google/protobuf/Descriptors/Descriptor;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$1:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;Lcom/google/protobuf/RpcCallback;)V:
+parameter 2:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method parseFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+implements 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+field GROUPS_FIELD_NUMBER:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method getUserBytes()Lcom/google/protobuf/ByteString;:
+local b:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method getSerializedSize()I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos:
+field internal_static_hadoop_common_GetGroupsForUserRequestProto_fieldAccessorTable:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$1:
+method assignDescriptors(Lcom/google/protobuf/Descriptors/FileDescriptor;)Lcom/google/protobuf/ExtensionRegistry;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method newBuilderForType(Lcom/google/protobuf/GeneratedMessage/BuilderParent;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method equals(Ljava/lang/Object;)Z:
+local result:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+implements 0:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$1:
+method parsePartialFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$Stub:
+method getChannel()Lcom/google/protobuf/RpcChannel;:
+return:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$1:
+method parsePartialFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method parseFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+parameter 1:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method parseFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method ensureGroupsIsMutable()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$1:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+field PARSER:
+new *0:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method newBuilderForType(Lcom/google/protobuf/GeneratedMessage/BuilderParent;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+local builder:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method equals(Ljava/lang/Object;)Z:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$2:
+method getResponsePrototype(Lcom/google/protobuf/Descriptors/MethodDescriptor;)Lcom/google/protobuf/Message;:
+new *0:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method getDefaultInstanceForType()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method <init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method newReflectiveBlockingService(Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$BlockingInterface;)Lcom/google/protobuf/BlockingService;:
+new *0:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$Stub:
+method getChannel()Lcom/google/protobuf/RpcChannel;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method setGroups(ILjava/lang/String;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method newBuilderForType()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method mergeFrom(Lcom/google/protobuf/Message;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method getResponsePrototype(Lcom/google/protobuf/Descriptors/MethodDescriptor;)Lcom/google/protobuf/Message;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method getDefaultInstance()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method callMethod(Lcom/google/protobuf/Descriptors/MethodDescriptor;Lcom/google/protobuf/RpcController;Lcom/google/protobuf/Message;Lcom/google/protobuf/RpcCallback;)V:
+parameter 1:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$1:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+parameter 1:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method <init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)V:
+local done:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method getUserBytes()Lcom/google/protobuf/ByteString;:
+return:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method <init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)V:
+new *1:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+parameter 1:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProtoOrBuilder:
+method getGroupsCount()I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method parseFrom(Lcom/google/protobuf/CodedInputStream;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+field serialVersionUID:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+field memoizedSerializedSize:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method <init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)V:
+new *0:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$2:
+method getRequestPrototype(Lcom/google/protobuf/Descriptors/MethodDescriptor;)Lcom/google/protobuf/Message;:
+new *0:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method <init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)V:
+local unknownFields:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProtoOrBuilder:
+method getGroupsList()Ljava/util/List;:
+return:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method <init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)V:
+local done:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method parseFrom(Ljava/io/InputStream;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method clearGroups()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method addAllGroups(Ljava/lang/Iterable;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 3,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method parseFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+parameter 1:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method getGroupsBytes(I)Lcom/google/protobuf/ByteString;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method <init>(Lcom/google/protobuf/GeneratedMessage/Builder;)V:
+parameter 0:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method mergeFrom(Lcom/google/protobuf/Message;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method clone()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$BlockingStub:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method writeReplace()Ljava/lang/Object;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+local parsedMessage:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;Lcom/google/protobuf/RpcCallback;)V:
+parameter 2:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos:
+staticinit *2:
+local descriptorData:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+field bitField0_:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method parseFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method getUnknownFields()Lcom/google/protobuf/UnknownFieldSet;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method buildPartial()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+local from_bitField0_:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method callMethod(Lcom/google/protobuf/Descriptors/MethodDescriptor;Lcom/google/protobuf/RpcController;Lcom/google/protobuf/Message;Lcom/google/protobuf/RpcCallback;)V:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method getSerializedSize()I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method ensureGroupsIsMutable()V:
+new *0:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method internalGetFieldAccessorTable()Lcom/google/protobuf/GeneratedMessage/FieldAccessorTable;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method addAllGroups(Ljava/lang/Iterable;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method equals(Ljava/lang/Object;)Z:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method <init>(Z)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method <init>(Z)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method mergeFrom(Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method addGroups(Ljava/lang/String;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method setGroups(ILjava/lang/String;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+parameter 1:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method initFields()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method isInitialized()Z:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+field serialVersionUID:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method parseFrom(Lcom/google/protobuf/CodedInputStream;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method hashCode()I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method newBuilderForType(Lcom/google/protobuf/GeneratedMessage/BuilderParent;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method build()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+field memoizedHashCode:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$Stub:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;Lcom/google/protobuf/RpcCallback;)V:
+parameter 2:
+type:
+inner-type 1,0, 1,0, 1,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method getDescriptor()Lcom/google/protobuf/Descriptors/Descriptor;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos:
+staticinit *2:
+local descriptorData:
+type:
+inner-type 0,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method getGroupsBytes(I)Lcom/google/protobuf/ByteString;:
+return:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$BlockingStub:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method getResponsePrototype(Lcom/google/protobuf/Descriptors/MethodDescriptor;)Lcom/google/protobuf/Message;:
+new *1:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$1:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method getGroupsList()Ljava/util/List;:
+return:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method parseFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method toBuilder()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method isInitialized()Z:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method getUserBytes()Lcom/google/protobuf/ByteString;:
+instanceof *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$2:
+method getDescriptorForType()Lcom/google/protobuf/Descriptors/ServiceDescriptor;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method getGroupsList()Ljava/util/List;:
+return:
+inner-type 1,0, 1,0, 3,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$2:
+method callBlockingMethod(Lcom/google/protobuf/Descriptors/MethodDescriptor;Lcom/google/protobuf/RpcController;Lcom/google/protobuf/Message;)Lcom/google/protobuf/Message;:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method equals(Ljava/lang/Object;)Z:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+staticinit *0:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method newReflectiveBlockingService(Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$BlockingInterface;)Lcom/google/protobuf/BlockingService;:
+return:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method build()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method callMethod(Lcom/google/protobuf/Descriptors/MethodDescriptor;Lcom/google/protobuf/RpcController;Lcom/google/protobuf/Message;Lcom/google/protobuf/RpcCallback;)V:
+new *0:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method internalGetFieldAccessorTable()Lcom/google/protobuf/GeneratedMessage/FieldAccessorTable;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method internalGetFieldAccessorTable()Lcom/google/protobuf/GeneratedMessage/FieldAccessorTable;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method getDescriptorForType()Lcom/google/protobuf/Descriptors/Descriptor;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method getDescriptorForType()Lcom/google/protobuf/Descriptors/Descriptor;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$BlockingStub:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method build()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method newBuilder()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method setUserBytes(Lcom/google/protobuf/ByteString;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$1:
+method assignDescriptors(Lcom/google/protobuf/Descriptors/FileDescriptor;)Lcom/google/protobuf/ExtensionRegistry;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method getGroupsList()Ljava/util/List;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method parseDelimitedFrom(Ljava/io/InputStream;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method parseFrom(Ljava/io/InputStream;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$2:
+method getRequestPrototype(Lcom/google/protobuf/Descriptors/MethodDescriptor;)Lcom/google/protobuf/Message;:
+return:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$Stub:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;Lcom/google/protobuf/RpcCallback;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method getDefaultInstance()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method addGroupsBytes(Lcom/google/protobuf/ByteString;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method parseFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+parameter 1:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$2:
+method getDescriptorForType()Lcom/google/protobuf/Descriptors/ServiceDescriptor;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method parseFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method equals(Ljava/lang/Object;)Z:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+local e:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method equals(Ljava/lang/Object;)Z:
+local result:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method getRequestPrototype(Lcom/google/protobuf/Descriptors/MethodDescriptor;)Lcom/google/protobuf/Message;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method getParserForType()Lcom/google/protobuf/Parser;:
+return:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos:
+staticinit *2:
+local assigner:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProtoOrBuilder:
+method getUser()Ljava/lang/String;:
+return:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+field memoizedIsInitialized:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method getUnknownFields()Lcom/google/protobuf/UnknownFieldSet;:
+return:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method parseFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+parameter 1:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$BlockingStub:
+method <init>(Lcom/google/protobuf/BlockingRpcChannel;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method parseFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+parameter 1:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method <init>(Z)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method writeReplace()Ljava/lang/Object;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method parseFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+parameter 0:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method addAllGroups(Ljava/lang/Iterable;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method getUser()Ljava/lang/String;:
+local bs:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method addGroupsBytes(Lcom/google/protobuf/ByteString;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method addGroupsBytes(Lcom/google/protobuf/ByteString;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method clear()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method clear()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$1:
+method assignDescriptors(Lcom/google/protobuf/Descriptors/FileDescriptor;)Lcom/google/protobuf/ExtensionRegistry;:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method maybeForceBuilderInitialization()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$BlockingInterface:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method getSerializedSize()I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method callMethod(Lcom/google/protobuf/Descriptors/MethodDescriptor;Lcom/google/protobuf/RpcController;Lcom/google/protobuf/Message;Lcom/google/protobuf/RpcCallback;)V:
+parameter 2:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProtoOrBuilder:
+method hasUser()Z:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+field user_:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method newStub(Lcom/google/protobuf/RpcChannel;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$Stub;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$Interface:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;Lcom/google/protobuf/RpcCallback;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;Lcom/google/protobuf/RpcCallback;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+field bitField0_:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method <init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)V:
+local unknownFields:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+field unknownFields:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method getUser()Ljava/lang/String;:
+typecast *0:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;Lcom/google/protobuf/RpcCallback;)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos:
+staticinit *2:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+extends:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method setUser(Ljava/lang/String;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProtoOrBuilder:
+method hasUser()Z:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+local e:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method <init>(Lcom/google/protobuf/GeneratedMessage/Builder;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method getUser()Ljava/lang/String;:
+instanceof *0:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method equals(Ljava/lang/Object;)Z:
+instanceof *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$Interface:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;Lcom/google/protobuf/RpcCallback;)V:
+parameter 2:
+type:
+inner-type 1,0, 1,0, 1,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method newBuilder(Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$1:
+method assignDescriptors(Lcom/google/protobuf/Descriptors/FileDescriptor;)Lcom/google/protobuf/ExtensionRegistry;:
+new *1:
+inner-type 0,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method buildPartial()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+new *1:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method <init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)V:
+local mutable_bitField0_:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method clone()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method getDescriptor()Lcom/google/protobuf/Descriptors/Descriptor;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method parseFrom([B)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method newBuilder(Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$BlockingStub:
+field channel:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method parseFrom(Lcom/google/protobuf/CodedInputStream;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method initFields()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method hasUser()Z:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method setGroups(ILjava/lang/String;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProtoOrBuilder:
+method getGroupsBytes(I)Lcom/google/protobuf/ByteString;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method callMethod(Lcom/google/protobuf/Descriptors/MethodDescriptor;Lcom/google/protobuf/RpcController;Lcom/google/protobuf/Message;Lcom/google/protobuf/RpcCallback;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method buildPartial()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method getUser()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method mergeFrom(Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method buildPartial()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method parseFrom([B)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+parameter 0:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method getUserBytes()Lcom/google/protobuf/ByteString;:
+instanceof *0:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method getUser()Ljava/lang/String;:
+instanceof *0:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method getGroupsList()Ljava/util/List;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method getGroupsList()Ljava/util/List;:
+insert-annotation Block.statement 0, Return.expression, MethodInvocation.typeArgument 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$2:
+method getRequestPrototype(Lcom/google/protobuf/Descriptors/MethodDescriptor;)Lcom/google/protobuf/Message;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+field memoizedHashCode:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+implements 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method <init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)V:
+local tag:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$Stub:
+field channel:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method newBuilderForType(Lcom/google/protobuf/GeneratedMessage/BuilderParent;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method <init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)V:
+parameter 1:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos:
+staticinit *2:
+new *2:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method setUserBytes(Lcom/google/protobuf/ByteString;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$2:
+method callBlockingMethod(Lcom/google/protobuf/Descriptors/MethodDescriptor;Lcom/google/protobuf/RpcController;Lcom/google/protobuf/Message;)Lcom/google/protobuf/Message;:
+return:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method writeTo(Lcom/google/protobuf/CodedOutputStream;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method parseFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+parameter 0:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method <init>(Lcom/google/protobuf/GeneratedMessage/BuilderParent;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method isInitialized()Z:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos:
+field internal_static_hadoop_common_GetGroupsForUserResponseProto_descriptor:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProtoOrBuilder:
+method getGroupsBytes(I)Lcom/google/protobuf/ByteString;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+field user_:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method parseFrom(Lcom/google/protobuf/CodedInputStream;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method getUser()Ljava/lang/String;:
+return:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+implements 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method clearGroups()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method getGroupsCount()I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method callMethod(Lcom/google/protobuf/Descriptors/MethodDescriptor;Lcom/google/protobuf/RpcController;Lcom/google/protobuf/Message;Lcom/google/protobuf/RpcCallback;)V:
+new *1:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method writeReplace()Ljava/lang/Object;:
+return:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$Interface:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;Lcom/google/protobuf/RpcCallback;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProtoOrBuilder:
+method getGroups(I)Ljava/lang/String;:
+return:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method getUserBytes()Lcom/google/protobuf/ByteString;:
+local ref:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$1:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;Lcom/google/protobuf/RpcCallback;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method buildPartial()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method parseFrom(Lcom/google/protobuf/ByteString;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method newBuilder(Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method clone()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$1:
+method assignDescriptors(Lcom/google/protobuf/Descriptors/FileDescriptor;)Lcom/google/protobuf/ExtensionRegistry;:
+return:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$2:
+method callBlockingMethod(Lcom/google/protobuf/Descriptors/MethodDescriptor;Lcom/google/protobuf/RpcController;Lcom/google/protobuf/Message;)Lcom/google/protobuf/Message;:
+new *1:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method getDescriptor()Lcom/google/protobuf/Descriptors/ServiceDescriptor;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProtoOrBuilder:
+implements 0:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$1:
+method parsePartialFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto;:
+parameter 1:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method getResponsePrototype(Lcom/google/protobuf/Descriptors/MethodDescriptor;)Lcom/google/protobuf/Message;:
+return:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method getUser()Ljava/lang/String;:
+typecast *1:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method <init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)V:
+new *0:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$1:
+method assignDescriptors(Lcom/google/protobuf/Descriptors/FileDescriptor;)Lcom/google/protobuf/ExtensionRegistry;:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method newBlockingStub(Lcom/google/protobuf/BlockingRpcChannel;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$BlockingInterface;:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method internalGetFieldAccessorTable()Lcom/google/protobuf/GeneratedMessage/FieldAccessorTable;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method getUnknownFields()Lcom/google/protobuf/UnknownFieldSet;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method <init>(Lcom/google/protobuf/GeneratedMessage/BuilderParent;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$1:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;Lcom/google/protobuf/RpcCallback;)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method build()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+local result:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$2:
+method callBlockingMethod(Lcom/google/protobuf/Descriptors/MethodDescriptor;Lcom/google/protobuf/RpcController;Lcom/google/protobuf/Message;)Lcom/google/protobuf/Message;:
+parameter 2:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method getGroups(I)Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method newBuilderForType(Lcom/google/protobuf/GeneratedMessage/BuilderParent;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method addAllGroups(Ljava/lang/Iterable;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+insert-annotation Block.statement 1, ExpressionStatement.expression, MethodInvocation.typeArgument 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method getParserForType()Lcom/google/protobuf/Parser;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method getUser()Ljava/lang/String;:
+return:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+parameter 1:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method create()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method toBuilder()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$Stub:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;Lcom/google/protobuf/RpcCallback;)V:
+parameter 2:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method newReflectiveService(Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$Interface;)Lcom/google/protobuf/Service;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method <init>(Lcom/google/protobuf/GeneratedMessage/Builder;)V:
+parameter 0:
+type:
+inner-type 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method getGroupsList()Ljava/util/List;:
+return:
+inner-type 1,0, 1,0, 3,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method getDefaultInstanceForType()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method parseFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method equals(Ljava/lang/Object;)Z:
+local other:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method getUser()Ljava/lang/String;:
+local s:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method isInitialized()Z:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+extends:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method newStub(Lcom/google/protobuf/RpcChannel;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$Stub;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+field groups_:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method isInitialized()Z:
+local isInitialized:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method parseFrom(Ljava/io/InputStream;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$2:
+method callBlockingMethod(Lcom/google/protobuf/Descriptors/MethodDescriptor;Lcom/google/protobuf/RpcController;Lcom/google/protobuf/Message;)Lcom/google/protobuf/Message;:
+parameter 1:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method getUser()Ljava/lang/String;:
+local ref:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$2:
+method getResponsePrototype(Lcom/google/protobuf/Descriptors/MethodDescriptor;)Lcom/google/protobuf/Message;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method newBuilderForType(Lcom/google/protobuf/GeneratedMessage/BuilderParent;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method mergeFrom(Lcom/google/protobuf/Message;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+instanceof *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method getGroupsCount()I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method getGroupsCount()I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method parseFrom(Ljava/io/InputStream;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method isInitialized()Z:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+staticinit *0:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method getGroups(I)Ljava/lang/String;:
+return:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method setUserBytes(Lcom/google/protobuf/ByteString;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$2:
+method getRequestPrototype(Lcom/google/protobuf/Descriptors/MethodDescriptor;)Lcom/google/protobuf/Message;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method getGroupsBytes(I)Lcom/google/protobuf/ByteString;:
+return:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method writeTo(Lcom/google/protobuf/CodedOutputStream;)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method setUserBytes(Lcom/google/protobuf/ByteString;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method callMethod(Lcom/google/protobuf/Descriptors/MethodDescriptor;Lcom/google/protobuf/RpcController;Lcom/google/protobuf/Message;Lcom/google/protobuf/RpcCallback;)V:
+parameter 3:
+type:
+inner-type 1,0, 1,0, 1,0, 3,0, 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+field PARSER:
+type:
+inner-type 1,0, 1,0, 1,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method mergeFrom(Lcom/google/protobuf/Message;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$1:
+method parsePartialFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method parseFrom([B)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+parameter 0:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method getDescriptor()Lcom/google/protobuf/Descriptors/Descriptor;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method getUserBytes()Lcom/google/protobuf/ByteString;:
+typecast *1:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method mergeFrom(Lcom/google/protobuf/Message;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$Stub:
+implements 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method parseFrom([B)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method create()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method mergeFrom(Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$1:
+method parsePartialFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method clear()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method isInitialized()Z:
+local isInitialized:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method getDefaultInstanceForType()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$Stub:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;Lcom/google/protobuf/RpcCallback;)V:
+insert-annotation Block.statement 0, ExpressionStatement.expression, MethodInvocation.argument 4, MethodInvocation.typeArgument 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method parseFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method create()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method getGroupsBytes(I)Lcom/google/protobuf/ByteString;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$Interface:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;Lcom/google/protobuf/RpcCallback;)V:
+parameter 2:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method equals(Ljava/lang/Object;)Z:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$BlockingStub:
+implements 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$2:
+method callBlockingMethod(Lcom/google/protobuf/Descriptors/MethodDescriptor;Lcom/google/protobuf/RpcController;Lcom/google/protobuf/Message;)Lcom/google/protobuf/Message;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method getDefaultInstanceForType()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method getParserForType()Lcom/google/protobuf/Parser;:
+return:
+inner-type 1,0, 1,0, 1,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method hasUser()Z:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method <init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)V:
+local e:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method hashCode()I:
+local hash:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method setGroups(ILjava/lang/String;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method newBuilder()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method equals(Ljava/lang/Object;)Z:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method getRequestPrototype(Lcom/google/protobuf/Descriptors/MethodDescriptor;)Lcom/google/protobuf/Message;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method setUser(Ljava/lang/String;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos:
+staticinit *2:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method getResponsePrototype(Lcom/google/protobuf/Descriptors/MethodDescriptor;)Lcom/google/protobuf/Message;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method buildPartial()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method mergeFrom(Lcom/google/protobuf/Message;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method getUserBytes()Lcom/google/protobuf/ByteString;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$1:
+method parsePartialFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto;:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method mergeFrom(Lcom/google/protobuf/Message;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+instanceof *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method isInitialized()Z:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method internalGetFieldAccessorTable()Lcom/google/protobuf/GeneratedMessage/FieldAccessorTable;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method getUser()Ljava/lang/String;:
+typecast *1:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+extends:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method maybeForceBuilderInitialization()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method getUserBytes()Lcom/google/protobuf/ByteString;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+field unknownFields:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method getUserBytes()Lcom/google/protobuf/ByteString;:
+typecast *1:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method getUser()Ljava/lang/String;:
+typecast *0:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProtoOrBuilder:
+method getGroupsBytes(I)Lcom/google/protobuf/ByteString;:
+return:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;Lcom/google/protobuf/RpcCallback;)V:
+parameter 2:
+type:
+inner-type 1,0, 1,0, 1,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method hasUser()Z:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$Stub:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method newReflectiveService(Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$Interface;)Lcom/google/protobuf/Service;:
+return:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method newBuilderForType(Lcom/google/protobuf/GeneratedMessage/BuilderParent;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+local builder:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$1:
+method assignDescriptors(Lcom/google/protobuf/Descriptors/FileDescriptor;)Lcom/google/protobuf/ExtensionRegistry;:
+new *3: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method mergeFrom(Lcom/google/protobuf/Message;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method <init>(Lcom/google/protobuf/GeneratedMessage/Builder;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method clearUser()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method equals(Ljava/lang/Object;)Z:
+local other:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method parseFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method toBuilder()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$2:
+method getResponsePrototype(Lcom/google/protobuf/Descriptors/MethodDescriptor;)Lcom/google/protobuf/Message;:
+return:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$Interface:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;Lcom/google/protobuf/RpcCallback;)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method <init>(Z)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+parameter 1:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+field memoizedSerializedSize:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$Stub:
+method <init>(Lcom/google/protobuf/RpcChannel;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$2:
+method getResponsePrototype(Lcom/google/protobuf/Descriptors/MethodDescriptor;)Lcom/google/protobuf/Message;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method parseFrom(Lcom/google/protobuf/ByteString;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+field defaultInstance:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method parseFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method hashCode()I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method writeTo(Lcom/google/protobuf/CodedOutputStream;)V:
+local i:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method newReflectiveBlockingService(Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$BlockingInterface;)Lcom/google/protobuf/BlockingService;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method isInitialized()Z:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$BlockingStub:
+method <init>(Lcom/google/protobuf/BlockingRpcChannel;)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+field bitField0_:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method getSerializedSize()I:
+local i:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method buildPartial()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+local from_bitField0_:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method <init>(Lcom/google/protobuf/GeneratedMessage/Builder;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method build()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+local result:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$2:
+method callBlockingMethod(Lcom/google/protobuf/Descriptors/MethodDescriptor;Lcom/google/protobuf/RpcController;Lcom/google/protobuf/Message;)Lcom/google/protobuf/Message;:
+new *0:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method hashCode()I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method getSerializedSize()I:
+local size:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method buildPartial()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method getUser()Ljava/lang/String;:
+local s:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method buildPartial()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+local result:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method clone()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProtoOrBuilder:
+method getUser()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method parseFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method buildPartial()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method getGroups(I)Ljava/lang/String;:
+return:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method equals(Ljava/lang/Object;)Z:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$BlockingStub:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method getUserBytes()Lcom/google/protobuf/ByteString;:
+return:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$BlockingStub:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProtoOrBuilder:
+method getUserBytes()Lcom/google/protobuf/ByteString;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method internalGetFieldAccessorTable()Lcom/google/protobuf/GeneratedMessage/FieldAccessorTable;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method getParserForType()Lcom/google/protobuf/Parser;:
+return:
+inner-type 1,0, 1,0, 1,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method newBlockingStub(Lcom/google/protobuf/BlockingRpcChannel;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$BlockingInterface;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method getDefaultInstanceForType()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method newBuilderForType(Lcom/google/protobuf/GeneratedMessage/BuilderParent;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos:
+field internal_static_hadoop_common_GetGroupsForUserRequestProto_descriptor:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method getUserBytes()Lcom/google/protobuf/ByteString;:
+typecast *0:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method addGroups(Ljava/lang/String;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$2:
+method getResponsePrototype(Lcom/google/protobuf/Descriptors/MethodDescriptor;)Lcom/google/protobuf/Message;:
+new *1:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method getDescriptorForType()Lcom/google/protobuf/Descriptors/Descriptor;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method getSerializedSize()I:
+local size:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method mergeFrom(Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method mergeFrom(Lcom/google/protobuf/Message;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$1:
+method parsePartialFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto;:
+parameter 1:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method parseFrom(Lcom/google/protobuf/ByteString;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+local parsedMessage:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method getDefaultInstanceForType()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$1:
+method assignDescriptors(Lcom/google/protobuf/Descriptors/FileDescriptor;)Lcom/google/protobuf/ExtensionRegistry;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method <init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)V:
+local e *1:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$1:
+method parsePartialFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method internalGetFieldAccessorTable()Lcom/google/protobuf/GeneratedMessage/FieldAccessorTable;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProtoOrBuilder:
+method getUserBytes()Lcom/google/protobuf/ByteString;:
+return:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method equals(Ljava/lang/Object;)Z:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos:
+field descriptor:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$2:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method getUserBytes()Lcom/google/protobuf/ByteString;:
+typecast *0:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method getUser()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+field groups_:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method addGroups(Ljava/lang/String;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method <init>(Lcom/google/protobuf/GeneratedMessage/Builder;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method <init>(Lcom/google/protobuf/GeneratedMessage/BuilderParent;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method parseFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$Stub:
+method <init>(Lcom/google/protobuf/RpcChannel;)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$1:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method equals(Ljava/lang/Object;)Z:
+instanceof *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method <init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)V:
+local mutable_bitField0_:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method getParserForType()Lcom/google/protobuf/Parser;:
+return:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method parseDelimitedFrom(Ljava/io/InputStream;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos:
+staticinit *2:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+field PARSER:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method newBlockingStub(Lcom/google/protobuf/BlockingRpcChannel;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$BlockingInterface;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method setUser(Ljava/lang/String;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method build()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+extends:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;Lcom/google/protobuf/RpcCallback;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method getGroupsBytes(I)Lcom/google/protobuf/ByteString;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method getUnknownFields()Lcom/google/protobuf/UnknownFieldSet;:
+return:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method newBuilderForType()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$Stub:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;Lcom/google/protobuf/RpcCallback;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+field PARSER:
+new *0:
+inner-type 1,0, 1,0, 1,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$2:
+method getRequestPrototype(Lcom/google/protobuf/Descriptors/MethodDescriptor;)Lcom/google/protobuf/Message;:
+new *1:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$Stub:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;Lcom/google/protobuf/RpcCallback;)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method mergeFrom(Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method <init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)V:
+local e *1:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos:
+field internal_static_hadoop_common_GetGroupsForUserResponseProto_fieldAccessorTable:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method callMethod(Lcom/google/protobuf/Descriptors/MethodDescriptor;Lcom/google/protobuf/RpcController;Lcom/google/protobuf/Message;Lcom/google/protobuf/RpcCallback;)V:
+insert-annotation Block.statement 1, Switch.case 0, Case.statement 0, ExpressionStatement.expression, MethodInvocation.argument 2, MethodInvocation.typeArgument 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method newBuilderForType()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method mergeFrom(Lcom/google/protobuf/Message;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method getUser()Ljava/lang/String;:
+local ref:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method <init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method newBuilderForType()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method getDescriptorForType()Lcom/google/protobuf/Descriptors/ServiceDescriptor;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+field defaultInstance:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$2:
+method callBlockingMethod(Lcom/google/protobuf/Descriptors/MethodDescriptor;Lcom/google/protobuf/RpcController;Lcom/google/protobuf/Message;)Lcom/google/protobuf/Message;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method getRequestPrototype(Lcom/google/protobuf/Descriptors/MethodDescriptor;)Lcom/google/protobuf/Message;:
+new *1:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProtoOrBuilder:
+method getGroupsCount()I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method newStub(Lcom/google/protobuf/RpcChannel;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$Stub;:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method isInitialized()Z:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method writeTo(Lcom/google/protobuf/CodedOutputStream;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+field PARSER:
+type:
+inner-type 1,0, 1,0, 1,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method parseFrom([B)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method getUserBytes()Lcom/google/protobuf/ByteString;:
+local b:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method mergeFrom(Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method parseFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+parameter 1:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method getDescriptor()Lcom/google/protobuf/Descriptors/Descriptor;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$1:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;Lcom/google/protobuf/RpcCallback;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProtoOrBuilder:
+method getGroupsList()Ljava/util/List;:
+return:
+inner-type 1,0, 1,0, 3,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method setUser(Ljava/lang/String;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method writeTo(Lcom/google/protobuf/CodedOutputStream;)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method <init>(Lcom/google/protobuf/GeneratedMessage/Builder;)V:
+parameter 0:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$BlockingInterface:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method getGroupsList()Ljava/util/List;:
+return:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$1:
+method parsePartialFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto;:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method parseFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+parameter 1:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method getDescriptorForType()Lcom/google/protobuf/Descriptors/ServiceDescriptor;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method addGroupsBytes(Lcom/google/protobuf/ByteString;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProtoOrBuilder:
+implements 0:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method setGroups(ILjava/lang/String;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method getGroupsBytes(I)Lcom/google/protobuf/ByteString;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+implements 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method newReflectiveService(Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$Interface;)Lcom/google/protobuf/Service;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method hasUser()Z:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+field PARSER:
+new *0:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method newBuilder(Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method parseFrom([B)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method writeReplace()Ljava/lang/Object;:
+return:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method getGroups(I)Ljava/lang/String;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+field PARSER:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method addAllGroups(Ljava/lang/Iterable;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos:
+method registerAllExtensions(Lcom/google/protobuf/ExtensionRegistry;)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method getParserForType()Lcom/google/protobuf/Parser;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method getUserBytes()Lcom/google/protobuf/ByteString;:
+local ref:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method getDefaultInstanceForType()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+parameter 1:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProtoOrBuilder:
+method getGroups(I)Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method callMethod(Lcom/google/protobuf/Descriptors/MethodDescriptor;Lcom/google/protobuf/RpcController;Lcom/google/protobuf/Message;Lcom/google/protobuf/RpcCallback;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$1:
+method parsePartialFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method getRequestPrototype(Lcom/google/protobuf/Descriptors/MethodDescriptor;)Lcom/google/protobuf/Message;:
+return:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method <init>(Lcom/google/protobuf/GeneratedMessage/Builder;)V:
+parameter 0:
+type:
+inner-type 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProtoOrBuilder:
+method getGroupsList()Ljava/util/List;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method <init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method getGroups(I)Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method <init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)V:
+new *2:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method internalGetFieldAccessorTable()Lcom/google/protobuf/GeneratedMessage/FieldAccessorTable;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$BlockingInterface:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method parseDelimitedFrom(Ljava/io/InputStream;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method getSerializedSize()I:
+local dataSize:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method addGroups(Ljava/lang/String;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$BlockingInterface:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method <init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)V:
+parameter 1:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method getRequestPrototype(Lcom/google/protobuf/Descriptors/MethodDescriptor;)Lcom/google/protobuf/Message;:
+new *0:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService$BlockingStub:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method <init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)V:
+local e:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method create()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method hashCode()I:
+local hash:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos:
+method getDescriptor()Lcom/google/protobuf/Descriptors/FileDescriptor;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProtoOrBuilder:
+method getGroups(I)Ljava/lang/String;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method <init>(Lcom/google/protobuf/GeneratedMessage/BuilderParent;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method buildPartial()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+local result:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method getResponsePrototype(Lcom/google/protobuf/Descriptors/MethodDescriptor;)Lcom/google/protobuf/Message;:
+new *0:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method newBuilderForType(Lcom/google/protobuf/GeneratedMessage/BuilderParent;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$1:
+method assignDescriptors(Lcom/google/protobuf/Descriptors/FileDescriptor;)Lcom/google/protobuf/ExtensionRegistry;:
+new *3:
+inner-type 0,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+field PARSER:
+new *0:
+inner-type 1,0, 1,0, 1,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder:
+method mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method toBuilder()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto$Builder;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+field memoizedIsInitialized:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+field USER_FIELD_NUMBER:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method getSerializedSize()I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method parseDelimitedFrom(Ljava/io/InputStream;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserResponseProto;:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto:
+method <init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)V:
+local tag:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder:
+method getDefaultInstanceForType()Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetUserMappingsProtocolService:
+method callMethod(Lcom/google/protobuf/Descriptors/MethodDescriptor;Lcom/google/protobuf/RpcController;Lcom/google/protobuf/Message;Lcom/google/protobuf/RpcCallback;)V:
+parameter 3:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method newBuilderForType(Lcom/google/protobuf/GeneratedMessage/BuilderParent;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto$Builder;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method <init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.proto:
+class GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto:
+method parseFrom(Lcom/google/protobuf/ByteString;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos/GetGroupsForUserRequestProto;:
+parameter 0:
+type:
+inner-type 1,0, 1,0, 1,0: @ostrusted.quals.OsUntrusted
+

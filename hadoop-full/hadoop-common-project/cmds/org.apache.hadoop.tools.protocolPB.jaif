@@ -1,0 +1,170 @@
+
+package ostrusted.quals:
+annotation @OsUntrusted:
+package ostrusted.quals:
+annotation @OsTrusted:
+
+
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolServerSideTranslatorPB:
+field impl:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolServerSideTranslatorPB:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolServerSideTranslatorPB:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto;:
+local g:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolServerSideTranslatorPB:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto;:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolServerSideTranslatorPB:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolClientSideTranslatorPB:
+method <init>(Lorg/apache/hadoop/tools/protocolPB/GetUserMappingsProtocolPB;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolClientSideTranslatorPB:
+implements 2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolClientSideTranslatorPB:
+method isMethodSupported(Ljava/lang/String;)Z:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolClientSideTranslatorPB:
+method <init>(Lorg/apache/hadoop/tools/protocolPB/GetUserMappingsProtocolPB;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolClientSideTranslatorPB:
+method isMethodSupported(Ljava/lang/String;)Z:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolClientSideTranslatorPB:
+method getGroupsForUser(Ljava/lang/String;)[Ljava/lang/String;:
+return:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolClientSideTranslatorPB:
+method getGroupsForUser(Ljava/lang/String;)[Ljava/lang/String;:
+new *0:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolClientSideTranslatorPB:
+method getGroupsForUser(Ljava/lang/String;)[Ljava/lang/String;:
+insert-annotation Block.statement 3, Return.expression, MethodInvocation.typeArgument 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolClientSideTranslatorPB:
+method getGroupsForUser(Ljava/lang/String;)[Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolClientSideTranslatorPB:
+implements 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolServerSideTranslatorPB:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto;:
+local groups:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolClientSideTranslatorPB:
+field NULL_CONTROLLER:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolClientSideTranslatorPB:
+method getGroupsForUser(Ljava/lang/String;)[Ljava/lang/String;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolPB:
+implements 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolClientSideTranslatorPB:
+method isMethodSupported(Ljava/lang/String;)Z:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolServerSideTranslatorPB:
+method <init>(Lorg/apache/hadoop/tools/GetUserMappingsProtocol;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolServerSideTranslatorPB:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto;:
+local builder:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolServerSideTranslatorPB:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto;:
+local groups:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolClientSideTranslatorPB:
+implements 1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolServerSideTranslatorPB:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolClientSideTranslatorPB:
+field rpcProxy:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolClientSideTranslatorPB:
+method close()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolClientSideTranslatorPB:
+method getGroupsForUser(Ljava/lang/String;)[Ljava/lang/String;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolServerSideTranslatorPB:
+method <init>(Lorg/apache/hadoop/tools/GetUserMappingsProtocol;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolClientSideTranslatorPB:
+method getGroupsForUser(Ljava/lang/String;)[Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolServerSideTranslatorPB:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolServerSideTranslatorPB:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolClientSideTranslatorPB:
+method getGroupsForUser(Ljava/lang/String;)[Ljava/lang/String;:
+local request:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolClientSideTranslatorPB:
+method getGroupsForUser(Ljava/lang/String;)[Ljava/lang/String;:
+local resp:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolClientSideTranslatorPB:
+method getGroupsForUser(Ljava/lang/String;)[Ljava/lang/String;:
+local se:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolServerSideTranslatorPB:
+method getGroupsForUser(Lcom/google/protobuf/RpcController;Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserRequestProto;)Lorg/apache/hadoop/tools/proto/GetUserMappingsProtocolProtos$GetGroupsForUserResponseProto;:
+local e:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolServerSideTranslatorPB:
+implements 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools.protocolPB:
+class GetUserMappingsProtocolClientSideTranslatorPB:
+extends: @ostrusted.quals.OsUntrusted
+

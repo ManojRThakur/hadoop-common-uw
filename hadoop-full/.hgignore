@@ -1,0 +1,4 @@
+hadoop-common-project/hadoop-common/cmds/
+
+syntax: glob
+*.class

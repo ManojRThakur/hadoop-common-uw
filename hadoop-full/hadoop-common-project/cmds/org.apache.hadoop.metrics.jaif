@@ -1,0 +1,1283 @@
+
+package ostrusted.quals:
+annotation @OsUntrusted:
+package ostrusted.quals:
+annotation @OsTrusted:
+
+
+package org.apache.hadoop.metrics:
+class MetricsContext:
+method init(Ljava/lang/String;Lorg/apache/hadoop/metrics/ContextFactory;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method setMetric(Ljava/lang/String;B)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method setTag(Ljava/lang/String;J)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method setAttributes()V:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method setMetric(Ljava/lang/String;F)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method doGet(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method indent(Ljava/io/PrintWriter;I)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsContext:
+method init(Ljava/lang/String;Lorg/apache/hadoop/metrics/ContextFactory;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method doGet(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:
+local format:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsUtil:
+method getHostName()Ljava/lang/String;:
+local ex:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method setMetric(Ljava/lang/String;B)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getAttributeNames()[Ljava/lang/String;:
+new *0:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsContext:
+method getAllRecords()Ljava/util/Map;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getContext(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsContext;:
+typecast *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsUtil:
+method createRecord(Lorg/apache/hadoop/metrics/MetricsContext;Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsRecord;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsContext:
+method getAllRecords()Ljava/util/Map;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method setTag(Ljava/lang/String;J)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method doGet(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+new *1:
+inner-type 3,1, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getContext(Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsContext;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+local metricMap:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method setMetric(Ljava/lang/String;I)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method printMap(Ljava/io/PrintWriter;Ljava/util/Map;)V:
+parameter 1:
+type:
+inner-type 3,1, 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+field contextMap:
+new *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsContext:
+method getAllRecords()Ljava/util/Map;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsContext:
+method init(Ljava/lang/String;Lorg/apache/hadoop/metrics/ContextFactory;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method incrMetric(Ljava/lang/String;S)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method remove()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsContext:
+method isMonitoring()Z:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+new *1:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method printMap(Ljava/io/PrintWriter;Ljava/util/Map;)V:
+local metricValue:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getContext(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsContext;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet$TagsMetricsPair:
+method fromJSON(Ljava/util/Map;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getAttributeNames()[Ljava/lang/String;:
+local it:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method printMap(Ljava/io/PrintWriter;Ljava/util/Map;)V:
+local metricValue:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+new *0:
+inner-type 3,1, 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getAttributeNames()[Ljava/lang/String;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method setTag(Ljava/lang/String;I)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsException:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method printMap(Ljava/io/PrintWriter;Ljava/util/Map;)V:
+local record:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method setTag(Ljava/lang/String;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+new *1:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsException:
+method <init>(Ljava/lang/String;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+new *2:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+field attributeMap:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getNullContext(Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsContext;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method printMap(Ljava/io/PrintWriter;Ljava/util/Map;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method setAttributes()V:
+local properties:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method setMetric(Ljava/lang/String;F)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+field attributeMap:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method setAttributes()V:
+local it:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getContext(Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsContext;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method setTag(Ljava/lang/String;B)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method setAttributes()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method printMap(Ljava/io/PrintWriter;Ljava/util/Map;)V:
+local record:
+type:
+inner-type 3,1, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsContext:
+method registerUpdater(Lorg/apache/hadoop/metrics/Updater;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method printMap(Ljava/io/PrintWriter;Ljava/util/Map;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+field nullContextMap:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method indent(Ljava/io/PrintWriter;I)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getNullContext(Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsContext;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsException:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getFactory()Lorg/apache/hadoop/metrics/ContextFactory;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet$TagsMetricsPair:
+method toJSON(Lorg/mortbay/util/ajax/JSON$Output;)V:
+new *0:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method setMetric(Ljava/lang/String;S)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getAllContexts()Ljava/util/Collection;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method incrMetric(Ljava/lang/String;S)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method indent(Ljava/io/PrintWriter;I)V:
+local i:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getAllContexts()Ljava/util/Collection;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method setTag(Ljava/lang/String;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsContext:
+method createRecord(Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsRecord;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+local r:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+field contextMap:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method setTag(Ljava/lang/String;J)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+local map:
+type:
+inner-type 3,1, 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method indent(Ljava/io/PrintWriter;I)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method printMap(Ljava/io/PrintWriter;Ljava/util/Map;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method setAttribute(Ljava/lang/String;Ljava/lang/Object;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet$TagsMetricsPair:
+method <init>(Lorg/apache/hadoop/metrics/spi/AbstractMetricsContext$TagMap;Lorg/apache/hadoop/metrics/spi/AbstractMetricsContext$MetricMap;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getContext(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsContext;:
+local metricsContext:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsContext:
+method isMonitoring()Z:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsUtil:
+method getContext(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsContext;:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet$TagsMetricsPair:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getContext(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsContext;:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsUtil:
+method getContext(Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsContext;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsContext:
+method getAllRecords()Ljava/util/Map;:
+return:
+inner-type 3,1, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+return:
+inner-type 3,1, 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getAttribute(Ljava/lang/String;)Ljava/lang/Object;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method printMap(Ljava/io/PrintWriter;Ljava/util/Map;)V:
+local context:
+type:
+inner-type 3,1, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method printMap(Ljava/io/PrintWriter;Ljava/util/Map;)V:
+local record:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsContext:
+method getContextName()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsContext:
+method registerUpdater(Lorg/apache/hadoop/metrics/Updater;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsContext:
+method getContextName()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getAttribute(Ljava/lang/String;)Ljava/lang/Object;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class Updater:
+method doUpdates(Lorg/apache/hadoop/metrics/MetricsContext;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method incrMetric(Ljava/lang/String;I)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method incrMetric(Ljava/lang/String;B)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getContext(Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsContext;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+field theFactory:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+field nullContextMap:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method doGet(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsContext:
+method startMonitoring()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method incrMetric(Ljava/lang/String;S)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method setMetric(Ljava/lang/String;I)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+parameter 0:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+local map:
+type:
+inner-type 3,1, 3,1, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method incrMetric(Ljava/lang/String;F)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsContext:
+method unregisterUpdater(Lorg/apache/hadoop/metrics/Updater;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method setAttributes()V:
+local propertyName:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsContext:
+field DEFAULT_PERIOD:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsUtil:
+method createRecord(Lorg/apache/hadoop/metrics/MetricsContext;Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsRecord;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getContext(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsContext;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsUtil:
+method getContext(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsContext;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+local context:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+new *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+local map:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+local records:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsUtil:
+method getContext(Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsContext;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method setAttributes()V:
+local propertyValue:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsUtil:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method setMetric(Ljava/lang/String;J)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getAllContexts()Ljava/util/Collection;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+return:
+inner-type 3,1, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+field contextMap:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method incrMetric(Ljava/lang/String;F)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method incrMetric(Ljava/lang/String;I)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method doGet(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method printMap(Ljava/io/PrintWriter;Ljava/util/Map;)V:
+parameter 1:
+type:
+inner-type 3,1, 3,1, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method setMetric(Ljava/lang/String;F)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method incrMetric(Ljava/lang/String;J)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method incrMetric(Ljava/lang/String;J)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+return:
+inner-type 3,1, 3,1, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+field nullContextMap:
+new *0:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method setTag(Ljava/lang/String;I)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet$TagsMetricsPair:
+method fromJSON(Ljava/util/Map;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsUtil:
+method createRecord(Lorg/apache/hadoop/metrics/MetricsContext;Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsRecord;:
+local metricsRecord:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method removeAttribute(Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method printMap(Ljava/io/PrintWriter;Ljava/util/Map;)V:
+local record:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+field attributeMap:
+new *0:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getNullContext(Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsContext;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method getRecordName()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getAttributeNames()[Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getAttributeNames()[Ljava/lang/String;:
+local result:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+local map:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsContext:
+method createRecord(Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsRecord;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method printMap(Ljava/io/PrintWriter;Ljava/util/Map;)V:
+local context:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method incrMetric(Ljava/lang/String;B)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+return:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method incrMetric(Ljava/lang/String;F)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method printMap(Ljava/io/PrintWriter;Ljava/util/Map;)V:
+local tagValue:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method setAttribute(Ljava/lang/String;Ljava/lang/Object;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method setAttributes()V:
+local is:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet$TagsMetricsPair:
+field tagMap:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getAllContexts()Ljava/util/Collection;:
+new *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getContext(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsContext;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+new *0:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method setMetric(Ljava/lang/String;J)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getAttribute(Ljava/lang/String;)Ljava/lang/Object;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method printMap(Ljava/io/PrintWriter;Ljava/util/Map;)V:
+parameter 1:
+type:
+inner-type 3,1, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+local r:
+type:
+inner-type 3,1, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getContext(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsContext;:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsException:
+field serialVersionUID:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method printMap(Ljava/io/PrintWriter;Ljava/util/Map;)V:
+local metricValue:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsUtil:
+method createRecord(Lorg/apache/hadoop/metrics/MetricsContext;Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsRecord;:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+field DEFAULT_CONTEXT_CLASSNAME:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method setMetric(Ljava/lang/String;S)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method doGet(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:
+local allContexts:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getFactory()Lorg/apache/hadoop/metrics/ContextFactory;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsContext:
+method getAllRecords()Ljava/util/Map;:
+return:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet$TagsMetricsPair:
+implements 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+field PROPERTIES_FILE:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet$TagsMetricsPair:
+method toJSON(Lorg/mortbay/util/ajax/JSON$Output;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsUtil:
+method getContext(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsContext;:
+local ex:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet$TagsMetricsPair:
+method toJSON(Lorg/mortbay/util/ajax/JSON$Output;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method printMap(Ljava/io/PrintWriter;Ljava/util/Map;)V:
+local context:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method printMap(Ljava/io/PrintWriter;Ljava/util/Map;)V:
+parameter 1:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsContext:
+method createRecord(Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsRecord;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method setMetric(Ljava/lang/String;J)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method setTag(Ljava/lang/String;B)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method incrMetric(Ljava/lang/String;I)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsContext:
+method close()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+local outputRecord:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet$TagsMetricsPair:
+method toJSON(Lorg/mortbay/util/ajax/JSON$Output;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+field nullContextMap:
+new *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+local map:
+type:
+inner-type 3,1, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsUtil:
+method getContext(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsContext;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method setTag(Ljava/lang/String;I)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+field contextMap:
+new *0:
+inner-type 3,1: @ostrusted.quals.OsTrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+field nullContextMap:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+new *0:
+inner-type 3,1, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsUtil:
+method getHostName()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method printMap(Ljava/io/PrintWriter;Ljava/util/Map;)V:
+local tagValue:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+local map:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+new *0:
+inner-type 3,1, 3,1, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsContext:
+method getPeriod()I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+field nullContextMap:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method doGet(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:
+local out:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+field CONTEXT_CLASS_SUFFIX:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsUtil:
+field LOG:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method setAttributes()V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsContext:
+method unregisterUpdater(Lorg/apache/hadoop/metrics/Updater;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet$TagsMetricsPair:
+method fromJSON(Ljava/util/Map;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+field attributeMap:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method setTag(Ljava/lang/String;S)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method removeTag(Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsException:
+method <init>(Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsContext:
+method getPeriod()I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsUtil:
+method getContext(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsContext;:
+local metricsContext:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method doGet(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:
+local allContexts:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class Updater:
+method doUpdates(Lorg/apache/hadoop/metrics/MetricsContext;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method update()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method setTag(Ljava/lang/String;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getNullContext(Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsContext;:
+local nullContext:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getAttributeNames()[Ljava/lang/String;:
+return:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet$TagsMetricsPair:
+method <init>(Lorg/apache/hadoop/metrics/spi/AbstractMetricsContext$TagMap;Lorg/apache/hadoop/metrics/spi/AbstractMetricsContext$MetricMap;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method printMap(Ljava/io/PrintWriter;Ljava/util/Map;)V:
+local first:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method removeAttribute(Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method incrMetric(Ljava/lang/String;J)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method setAttribute(Ljava/lang/String;Ljava/lang/Object;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsUtil:
+method getHostName()Ljava/lang/String;:
+local hostName:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method doGet(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V:
+local out *1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+local records:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+local metricsAndTags:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method printMap(Ljava/io/PrintWriter;Ljava/util/Map;)V:
+parameter 1:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method setTag(Ljava/lang/String;S)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method setMetric(Ljava/lang/String;B)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsUtil:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+new *3: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getAttributeNames()[Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+local records:
+type:
+inner-type 3,1, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method getRecordName()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getAttributeNames()[Ljava/lang/String;:
+local i:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method incrMetric(Ljava/lang/String;B)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+field contextMap:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+field attributeMap:
+new *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+field attributeMap:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+local r:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method printMap(Ljava/io/PrintWriter;Ljava/util/Map;)V:
+local context:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method printMap(Ljava/io/PrintWriter;Ljava/util/Map;)V:
+local context:
+type:
+inner-type 3,1, 3,1, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getContext(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsContext;:
+local contextClass:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+local r:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet$TagsMetricsPair:
+field metricMap:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method setMetric(Ljava/lang/String;I)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method setTag(Ljava/lang/String;B)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+local metricsAndTags:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet$TagsMetricsPair:
+method <init>(Lorg/apache/hadoop/metrics/spi/AbstractMetricsContext$TagMap;Lorg/apache/hadoop/metrics/spi/AbstractMetricsContext$MetricMap;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getAllContexts()Ljava/util/Collection;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method removeTag(Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+field contextMap:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getAttributeNames()[Ljava/lang/String;:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method setMetric(Ljava/lang/String;S)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method printMap(Ljava/io/PrintWriter;Ljava/util/Map;)V:
+local tagValue:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsRecord:
+method setTag(Ljava/lang/String;S)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+local records:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+local tagMap:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getAttributeNames()[Ljava/lang/String;:
+local result:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsContext:
+method stopMonitoring()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method makeMap(Ljava/util/Collection;)Ljava/util/Map;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method printMap(Ljava/io/PrintWriter;Ljava/util/Map;)V:
+local pair:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getContext(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsContext;:
+local className:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class MetricsServlet:
+method printMap(Ljava/io/PrintWriter;Ljava/util/Map;)V:
+local context:
+type:
+inner-type 3,1, 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics:
+class ContextFactory:
+method getContext(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/hadoop/metrics/MetricsContext;:
+local classNameAttribute:
+type: @ostrusted.quals.OsUntrusted
+

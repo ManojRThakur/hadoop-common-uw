@@ -1,0 +1,53 @@
+/Users/mcarthur/dev/hadoop/verigames-hadoop-repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java:1582: error: > expected
+    Class<? extends java.lang.@OsUntrusted Object extends java.lang.@OsTrusted Object> getProtocol(Client.@OsUntrusted ConnectionId this) {
+                                                  ^
+/Users/mcarthur/dev/hadoop/verigames-hadoop-repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java:1582: error: ';' expected
+    Class<? extends java.lang.@OsUntrusted Object extends java.lang.@OsTrusted Object> getProtocol(Client.@OsUntrusted ConnectionId this) {
+                                                         ^
+/Users/mcarthur/dev/hadoop/verigames-hadoop-repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java:1582: error: illegal start of type
+    Class<? extends java.lang.@OsUntrusted Object extends java.lang.@OsTrusted Object> getProtocol(Client.@OsUntrusted ConnectionId this) {
+                                                              ^
+/Users/mcarthur/dev/hadoop/verigames-hadoop-repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java:1582: error: ';' expected
+    Class<? extends java.lang.@OsUntrusted Object extends java.lang.@OsTrusted Object> getProtocol(Client.@OsUntrusted ConnectionId this) {
+                                                                   ^
+/Users/mcarthur/dev/hadoop/verigames-hadoop-repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java:1582: error: <identifier> expected
+    Class<? extends java.lang.@OsUntrusted Object extends java.lang.@OsTrusted Object> getProtocol(Client.@OsUntrusted ConnectionId this) {
+                                                                                     ^
+/Users/mcarthur/dev/hadoop/verigames-hadoop-repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java:1582: error: invalid method declaration; return type required
+    Class<? extends java.lang.@OsUntrusted Object extends java.lang.@OsTrusted Object> getProtocol(Client.@OsUntrusted ConnectionId this) {
+                                                                                       ^
+/Users/mcarthur/dev/hadoop/verigames-hadoop-repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/SequenceFile.java:2163: error: > expected
+    public synchronized @OsUntrusted Class<? extends java.lang.@OsUntrusted Object extends java.lang.@OsTrusted Object> getKeyClass(SequenceFile.@OsUntrusted Reader this) {
+                                                                                   ^
+/Users/mcarthur/dev/hadoop/verigames-hadoop-repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/SequenceFile.java:2163: error: ';' expected
+    public synchronized @OsUntrusted Class<? extends java.lang.@OsUntrusted Object extends java.lang.@OsTrusted Object> getKeyClass(SequenceFile.@OsUntrusted Reader this) {
+                                                                                          ^
+/Users/mcarthur/dev/hadoop/verigames-hadoop-repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/SequenceFile.java:2163: error: illegal start of type
+    public synchronized @OsUntrusted Class<? extends java.lang.@OsUntrusted Object extends java.lang.@OsTrusted Object> getKeyClass(SequenceFile.@OsUntrusted Reader this) {
+                                                                                               ^
+/Users/mcarthur/dev/hadoop/verigames-hadoop-repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/SequenceFile.java:2163: error: ';' expected
+    public synchronized @OsUntrusted Class<? extends java.lang.@OsUntrusted Object extends java.lang.@OsTrusted Object> getKeyClass(SequenceFile.@OsUntrusted Reader this) {
+                                                                                                    ^
+/Users/mcarthur/dev/hadoop/verigames-hadoop-repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/SequenceFile.java:2163: error: <identifier> expected
+    public synchronized @OsUntrusted Class<? extends java.lang.@OsUntrusted Object extends java.lang.@OsTrusted Object> getKeyClass(SequenceFile.@OsUntrusted Reader this) {
+                                                                                                                      ^
+/Users/mcarthur/dev/hadoop/verigames-hadoop-repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/SequenceFile.java:2163: error: invalid method declaration; return type required
+    public synchronized @OsUntrusted Class<? extends java.lang.@OsUntrusted Object extends java.lang.@OsTrusted Object> getKeyClass(SequenceFile.@OsUntrusted Reader this) {
+                                                                                                                        ^
+/Users/mcarthur/dev/hadoop/verigames-hadoop-repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/SequenceFile.java:2180: error: > expected
+    public synchronized @OsUntrusted Class<? extends java.lang.@OsTrusted Object extends java.lang.@OsUntrusted Object> getValueClass(SequenceFile.@OsUntrusted Reader this) {
+                                                                                 ^
+/Users/mcarthur/dev/hadoop/verigames-hadoop-repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/SequenceFile.java:2180: error: ';' expected
+    public synchronized @OsUntrusted Class<? extends java.lang.@OsTrusted Object extends java.lang.@OsUntrusted Object> getValueClass(SequenceFile.@OsUntrusted Reader this) {
+                                                                                        ^
+/Users/mcarthur/dev/hadoop/verigames-hadoop-repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/SequenceFile.java:2180: error: illegal start of type
+    public synchronized @OsUntrusted Class<? extends java.lang.@OsTrusted Object extends java.lang.@OsUntrusted Object> getValueClass(SequenceFile.@OsUntrusted Reader this) {
+                                                                                             ^
+/Users/mcarthur/dev/hadoop/verigames-hadoop-repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/SequenceFile.java:2180: error: ';' expected
+    public synchronized @OsUntrusted Class<? extends java.lang.@OsTrusted Object extends java.lang.@OsUntrusted Object> getValueClass(SequenceFile.@OsUntrusted Reader this) {
+                                                                                                  ^
+/Users/mcarthur/dev/hadoop/verigames-hadoop-repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/SequenceFile.java:2180: error: <identifier> expected
+    public synchronized @OsUntrusted Class<? extends java.lang.@OsTrusted Object extends java.lang.@OsUntrusted Object> getValueClass(SequenceFile.@OsUntrusted Reader this) {
+                                                                                                                      ^
+/Users/mcarthur/dev/hadoop/verigames-hadoop-repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/SequenceFile.java:2180: error: invalid method declaration; return type required
+    public synchronized @OsUntrusted Class<? extends java.lang.@OsTrusted Object extends java.lang.@OsUntrusted Object> getValueClass(SequenceFile.@OsUntrusted Reader this) {

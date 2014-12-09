@@ -1,0 +1,3322 @@
+
+package ostrusted.quals:
+annotation @OsUntrusted:
+package ostrusted.quals:
+annotation @OsTrusted:
+
+
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Input()Lorg/apache/hadoop/record/compiler/JFile;:
+local l:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Input()Lorg/apache/hadoop/record/compiler/JFile;:
+new *3: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Include()Lorg/apache/hadoop/record/compiler/JFile;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjtoSpecial:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/InputStream;Ljava/lang/String;III)V:
+parameter 4:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+field LOOP_DETECTED:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/InputStream;III)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjtoSpecial:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field destDir:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field language:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveNfa_1(II)I:
+local i:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+method <init>(Lorg/apache/hadoop/record/compiler/generated/Token;[[I[Ljava/lang/String;)V:
+parameter 2:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/InputStream;III)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccConstants:
+field FLOAT_TKN:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Module()Ljava/util/ArrayList;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccConstants:
+field tokenImage:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/Reader;III)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Field()Lorg/apache/hadoop/record/compiler/JField;:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjrounds:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field jj_la1_0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Field()Lorg/apache/hadoop/record/compiler/JField;:
+new *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method adjustBeginLineColumn(II)V:
+local i:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/InputStream;)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/Reader;III)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Include()Lorg/apache/hadoop/record/compiler/JFile;:
+local tmpFile:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Record()Lorg/apache/hadoop/record/compiler/JRecord;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Type()Lorg/apache/hadoop/record/compiler/JType;:
+new *9: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Field()Lorg/apache/hadoop/record/compiler/JField;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method <init>(Ljava/io/Reader;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjCheckNAddTwoStates(II)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+method LexicalError(ZIIILjava/lang/String;C)Ljava/lang/String;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccConstants:
+field COMMA_TKN:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method <init>(Ljava/io/InputStream;Ljava/lang/String;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveNfa_1(II)I:
+local l *1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method ReInit(Ljava/io/Reader;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method getBeginColumn()I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Type()Lorg/apache/hadoop/record/compiler/JType;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Input()Lorg/apache/hadoop/record/compiler/JFile;:
+new *4: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method ReInit(Lorg/apache/hadoop/record/compiler/generated/SimpleCharStream;I)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field jj_input_stream:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjAddStates(II)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Type()Lorg/apache/hadoop/record/compiler/JType;:
+local t:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Token:
+field kind:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjStartNfaWithStates_0(III)I:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Token:
+field endColumn:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+field expectedTokenSequences:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field jj_la1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+method getMessage()Ljava/lang/String;:
+local tok:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method <init>(Ljava/io/InputStream;)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa1_2(J)I:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Include()Lorg/apache/hadoop/record/compiler/JFile;:
+local reader:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method getBeginColumn()I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjimageLen:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method driver([Ljava/lang/String;)I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method ReInit(Ljava/io/InputStream;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field curModuleName:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method getNextToken()Lorg/apache/hadoop/record/compiler/generated/Token;:
+local kind:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method <init>(Ljava/io/InputStream;Ljava/lang/String;)V:
+local e:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa0_2()I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa6_0(JJ)I:
+local e:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method <init>(Lorg/apache/hadoop/record/compiler/generated/SimpleCharStream;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjtoMore:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/InputStream;III)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveNfa_1(II)I:
+local startsAt:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+field bufline:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjstateSet:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccConstants:
+field BOOLEAN_TKN:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field curChar:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+method getMessage()Ljava/lang/String;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjstateSet:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjnextStates:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveNfa_0(II)I:
+local i:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/InputStream;Ljava/lang/String;II)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjnewLexState:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+method <init>(ZIIILjava/lang/String;CI)V:
+parameter 4:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+method <init>(Ljava/lang/String;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+field tokenBegin:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Token:
+field specialToken:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccConstants:
+field DOUBLE_TKN:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/InputStream;II)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa0_0()I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/InputStream;III)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method ModuleName()Ljava/lang/String;:
+local t:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method generateParseException()Lorg/apache/hadoop/record/compiler/generated/ParseException;:
+new *1:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjStartNfaWithStates_0(III)I:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjStopAtPos(II)I:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method setTabSize(I)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Record()Lorg/apache/hadoop/record/compiler/JRecord;:
+local f:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field jj_la1:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Record()Lorg/apache/hadoop/record/compiler/JRecord;:
+local rname:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method backup(I)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method main([Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+method <init>(Ljava/lang/String;I)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field jj_expentry:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/InputStream;Ljava/lang/String;II)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjrounds:
+new *0:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccConstants:
+field DOT_TKN:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method <init>(Ljava/io/Reader;)V:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method getEndLine()I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method UpdateLineColumn(C)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Record()Lorg/apache/hadoop/record/compiler/JRecord;:
+new *0:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccConstants:
+field DEFAULT:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Type()Lorg/apache/hadoop/record/compiler/JType;:
+local r:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+field INVALID_LEXICAL_STATE:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjStartNfa_0(IJ)I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjtoSpecial:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+method add_escapes(Ljava/lang/String;)Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa1_0(J)I:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/Reader;III)V:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method FillBuff()V:
+new *0:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/InputStream;III)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method readChar()C:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Module()Ljava/util/ArrayList;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjStartNfa_0(IJ)I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/Reader;III)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method jj_la1_1()V:
+new *0:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccConstants:
+field RECORD_TKN:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Include()Lorg/apache/hadoop/record/compiler/JFile;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjCheckNAddStates(II)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method driver([Ljava/lang/String;)I:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method SwitchTo(I)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field recTab:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveNfa_1(II)I:
+local i2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjstrLiteralImages:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa6_0(JJ)I:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa4_0(JJ)I:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method jj_consume_token(I)Lorg/apache/hadoop/record/compiler/generated/Token;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field jj_la1_1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field cmdargs:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method driver([Ljava/lang/String;)I:
+local e:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method ReInit(Ljava/io/Reader;)V:
+local i:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ExpandBuff(Z)V:
+local newbufline:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveNfa_0(II)I:
+local i2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+method LexicalError(ZIIILjava/lang/String;C)Ljava/lang/String;:
+parameter 5:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method ReInit(Ljava/io/Reader;)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa4_0(JJ)I:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+method <init>(ZIIILjava/lang/String;CI)V:
+parameter 5:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method FillBuff()V:
+local i:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method getNextToken()Lorg/apache/hadoop/record/compiler/generated/Token;:
+local error_after:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method <init>(Lorg/apache/hadoop/record/compiler/generated/RccTokenManager;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method RecordList()Ljava/util/ArrayList;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method RecordList()Ljava/util/ArrayList;:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method ReInit(Lorg/apache/hadoop/record/compiler/generated/SimpleCharStream;I)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Record()Lorg/apache/hadoop/record/compiler/JRecord;:
+local f:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/Reader;II)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method jj_consume_token(I)Lorg/apache/hadoop/record/compiler/generated/Token;:
+local oldToken:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+method getMessage()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/Reader;III)V:
+new *0:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Token:
+field beginLine:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjStopAtPos(II)I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+method <init>(ZIIILjava/lang/String;CI)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method <init>(Ljava/io/InputStream;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjCheckNAddStates(I)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method generateParseException()Lorg/apache/hadoop/record/compiler/generated/ParseException;:
+local i *1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+method add_escapes(Ljava/lang/String;)Ljava/lang/String;:
+local i:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+field currentToken:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccConstants:
+field tokenImage:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ExpandBuff(Z)V:
+new *0:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method ReInit(Ljava/io/InputStream;)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/InputStream;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ExpandBuff(Z)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method <init>(Ljava/io/InputStream;Ljava/lang/String;)V:
+new *3: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjstateSet:
+new *0:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field jj_nt:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/InputStream;Ljava/lang/String;II)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field curLexState:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method <init>(Ljava/io/Reader;)V:
+local i:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method ReInit(Ljava/io/InputStream;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Record()Lorg/apache/hadoop/record/compiler/JRecord;:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+method LexicalError(ZIIILjava/lang/String;C)Ljava/lang/String;:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method disable_tracing()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method driver([Ljava/lang/String;)I:
+new *3:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+method <init>(Lorg/apache/hadoop/record/compiler/generated/Token;[[I[Ljava/lang/String;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Record()Lorg/apache/hadoop/record/compiler/JRecord;:
+local r:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Include()Lorg/apache/hadoop/record/compiler/JFile;:
+local file:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/Reader;III)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method GetSuffix(I)[C:
+local ret:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field token_source:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+implements 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method GetSuffix(I)[C:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjCheckNAddTwoStates(II)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field curDir:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method getNextToken()Lorg/apache/hadoop/record/compiler/generated/Token;:
+local error_column:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method BeginToken()C:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccConstants:
+field VECTOR_TKN:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+method add_escapes(Ljava/lang/String;)Ljava/lang/String;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method driver([Ljava/lang/String;)I:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field recTab:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Vector()Lorg/apache/hadoop/record/compiler/JVector;:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccConstants:
+field BYTE_TKN:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccConstants:
+field tokenImage:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method ModuleName()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjStartNfa_0(IJ)I:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+method add_escapes(Ljava/lang/String;)Ljava/lang/String;:
+local ch:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method generateParseException()Lorg/apache/hadoop/record/compiler/generated/ParseException;:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method generateParseException()Lorg/apache/hadoop/record/compiler/generated/ParseException;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveNfa_1(II)I:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ExpandBuff(Z)V:
+local newbufcolumn:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveNfa_0(II)I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveNfa_0(II)I:
+local e:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveNfa_1(II)I:
+local nextStates:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+field specialConstructor:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ExpandBuff(Z)V:
+new *2:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa3_0(JJ)I:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+method addEscapes(Ljava/lang/String;)Ljava/lang/String;:
+local ch:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method RecordList()Ljava/util/ArrayList;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method Done()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method generateParseException()Lorg/apache/hadoop/record/compiler/generated/ParseException;:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa0_1()I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjCheckNAddTwoStates(II)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccConstants:
+field INT_TKN:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/InputStream;Ljava/lang/String;III)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Record()Lorg/apache/hadoop/record/compiler/JRecord;:
+local fqn:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Map()Lorg/apache/hadoop/record/compiler/JMap;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/Reader;III)V:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method ReInit(Ljava/io/InputStream;Ljava/lang/String;)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field cmdargs:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/InputStream;II)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method driver([Ljava/lang/String;)I:
+local e *1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/Reader;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method getBeginLine()I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjbitVec0:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+method <init>(Ljava/lang/String;I)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa0_2()I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+method <init>(Lorg/apache/hadoop/record/compiler/generated/Token;[[I[Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjCheckNAddStates(I)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/InputStream;II)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method driver([Ljava/lang/String;)I:
+local file:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Token:
+method newToken(I)Lorg/apache/hadoop/record/compiler/generated/Token;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Field()Lorg/apache/hadoop/record/compiler/JField;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjrounds:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa5_0(JJ)I:
+local e:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method getNextToken()Lorg/apache/hadoop/record/compiler/generated/Token;:
+local e1 *1:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method jj_la1_1()V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+method <init>(ZIIILjava/lang/String;CI)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+method <init>(ZIIILjava/lang/String;CI)V:
+parameter 6:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method getNextToken()Lorg/apache/hadoop/record/compiler/generated/Token;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjmatchedKind:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Include()Lorg/apache/hadoop/record/compiler/JFile;:
+local t:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field jj_ntk:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field jj_expentries:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method GetImage()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method driver([Ljava/lang/String;)I:
+local i:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field token:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccConstants:
+field GT_TKN:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Include()Lorg/apache/hadoop/record/compiler/JFile;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+method <init>(ZIIILjava/lang/String;CI)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method ModuleName()Ljava/lang/String;:
+local name:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method RecordList()Ljava/util/ArrayList;:
+local rlist:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/InputStream;Ljava/lang/String;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ExpandBuff(Z)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/Reader;III)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjFillToken()Lorg/apache/hadoop/record/compiler/generated/Token;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccConstants:
+field BUFFER_TKN:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field jj_kind:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/InputStream;II)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Input()Lorg/apache/hadoop/record/compiler/JFile;:
+local i:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+method LexicalError(ZIIILjava/lang/String;C)Ljava/lang/String;:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method SkipLexicalActions(Lorg/apache/hadoop/record/compiler/generated/Token;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method RecordList()Ljava/util/ArrayList;:
+local r:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccConstants:
+field IDENT_TKN:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/InputStream;II)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjStopAtPos(II)I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjCheckNAdd(I)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Input()Lorg/apache/hadoop/record/compiler/JFile;:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjnextStates:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa3_0(JJ)I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Map()Lorg/apache/hadoop/record/compiler/JMap;:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/InputStream;Ljava/lang/String;II)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/Reader;III)V:
+new *1:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/Reader;III)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method getToken(I)Lorg/apache/hadoop/record/compiler/generated/Token;:
+local i:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method ReInit(Lorg/apache/hadoop/record/compiler/generated/SimpleCharStream;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa0_0()I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method generateParseException()Lorg/apache/hadoop/record/compiler/generated/ParseException;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/InputStream;III)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method getNextToken()Lorg/apache/hadoop/record/compiler/generated/Token;:
+local curPos:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Input()Lorg/apache/hadoop/record/compiler/JFile;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Token:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Record()Lorg/apache/hadoop/record/compiler/JRecord;:
+new *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field recFiles:
+new *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method generateParseException()Lorg/apache/hadoop/record/compiler/generated/ParseException;:
+local exptokseq:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Module()Ljava/util/ArrayList;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+field buffer:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjstateSet:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/InputStream;Ljava/lang/String;III)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+field tokenImage:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Module()Ljava/util/ArrayList;:
+local mName:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method getNextToken()Lorg/apache/hadoop/record/compiler/generated/Token;:
+local specialToken:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method GetSuffix(I)[C:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/InputStream;Ljava/lang/String;II)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method ReInit(Ljava/io/InputStream;Ljava/lang/String;)V:
+local e:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method GetSuffix(I)[C:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+method add_escapes(Ljava/lang/String;)Ljava/lang/String;:
+local s:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Include()Lorg/apache/hadoop/record/compiler/JFile;:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+method getMessage()Ljava/lang/String;:
+local i *1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method FillBuff()V:
+local e:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Record()Lorg/apache/hadoop/record/compiler/JRecord;:
+local flist:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Include()Lorg/apache/hadoop/record/compiler/JFile;:
+local ret:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveNfa_1(II)I:
+local e:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/Reader;III)V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/InputStream;Ljava/lang/String;III)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccConstants:
+field MAP_TKN:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method GetImage()Ljava/lang/String;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+method getMessage()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/InputStream;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method driver([Ljava/lang/String;)I:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Type()Lorg/apache/hadoop/record/compiler/JType;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+method <init>(Lorg/apache/hadoop/record/compiler/generated/Token;[[I[Ljava/lang/String;)V:
+parameter 1:
+type:
+inner-type 0,0, 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Type()Lorg/apache/hadoop/record/compiler/JType;:
+new *6: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/InputStream;II)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+field column:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/InputStream;Ljava/lang/String;III)V:
+new *0:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Type()Lorg/apache/hadoop/record/compiler/JType;:
+new *5: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjbitVec0:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method generateParseException()Lorg/apache/hadoop/record/compiler/generated/ParseException;:
+local la1tokens:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Token:
+field next:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+field inBuf:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/Reader;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjCheckNAddStates(II)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+method getMessage()Ljava/lang/String;:
+local maxSize:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ExpandBuff(Z)V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method adjustBeginLineColumn(II)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveNfa_1(II)I:
+local kind:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Include()Lorg/apache/hadoop/record/compiler/JFile;:
+local parser:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjround:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method RecordList()Ljava/util/ArrayList;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/InputStream;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa1_0(J)I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+method LexicalError(ZIIILjava/lang/String;C)Ljava/lang/String;:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+field STATIC_LEXER_ERROR:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/InputStream;III)V:
+new *0:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjAddStates(II)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method driver([Ljava/lang/String;)I:
+new *3:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/Reader;III)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa3_0(JJ)I:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/Reader;)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa0_1()I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field jj_la1_0:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field curFile:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method getEndLine()I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveNfa_0(II)I:
+local l *1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/InputStream;Ljava/lang/String;III)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/InputStream;Ljava/lang/String;III)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjtoToken:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveNfa_0(II)I:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method UpdateLineColumn(C)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method generateParseException()Lorg/apache/hadoop/record/compiler/generated/ParseException;:
+new *2:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+method <init>(Lorg/apache/hadoop/record/compiler/generated/Token;[[I[Ljava/lang/String;)V:
+parameter 1:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+method LexicalError(ZIIILjava/lang/String;C)Ljava/lang/String;:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method ReInit(Ljava/io/Reader;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+method addEscapes(Ljava/lang/String;)Ljava/lang/String;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa1_2(J)I:
+local e:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field lengthOfMatch:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjStopStringLiteralDfa_0(IJ)I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method backup(I)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+field line:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method jj_consume_token(I)Lorg/apache/hadoop/record/compiler/generated/Token;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa1_0(J)I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/InputStream;Ljava/lang/String;III)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/Reader;II)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccConstants:
+field RBRACE_TKN:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveNfa_0(II)I:
+local nextStates:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+method getMessage()Ljava/lang/String;:
+local j:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method GetSuffix(I)[C:
+return:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method driver([Ljava/lang/String;)I:
+parameter 0:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Module()Ljava/util/ArrayList;:
+local rlist:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/Reader;III)V:
+new *0:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Type()Lorg/apache/hadoop/record/compiler/JType;:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method generateParseException()Lorg/apache/hadoop/record/compiler/generated/ParseException;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+field LEXICAL_ERROR:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Record()Lorg/apache/hadoop/record/compiler/JRecord;:
+local t:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa1_2(J)I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+field staticFlag:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ExpandBuff(Z)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/InputStream;II)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+method add_escapes(Ljava/lang/String;)Ljava/lang/String;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/Reader;II)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Input()Lorg/apache/hadoop/record/compiler/JFile;:
+local ilist:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Input()Lorg/apache/hadoop/record/compiler/JFile;:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method RecordList()Ljava/util/ArrayList;:
+local rlist:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method <init>(Ljava/io/Reader;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/Reader;II)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method generateParseException()Lorg/apache/hadoop/record/compiler/generated/ParseException;:
+local exptokseq:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjCheckNAddStates(II)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Type()Lorg/apache/hadoop/record/compiler/JType;:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Token:
+field image:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveNfa_0(II)I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjbitVec0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method driver([Ljava/lang/String;)I:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Token:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ExpandBuff(Z)V:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/InputStream;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method <init>(Lorg/apache/hadoop/record/compiler/generated/RccTokenManager;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/InputStream;Ljava/lang/String;II)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field recFiles:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+field tokenImage:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method generateParseException()Lorg/apache/hadoop/record/compiler/generated/ParseException;:
+local la1tokens:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method ReInit(Lorg/apache/hadoop/record/compiler/generated/SimpleCharStream;I)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjnextStates:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveNfa_1(II)I:
+local l:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field debugStream:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method setTabSize(I)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjStartNfa_0(IJ)I:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method jj_la1_0()V:
+new *0:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/InputStream;Ljava/lang/String;III)V:
+new *0:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method ReInit(Lorg/apache/hadoop/record/compiler/generated/RccTokenManager;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjtoToken:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/Reader;II)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+field available:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method ReInitRounds()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Record()Lorg/apache/hadoop/record/compiler/JRecord;:
+local flist:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method <init>(Ljava/io/InputStream;Ljava/lang/String;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccConstants:
+field LBRACE_TKN:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa2_0(JJ)I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ExpandBuff(Z)V:
+local t:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Include()Lorg/apache/hadoop/record/compiler/JFile;:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+method getMessage()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/InputStream;III)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method adjustBeginLineColumn(II)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method GetImage()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+field errorCode:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjstrLiteralImages:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method generateParseException()Lorg/apache/hadoop/record/compiler/generated/ParseException;:
+local j:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method <init>(Ljava/io/InputStream;Ljava/lang/String;)V:
+local i:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method <init>(Ljava/io/Reader;)V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjtoSkip:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccConstants:
+field LONG_TKN:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Field()Lorg/apache/hadoop/record/compiler/JField;:
+local t:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+method addEscapes(Ljava/lang/String;)Ljava/lang/String;:
+local i:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa3_0(JJ)I:
+local e:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Vector()Lorg/apache/hadoop/record/compiler/JVector;:
+local jt:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ExpandBuff(Z)V:
+local newbuffer:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method ReInit(Ljava/io/InputStream;Ljava/lang/String;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/Reader;III)V:
+new *2:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Include()Lorg/apache/hadoop/record/compiler/JFile;:
+local fname:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Module()Ljava/util/ArrayList;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method generateParseException()Lorg/apache/hadoop/record/compiler/generated/ParseException;:
+local i *2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/InputStream;Ljava/lang/String;II)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjFillToken()Lorg/apache/hadoop/record/compiler/generated/Token;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccConstants:
+field MODULE_TKN:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/InputStream;Ljava/lang/String;III)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjrounds:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method adjustBeginLineColumn(II)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method SwitchTo(I)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Input()Lorg/apache/hadoop/record/compiler/JFile;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Vector()Lorg/apache/hadoop/record/compiler/JVector;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+method <init>(Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method getNextToken()Lorg/apache/hadoop/record/compiler/generated/Token;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa6_0(JJ)I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Field()Lorg/apache/hadoop/record/compiler/JField;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/InputStream;III)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/InputStream;Ljava/lang/String;II)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ExpandBuff(Z)V:
+local newbufline:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ExpandBuff(Z)V:
+local newbufcolumn:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjAddStates(II)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+field tabSize:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/Reader;III)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveNfa_1(II)I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+method addEscapes(Ljava/lang/String;)Ljava/lang/String;:
+local retval:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/InputStream;)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method jj_consume_token(I)Lorg/apache/hadoop/record/compiler/generated/Token;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccConstants:
+field WithinMultiLineComment:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method generateParseException()Lorg/apache/hadoop/record/compiler/generated/ParseException;:
+local i *3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method ReInit(Lorg/apache/hadoop/record/compiler/generated/RccTokenManager;)V:
+local i:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method ReInit(Ljava/io/InputStream;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method getBeginLine()I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+field eol:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method <init>(Lorg/apache/hadoop/record/compiler/generated/SimpleCharStream;I)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+method getMessage()Ljava/lang/String;:
+local retval:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method SwitchTo(I)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/InputStream;III)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Input()Lorg/apache/hadoop/record/compiler/JFile;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method getNextToken()Lorg/apache/hadoop/record/compiler/generated/Token;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method generateParseException()Lorg/apache/hadoop/record/compiler/generated/ParseException;:
+local i:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method jj_la1_0()V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveNfa_0(II)I:
+local kind:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjnewStateCnt:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveNfa_0(II)I:
+local l:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method SkipLexicalActions(Lorg/apache/hadoop/record/compiler/generated/Token;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa2_0(JJ)I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjStopStringLiteralDfa_0(IJ)I:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/InputStream;II)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjtoSkip:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method BeginToken()C:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa2_0(JJ)I:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Input()Lorg/apache/hadoop/record/compiler/JFile;:
+local l:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Include()Lorg/apache/hadoop/record/compiler/JFile;:
+local e *2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccConstants:
+field USTRING_TKN:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+implements 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Map()Lorg/apache/hadoop/record/compiler/JMap;:
+local jt2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+field bufline:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccConstants:
+field INCLUDE_TKN:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method ModuleName()Ljava/lang/String;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa4_0(JJ)I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Include()Lorg/apache/hadoop/record/compiler/JFile;:
+local e:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method GetSuffix(I)[C:
+local ret:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field jj_expentry:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Type()Lorg/apache/hadoop/record/compiler/JType;:
+local jt:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field jj_expentries:
+new *0:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method getTabSize(I)I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method ModuleName()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/Reader;III)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method getToken(I)Lorg/apache/hadoop/record/compiler/generated/Token;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field jj_expentries:
+new *0:
+inner-type 1,0, 1,0, 3,0, 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+method addEscapes(Ljava/lang/String;)Ljava/lang/String;:
+local s:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method driver([Ljava/lang/String;)I:
+local parser:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field jj_expentries:
+type:
+inner-type 1,0, 1,0, 3,0, 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Map()Lorg/apache/hadoop/record/compiler/JMap;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method getToken(I)Lorg/apache/hadoop/record/compiler/generated/Token;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Type()Lorg/apache/hadoop/record/compiler/JType;:
+new *8: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method <init>(Lorg/apache/hadoop/record/compiler/generated/SimpleCharStream;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field cmdargs:
+new *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+field expectedTokenSequences:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/InputStream;III)V:
+new *0:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method getEndColumn()I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method GetSuffix(I)[C:
+new *0:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveNfa_0(II)I:
+local nextStates:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Input()Lorg/apache/hadoop/record/compiler/JFile;:
+new *1:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method generateParseException()Lorg/apache/hadoop/record/compiler/generated/ParseException;:
+local exptokseq:
+type:
+inner-type 0,0, 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/InputStream;Ljava/lang/String;)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+field bufcolumn:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Type()Lorg/apache/hadoop/record/compiler/JType;:
+new *4: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa2_0(JJ)I:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Record()Lorg/apache/hadoop/record/compiler/JRecord;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa5_0(JJ)I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+method <init>(Ljava/lang/String;I)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method generateParseException()Lorg/apache/hadoop/record/compiler/generated/ParseException;:
+new *0:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field lexStateNames:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method driver([Ljava/lang/String;)I:
+local retCode:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+field prevCharIsLF:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method <init>(Ljava/io/Reader;)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/Reader;III)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+method <init>(Lorg/apache/hadoop/record/compiler/generated/Token;[[I[Ljava/lang/String;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ExpandBuff(Z)V:
+new *3: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method ReInit(Lorg/apache/hadoop/record/compiler/generated/SimpleCharStream;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveNfa_1(II)I:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+field bufsize:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method getToken(I)Lorg/apache/hadoop/record/compiler/generated/Token;:
+local t:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccConstants:
+field WithinOneLineComment:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/InputStream;Ljava/lang/String;II)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+field bufcolumn:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method GetSuffix(I)[C:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/InputStream;Ljava/lang/String;III)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjnewLexState:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method getTabSize(I)I:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field curFileName:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjCheckNAdd(I)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method setDebugStream(Ljava/io/PrintStream;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method enable_tracing()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/InputStream;Ljava/lang/String;III)V:
+new *1:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method getTabSize(I)I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field input_stream:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjmatchedPos:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/Reader;III)V:
+new *2:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Module()Ljava/util/ArrayList;:
+local rlist:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa5_0(JJ)I:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method <init>(Lorg/apache/hadoop/record/compiler/generated/SimpleCharStream;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method getNextToken()Lorg/apache/hadoop/record/compiler/generated/Token;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/InputStream;Ljava/lang/String;)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+method <init>(ZIIILjava/lang/String;CI)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Input()Lorg/apache/hadoop/record/compiler/JFile;:
+local rlist:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method main([Ljava/lang/String;)V:
+parameter 0:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+method add_escapes(Ljava/lang/String;)Ljava/lang/String;:
+local retval:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method getNextToken()Lorg/apache/hadoop/record/compiler/generated/Token;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method GetImage()Ljava/lang/String;:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+method getMessage()Ljava/lang/String;:
+local expected:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa5_0(JJ)I:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method <init>(Lorg/apache/hadoop/record/compiler/generated/SimpleCharStream;I)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+method LexicalError(ZIIILjava/lang/String;C)Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field defaultLexState:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccConstants:
+field CSTRING_TKN:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method driver([Ljava/lang/String;)I:
+new *3: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Input()Lorg/apache/hadoop/record/compiler/JFile;:
+local rlist:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ExpandBuff(Z)V:
+local newbuffer:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method <init>(Ljava/io/InputStream;Ljava/lang/String;)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Type()Lorg/apache/hadoop/record/compiler/JType;:
+local rname:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+field buffer:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjStartNfaWithStates_0(III)I:
+local e:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ExpandBuff(Z)V:
+new *1:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/InputStream;Ljava/lang/String;III)V:
+parameter 4:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method <init>(Lorg/apache/hadoop/record/compiler/generated/SimpleCharStream;I)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjtoMore:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field image:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method setDebugStream(Ljava/io/PrintStream;)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+method LexicalError(ZIIILjava/lang/String;C)Ljava/lang/String;:
+parameter 4:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method jj_ntk()I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+field prevCharIsCR:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/Reader;)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Input()Lorg/apache/hadoop/record/compiler/JFile;:
+local ilist:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/Reader;III)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method <init>(Ljava/io/InputStream;Ljava/lang/String;)V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Field()Lorg/apache/hadoop/record/compiler/JField;:
+local jt:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method readChar()C:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Map()Lorg/apache/hadoop/record/compiler/JMap;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjtoToken:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+method getMessage()Ljava/lang/String;:
+local i:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method getToken(I)Lorg/apache/hadoop/record/compiler/generated/Token;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjStopAtPos(II)I:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Map()Lorg/apache/hadoop/record/compiler/JMap;:
+local jt1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Record()Lorg/apache/hadoop/record/compiler/JRecord;:
+local flist:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method getNextToken()Lorg/apache/hadoop/record/compiler/generated/Token;:
+local e1:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/Reader;III)V:
+new *1:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa4_0(JJ)I:
+local e:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+method getMessage()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+field inputStream:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjtoSkip:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/InputStream;Ljava/lang/String;III)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+field expectedTokenSequences:
+type:
+inner-type 0,0, 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccConstants:
+field SEMICOLON_TKN:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method driver([Ljava/lang/String;)I:
+local e *2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Vector()Lorg/apache/hadoop/record/compiler/JVector;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method jj_ntk()I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method driver([Ljava/lang/String;)I:
+local arg:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field jj_la1_1:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method generateParseException()Lorg/apache/hadoop/record/compiler/generated/ParseException;:
+new *2:
+inner-type 0,0, 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveNfa_1(II)I:
+local nextStates:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/InputStream;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa4_0(JJ)I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/Reader;II)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+field maxNextCharInd:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/InputStream;Ljava/lang/String;II)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field recTab:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjStartNfaWithStates_0(III)I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveNfa_0(II)I:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Record()Lorg/apache/hadoop/record/compiler/JRecord;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field recFiles:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Token:
+method newToken(I)Lorg/apache/hadoop/record/compiler/generated/Token;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method adjustBeginLineColumn(II)V:
+local len:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method adjustBeginLineColumn(II)V:
+local nextColDiff:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field jj_la1:
+new *0:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method generateParseException()Lorg/apache/hadoop/record/compiler/generated/ParseException;:
+new *3: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjStopStringLiteralDfa_0(IJ)I:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method getEndColumn()I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa2_0(JJ)I:
+local e:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+method addEscapes(Ljava/lang/String;)Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field jj_expentries:
+new *0:
+inner-type 1,0, 1,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method <init>(Lorg/apache/hadoop/record/compiler/generated/RccTokenManager;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa6_0(JJ)I:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjstrLiteralImages:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjFillToken()Lorg/apache/hadoop/record/compiler/generated/Token;:
+local t:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method <init>(Ljava/io/InputStream;Ljava/lang/String;)V:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa1_2(J)I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/Reader;III)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+method <init>(ZIIILjava/lang/String;CI)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveNfa_1(II)I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Include()Lorg/apache/hadoop/record/compiler/JFile;:
+local e *1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/Reader;III)V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method ReInitRounds()V:
+local i:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method ReInit(Ljava/io/InputStream;Ljava/lang/String;)V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Type()Lorg/apache/hadoop/record/compiler/JType;:
+new *3: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjtoMore:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Type()Lorg/apache/hadoop/record/compiler/JType;:
+new *7: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class TokenMgrError:
+method addEscapes(Ljava/lang/String;)Ljava/lang/String;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field lexStateNames:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccConstants:
+field LT_TKN:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Include()Lorg/apache/hadoop/record/compiler/JFile;:
+local tmpDir:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method getNextToken()Lorg/apache/hadoop/record/compiler/generated/Token;:
+local e:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Include()Lorg/apache/hadoop/record/compiler/JFile;:
+new *3: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method ReInit(Lorg/apache/hadoop/record/compiler/generated/RccTokenManager;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method driver([Ljava/lang/String;)I:
+local e *3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveNfa_0(II)I:
+local l2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveNfa_0(II)I:
+local startsAt:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/InputStream;Ljava/lang/String;III)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field lexStateNames:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field jj_gen:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/InputStream;III)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method RecordList()Ljava/util/ArrayList;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method BeginToken()C:
+local c:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field cmdargs:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Field()Lorg/apache/hadoop/record/compiler/JField;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+field bufpos:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Input()Lorg/apache/hadoop/record/compiler/JFile;:
+new *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa3_0(JJ)I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field jj_expentries:
+type:
+inner-type 1,0, 1,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Token:
+method toString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/Reader;II)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+method <init>(Lorg/apache/hadoop/record/compiler/generated/Token;[[I[Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method readChar()C:
+local c:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Token:
+field beginColumn:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method <init>(Ljava/io/InputStream;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method getNextToken()Lorg/apache/hadoop/record/compiler/generated/Token;:
+local matchedToken:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Vector()Lorg/apache/hadoop/record/compiler/JVector;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method getNextToken()Lorg/apache/hadoop/record/compiler/generated/Token;:
+local e1 *2:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method GetImage()Ljava/lang/String;:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveNfa_1(II)I:
+local l2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method driver([Ljava/lang/String;)I:
+local i *1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class ParseException:
+method add_escapes(Ljava/lang/String;)Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Token:
+field endLine:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method getNextToken()Lorg/apache/hadoop/record/compiler/generated/Token;:
+local error_line:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method adjustBeginLineColumn(II)V:
+local start:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjStopStringLiteralDfa_0(IJ)I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field jj_la1:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccConstants:
+field EOF:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Type()Lorg/apache/hadoop/record/compiler/JType;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method driver([Ljava/lang/String;)I:
+local reader:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method FillBuff()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method ReInit(Ljava/io/InputStream;Ljava/lang/String;)V:
+local i:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Token:
+method newToken(I)Lorg/apache/hadoop/record/compiler/generated/Token;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa6_0(JJ)I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method RecordList()Ljava/util/ArrayList;:
+new *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method <init>(Ljava/io/InputStream;Ljava/lang/String;III)V:
+new *1:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjStartNfaWithStates_0(III)I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method Record()Lorg/apache/hadoop/record/compiler/JRecord;:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjStartNfaWithStates_0(III)I:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method <init>(Lorg/apache/hadoop/record/compiler/generated/RccTokenManager;)V:
+local i:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjFillToken()Lorg/apache/hadoop/record/compiler/generated/Token;:
+local im:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method getNextToken()Lorg/apache/hadoop/record/compiler/generated/Token;:
+local EOFSeen:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+method ReInit(Lorg/apache/hadoop/record/compiler/generated/RccTokenManager;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa1_0(J)I:
+local e:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class SimpleCharStream:
+method ReInit(Ljava/io/Reader;II)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Token:
+method toString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+method jjMoveStringLiteralDfa5_0(JJ)I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class Rcc:
+field recFiles:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler.generated:
+class RccTokenManager:
+field jjnewLexState:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+

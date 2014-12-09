@@ -1,0 +1,93 @@
+
+package ostrusted.quals:
+annotation @OsUntrusted:
+package ostrusted.quals:
+annotation @OsTrusted:
+
+
+package org.apache.hadoop.metrics2.sink:
+class FileSink:
+method init(Lorg/apache/commons/configuration/SubsetConfiguration;)V:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics2.sink:
+class FileSink:
+implements 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics2.sink:
+class FileSink:
+method init(Lorg/apache/commons/configuration/SubsetConfiguration;)V:
+local e:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics2.sink:
+class FileSink:
+method putMetrics(Lorg/apache/hadoop/metrics2/MetricsRecord;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics2.sink:
+class FileSink:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics2.sink:
+class FileSink:
+method putMetrics(Lorg/apache/hadoop/metrics2/MetricsRecord;)V:
+local separator:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics2.sink:
+class FileSink:
+method init(Lorg/apache/commons/configuration/SubsetConfiguration;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics2.sink:
+class FileSink:
+field FILENAME_KEY:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics2.sink:
+class FileSink:
+method putMetrics(Lorg/apache/hadoop/metrics2/MetricsRecord;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics2.sink:
+class FileSink:
+method putMetrics(Lorg/apache/hadoop/metrics2/MetricsRecord;)V:
+local metric:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics2.sink:
+class FileSink:
+method putMetrics(Lorg/apache/hadoop/metrics2/MetricsRecord;)V:
+local tag:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics2.sink:
+class FileSink:
+field writer:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics2.sink:
+class FileSink:
+method init(Lorg/apache/commons/configuration/SubsetConfiguration;)V:
+local filename:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics2.sink:
+class FileSink:
+method init(Lorg/apache/commons/configuration/SubsetConfiguration;)V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics2.sink:
+class FileSink:
+method init(Lorg/apache/commons/configuration/SubsetConfiguration;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics2.sink:
+class FileSink:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics2.sink:
+class FileSink:
+method flush()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics2.sink:
+class FileSink:
+method init(Lorg/apache/commons/configuration/SubsetConfiguration;)V:
+new *4: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics2.sink:
+class FileSink:
+method init(Lorg/apache/commons/configuration/SubsetConfiguration;)V:
+new *3: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.metrics2.sink:
+class FileSink:
+method init(Lorg/apache/commons/configuration/SubsetConfiguration;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+

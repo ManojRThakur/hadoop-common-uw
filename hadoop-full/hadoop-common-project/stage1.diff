@@ -1,0 +1,201 @@
+diff -r b9fcce987508 hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java
+--- a/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java	Sat Nov 30 14:34:20 2013 -0800
++++ b/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java	Sat Nov 30 15:16:15 2013 -0800
+@@ -116,17 +116,17 @@
+    * The statistics for this file system.
+    */
+   protected @OsUntrusted Statistics statistics;
+ 
+   /**
+    * A cache of files that should be deleted when filsystem is closed
+    * or the JVM is exited.
+    */
+-  private @OsUntrusted Set<@OsUntrusted Path> deleteOnExit = new @OsUntrusted TreeSet<@OsUntrusted Path>();
++  private @OsUntrusted Set<@OsTrusted Path> deleteOnExit = new @OsUntrusted TreeSet<@OsTrusted Path>();
+   
+   @OsUntrusted
+   boolean resolveSymlinks;
+   /**
+    * This method adds a file system for testing so that we can find it later. It
+    * is only for testing.
+    * @param uri the uri to store it under
+    * @param conf the configuration to store it under
+@@ -1337,17 +1337,17 @@
+    * support the transition from FileSystem to FileContext for user 
+    * applications.
+    * 
+    * @param src path to be renamed
+    * @param dst new path after rename
+    * @throws IOException on failure
+    */
+   @Deprecated
+-  protected void rename(@OsUntrusted FileSystem this, final @OsUntrusted Path src, final @OsUntrusted Path dst,
++  protected void rename(@OsUntrusted FileSystem this, final @OsUntrusted Path src, final @OsTrusted Path dst,
+       final @OsUntrusted Rename @OsUntrusted ... options) throws IOException {
+     // Default implementation
+     final @OsUntrusted FileStatus srcStatus = getFileLinkStatus(src);
+     if (srcStatus == null) {
+       throw new @OsUntrusted FileNotFoundException("rename source " + src + " not found.");
+     }
+ 
+     @OsUntrusted
+@@ -1403,45 +1403,45 @@
+     }
+   }
+   
+   /**
+    * Delete a file 
+    * @deprecated Use {@link #delete(Path, boolean)} instead.
+    */
+   @Deprecated
+-  public @OsUntrusted boolean delete(@OsUntrusted FileSystem this, @OsUntrusted Path f) throws IOException {
++  public @OsUntrusted boolean delete(@OsUntrusted FileSystem this, @OsTrusted Path f) throws IOException {
+     return delete(f, true);
+   }
+   
+   /** Delete a file.
+    *
+    * @param f the path to delete.
+    * @param recursive if path is a directory and set to 
+    * true, the directory is deleted else throws an exception. In
+    * case of a file the recursive can be set to either true or false. 
+    * @return  true if delete is successful else false. 
+    * @throws IOException
+    */
+-  public abstract @OsUntrusted boolean delete(@OsUntrusted FileSystem this, @OsUntrusted Path f, @OsUntrusted boolean recursive) throws IOException;
++  public abstract @OsUntrusted boolean delete(@OsUntrusted FileSystem this, @OsTrusted Path f, @OsUntrusted boolean recursive) throws IOException;
+ 
+   /**
+    * Mark a path to be deleted when FileSystem is closed.
+    * When the JVM shuts down,
+    * all FileSystem objects will be closed automatically.
+    * Then,
+    * the marked path will be deleted as a result of closing the FileSystem.
+    *
+    * The path has to exist in the file system.
+    * 
+    * @param f the path to delete.
+    * @return  true if deleteOnExit is successful, otherwise false.
+    * @throws IOException
+    */
+-  public @OsUntrusted boolean deleteOnExit(@OsUntrusted FileSystem this, @OsUntrusted Path f) throws IOException {
++  public @OsUntrusted boolean deleteOnExit(@OsUntrusted FileSystem this, @OsTrusted Path f) throws IOException {
+     if (!exists(f)) {
+       return false;
+     }
+     synchronized (deleteOnExit) {
+       deleteOnExit.add(f);
+     }
+     return true;
+   }
+@@ -1457,17 +1457,17 @@
+   }
+ 
+   /**
+    * Delete all files that were marked as delete-on-exit. This recursively
+    * deletes all files in the specified paths.
+    */
+   protected void processDeleteOnExit(@OsUntrusted FileSystem this) {
+     synchronized (deleteOnExit) {
+-      for (@OsUntrusted Iterator<@OsUntrusted Path> iter = deleteOnExit.iterator(); iter.hasNext();) {
++      for (@OsUntrusted Iterator<@OsTrusted Path> iter = deleteOnExit.iterator(); iter.hasNext();) {
+         @OsUntrusted
+         Path path = iter.next();
+         try {
+           if (exists(path)) {
+             delete(path, true);
+           }
+         }
+         catch (@OsUntrusted IOException e) {
+diff -r b9fcce987508 hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/Path.java
+--- a/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/Path.java	Sat Nov 30 14:34:20 2013 -0800
++++ b/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/Path.java	Sat Nov 30 15:16:15 2013 -0800
+@@ -33,17 +33,17 @@
+ 
+ /** Names a file or directory in a {@link FileSystem}.
+  * Path strings use slash as the directory separator.  A path string is
+  * absolute if it begins with a slash.
+  */
+ @Stringable
+ @InterfaceAudience.Public
+ @InterfaceStability.Stable
+-public class Path implements @OsUntrusted Comparable {
++public class Path implements Comparable {
+ 
+   /** The directory separator, a slash. */
+   public static final @OsUntrusted String SEPARATOR = "/";
+   public static final @OsUntrusted char SEPARATOR_CHAR = '/';
+   
+   public static final @OsUntrusted String CUR_DIR = ".";
+   
+   public static final @OsUntrusted boolean WINDOWS
+diff -r b9fcce987508 hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/RawLocalFileSystem.java
+--- a/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/RawLocalFileSystem.java	Sat Nov 30 14:34:20 2013 -0800
++++ b/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/RawLocalFileSystem.java	Sat Nov 30 15:16:15 2013 -0800
+@@ -338,17 +338,17 @@
+     @OsUntrusted
+     FSDataOutputStream out = create(f,
+         overwrite, false, bufferSize, replication, blockSize, progress);
+     setPermission(f, permission);
+     return out;
+   }
+ 
+   @Override
+-  public @OsUntrusted boolean rename(@OsUntrusted RawLocalFileSystem this, @OsUntrusted Path src, @OsUntrusted Path dst) throws IOException {
++  public @OsUntrusted boolean rename(@OsUntrusted RawLocalFileSystem this, @OsTrusted Path src, @OsUntrusted Path dst) throws IOException {
+     // Attempt rename using Java API.
+     @OsUntrusted
+     File srcFile = pathToFile(src);
+     @OsUntrusted
+     File dstFile = pathToFile(dst);
+     if (srcFile.renameTo(dstFile)) {
+       return true;
+     }
+@@ -382,19 +382,20 @@
+   /**
+    * Delete the given path to a file or directory.
+    * @param p the path to delete
+    * @param recursive to delete sub-directories
+    * @return true if the file or directory and all its contents were deleted
+    * @throws IOException if p is non-empty and recursive is false 
+    */
+   @Override
+-  public @OsUntrusted boolean delete(@OsUntrusted RawLocalFileSystem this, @OsUntrusted Path p, @OsUntrusted boolean recursive) throws IOException {
+-    @OsUntrusted
+-    File f = pathToFile(p);
++  public @OsUntrusted boolean delete(@OsUntrusted RawLocalFileSystem this, @OsTrusted Path p, @OsUntrusted boolean recursive) throws IOException {
++    @SuppressWarnings("ostrusted:cast.unsafe") // Issues with poly
++    @OsTrusted
++    File f = (@OsTrusted File) pathToFile(p);
+     if (f.isFile()) {
+       return f.delete();
+     } else if (!recursive && f.isDirectory() && 
+         (FileUtil.listFiles(f).length != 0)) {
+       throw new @OsUntrusted IOException("Directory " + f.toString() + " is not empty");
+     }
+     return FileUtil.fullyDelete(f);
+   }
+@@ -677,19 +678,21 @@
+       super.write(out);
+     }
+   }
+ 
+   /**
+    * Use the command chown to set owner.
+    */
+   @Override
+-  public void setOwner(@OsUntrusted RawLocalFileSystem this, @OsUntrusted Path p, @OsUntrusted String username, @OsUntrusted String groupname)
++  public void setOwner(@OsUntrusted RawLocalFileSystem this, @OsTrusted Path p, @OsTrusted String username, @OsTrusted String groupname)
+     throws IOException {
+-    FileUtil.setOwner(pathToFile(p), username, groupname);
++    @SuppressWarnings("ostrusted:cast.unsafe")// poly no working
++    @OsTrusted File file = (@OsTrusted File) pathToFile(p);
++    FileUtil.setOwner(file, username, groupname);
+   }
+ 
+   /**
+    * Use the command chmod to set permission.
+    */
+   @Override
+   public void setPermission(@OsUntrusted RawLocalFileSystem this, @OsUntrusted Path p, @OsUntrusted FsPermission permission)
+     throws IOException {

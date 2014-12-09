@@ -1,0 +1,140 @@
+
+package ostrusted.quals:
+annotation @OsUntrusted:
+package ostrusted.quals:
+annotation @OsTrusted:
+
+
+package org.apache.hadoop.tools:
+class GetUserMappingsProtocol:
+method getGroupsForUser(Ljava/lang/String;)[Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools:
+class GetGroupsBase:
+method run([Ljava/lang/String;)I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools:
+class GetGroupsBase:
+method getUgmProtocol()Lorg/apache/hadoop/tools/GetUserMappingsProtocol;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools:
+class GetGroupsBase:
+implements 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools:
+class GetGroupsBase:
+field out:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools:
+class GetGroupsBase:
+method <init>(Lorg/apache/hadoop/conf/Configuration;Ljava/io/PrintStream;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools:
+class GetUserMappingsProtocol:
+field versionID:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools:
+class GetGroupsBase:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools:
+class GetGroupsBase:
+method run([Ljava/lang/String;)I:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools:
+class GetGroupsBase:
+method <init>(Lorg/apache/hadoop/conf/Configuration;Ljava/io/PrintStream;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools:
+class GetGroupsBase:
+method getUgmProtocol()Lorg/apache/hadoop/tools/GetUserMappingsProtocol;:
+local userGroupMappingProtocol:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools:
+class GetGroupsBase:
+method run([Ljava/lang/String;)I:
+parameter 0:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools:
+class GetGroupsBase:
+method run([Ljava/lang/String;)I:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools:
+class GetGroupsBase:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools:
+class GetGroupsBase:
+method run([Ljava/lang/String;)I:
+local sb:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools:
+class GetGroupsBase:
+method getUgmProtocol()Lorg/apache/hadoop/tools/GetUserMappingsProtocol;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools:
+class GetGroupsBase:
+method run([Ljava/lang/String;)I:
+local group:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools:
+class GetGroupsBase:
+method getUgmProtocol()Lorg/apache/hadoop/tools/GetUserMappingsProtocol;:
+insert-annotation Block.statement 0, Variable.initializer, MethodInvocation.typeArgument 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools:
+class GetGroupsBase:
+method getProtocolAddress(Lorg/apache/hadoop/conf/Configuration;)Ljava/net/InetSocketAddress;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools:
+class GetGroupsBase:
+method run([Ljava/lang/String;)I:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools:
+class GetGroupsBase:
+method getProtocolAddress(Lorg/apache/hadoop/conf/Configuration;)Ljava/net/InetSocketAddress;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools:
+class GetGroupsBase:
+method <init>(Lorg/apache/hadoop/conf/Configuration;Ljava/io/PrintStream;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools:
+class GetUserMappingsProtocol:
+method getGroupsForUser(Ljava/lang/String;)[Ljava/lang/String;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools:
+class GetUserMappingsProtocol:
+method getGroupsForUser(Ljava/lang/String;)[Ljava/lang/String;:
+return:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools:
+class GetGroupsBase:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools:
+class GetUserMappingsProtocol:
+method getGroupsForUser(Ljava/lang/String;)[Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools:
+class GetGroupsBase:
+method run([Ljava/lang/String;)I:
+local username:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools:
+class GetGroupsBase:
+method getProtocolAddress(Lorg/apache/hadoop/conf/Configuration;)Ljava/net/InetSocketAddress;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools:
+class GetGroupsBase:
+method run([Ljava/lang/String;)I:
+new *0:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.tools:
+class GetGroupsBase:
+method run([Ljava/lang/String;)I:
+return: @ostrusted.quals.OsUntrusted
+

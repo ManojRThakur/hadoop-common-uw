@@ -1,0 +1,24 @@
+
+package ostrusted.quals:
+annotation @OsUntrusted:
+package ostrusted.quals:
+annotation @OsTrusted:
+
+
+package org.apache.hadoop:
+class HadoopIllegalArgumentException:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop:
+class HadoopIllegalArgumentException:
+method <init>(Ljava/lang/String;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop:
+class HadoopIllegalArgumentException:
+method <init>(Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop:
+class HadoopIllegalArgumentException:
+field serialVersionUID:
+type: @ostrusted.quals.OsUntrusted
+

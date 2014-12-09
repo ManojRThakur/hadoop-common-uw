@@ -1,0 +1,1258 @@
+
+package ostrusted.quals:
+annotation @OsUntrusted:
+package ostrusted.quals:
+annotation @OsTrusted:
+
+
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method buildACL(Ljava/lang/String;)V:
+insert-annotation Block.statement 2, If.elseStatement, Block.statement 3, If.thenStatement, Block.statement 0, Variable.initializer, NewClass.argument 0, MethodInvocation.typeArgument 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method refresh(Lorg/apache/hadoop/conf/Configuration;Lorg/apache/hadoop/security/authorize/PolicyProvider;)V:
+local services:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class Service:
+method getServiceKey()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method getAclString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+field groups:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList$1:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method addToSet(Ljava/util/Set;Ljava/util/List;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method refreshSuperUserGroupsConfiguration(Lorg/apache/hadoop/conf/Configuration;)V:
+local entry *1:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+field users:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/Class;Lorg/apache/hadoop/conf/Configuration;Ljava/net/InetAddress;)V:
+parameter 1:
+type:
+inner-type 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+field WILDCARD_ACL_VALUE:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/String;Lorg/apache/hadoop/conf/Configuration;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+field protocolToAcl:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method refresh(Lorg/apache/hadoop/conf/Configuration;Lorg/apache/hadoop/security/authorize/PolicyProvider;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+field protocolToAcl:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method getProxySuperuserGroupConfKey(Ljava/lang/String;)Ljava/lang/String;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/Class;Lorg/apache/hadoop/conf/Configuration;Ljava/net/InetAddress;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+field users:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method readFields(Ljava/io/DataInput;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method toString()Ljava/lang/String;:
+local groupsStr:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class PolicyProvider:
+field DEFAULT_POLICY_PROVIDER:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+field proxyGroups:
+new *0:
+inner-type 3,1, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method buildACL(Ljava/lang/String;)V:
+local usersList:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class PolicyProvider:
+method getServices()[Lorg/apache/hadoop/security/authorize/Service;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method buildACL(Ljava/lang/String;)V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+field proxyGroups:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method refresh(Lorg/apache/hadoop/conf/Configuration;Lorg/apache/hadoop/security/authorize/PolicyProvider;)V:
+local newAcls:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/String;Lorg/apache/hadoop/conf/Configuration;)V:
+local allowedUserGroups:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class Service:
+method <init>(Ljava/lang/String;Ljava/lang/Class;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class Service:
+method getProtocol()Ljava/lang/Class;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+field AUTHZ_FAILED_FOR:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method addUser(Ljava/lang/String;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method refresh(Lorg/apache/hadoop/conf/Configuration;Lorg/apache/hadoop/security/authorize/PolicyProvider;)V:
+local newAcls:
+type:
+inner-type 3,0, 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList$1:
+method newInstance()Lorg/apache/hadoop/io/Writable;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method addGroup(Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+field CONF_HOSTS:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method getGroups()Ljava/util/Set;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method buildACL(Ljava/lang/String;)V:
+insert-annotation Block.statement 2, If.elseStatement, Block.statement 2, If.thenStatement, Block.statement 0, Variable.initializer, NewClass.argument 0, MethodInvocation.typeArgument 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AuthorizationException:
+field serialVersionUID:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/String;Lorg/apache/hadoop/conf/Configuration;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class Service:
+field key:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method addGroup(Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method refresh(Lorg/apache/hadoop/conf/Configuration;Lorg/apache/hadoop/security/authorize/PolicyProvider;)V:
+new *1:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class Service:
+method <init>(Ljava/lang/String;Ljava/lang/Class;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method getProtocolsWithAcls()Ljava/util/Set;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method refreshSuperUserGroupsConfiguration(Lorg/apache/hadoop/conf/Configuration;)V:
+local allMatchKeys:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method refresh(Lorg/apache/hadoop/conf/Configuration;Lorg/apache/hadoop/security/authorize/PolicyProvider;)V:
+new *1:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/Class;Lorg/apache/hadoop/conf/Configuration;Ljava/net/InetAddress;)V:
+local krbInfo:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method addToSet(Ljava/util/Set;Ljava/util/List;)V:
+parameter 0:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AuthorizationException:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class PolicyProvider:
+field DEFAULT_POLICY_PROVIDER:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+field proxyHosts:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class Service:
+method getServiceKey()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method readFields(Ljava/io/DataInput;)V:
+local aclString:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class Service:
+method <init>(Ljava/lang/String;Ljava/lang/Class;)V:
+parameter 1:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+field groups:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method refreshSuperUserGroupsConfiguration()V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method refresh(Lorg/apache/hadoop/conf/Configuration;Lorg/apache/hadoop/security/authorize/PolicyProvider;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method getAclString()Ljava/lang/String;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+field HADOOP_POLICY_FILE:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method getProtocolsWithAcls()Ljava/util/Set;:
+return:
+inner-type 3,0, 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method removeGroup(Ljava/lang/String;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/String;Lorg/apache/hadoop/conf/Configuration;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+field protocolToAcl:
+type:
+inner-type 3,0, 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method getProtocolsWithAcls()Ljava/util/Set;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method refreshSuperUserGroupsConfiguration(Lorg/apache/hadoop/conf/Configuration;)V:
+local entry *1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+field proxyGroups:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/Class;Lorg/apache/hadoop/conf/Configuration;Ljava/net/InetAddress;)V:
+parameter 1:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+field proxyGroups:
+new *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method refresh(Lorg/apache/hadoop/conf/Configuration;Lorg/apache/hadoop/security/authorize/PolicyProvider;)V:
+local policyConf:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AuthorizationException:
+method <init>(Ljava/lang/Throwable;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method addGroup(Ljava/lang/String;)V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method toString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method refreshSuperUserGroupsConfiguration(Lorg/apache/hadoop/conf/Configuration;)V:
+local allMatchKeys:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method addGroup(Ljava/lang/String;)V:
+new *1:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class Service:
+field protocol:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AuthorizationException:
+method <init>(Ljava/lang/String;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method <init>(Ljava/lang/String;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+field protocolToAcl:
+new *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method write(Ljava/io/DataOutput;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method refresh(Lorg/apache/hadoop/conf/Configuration;Lorg/apache/hadoop/security/authorize/PolicyProvider;)V:
+local service:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/Class;Lorg/apache/hadoop/conf/Configuration;Ljava/net/InetAddress;)V:
+local e:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method refresh(Lorg/apache/hadoop/conf/Configuration;Lorg/apache/hadoop/security/authorize/PolicyProvider;)V:
+new *1:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AuthorizationException:
+method <init>(Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AuthorizationException:
+method getStackTrace()[Ljava/lang/StackTraceElement;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method getString(Ljava/util/Set;)Ljava/lang/String;:
+local str:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList$1:
+method newInstance()Lorg/apache/hadoop/io/Writable;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+field proxyHosts:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AuthorizationException:
+method printStackTrace()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method buildACL(Ljava/lang/String;)V:
+local groupsList:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AuthorizationException:
+method getStackTrace()[Ljava/lang/StackTraceElement;:
+return:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method refreshSuperUserGroupsConfiguration(Lorg/apache/hadoop/conf/Configuration;)V:
+local entry:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+field proxyHosts:
+new *0:
+inner-type 3,1, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+field proxyHosts:
+new *0:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/String;Lorg/apache/hadoop/conf/Configuration;)V:
+local groupAuthorized:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method getUsersString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/String;Lorg/apache/hadoop/conf/Configuration;)V:
+local allowedUserGroups:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method getString(Ljava/util/Set;)Ljava/lang/String;:
+parameter 0:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/String;Lorg/apache/hadoop/conf/Configuration;)V:
+local ipAuthorized:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class RefreshAuthorizationPolicyProtocol:
+method refreshServiceAcl()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method toString()Ljava/lang/String;:
+local usersStr:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/String;Lorg/apache/hadoop/conf/Configuration;)V:
+local ipList:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class PolicyProvider:
+method getServices()[Lorg/apache/hadoop/security/authorize/Service;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class Service:
+method getProtocol()Ljava/lang/Class;:
+return:
+inner-type 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method buildACL(Ljava/lang/String;)V:
+new *2:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method addToSet(Ljava/util/Set;Ljava/util/List;)V:
+local s:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class PolicyProvider:
+method getServices()[Lorg/apache/hadoop/security/authorize/Service;:
+return:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/String;Lorg/apache/hadoop/conf/Configuration;)V:
+local superUser:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+staticinit *0:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+field protocolToAcl:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method isWildCardACLValue(Ljava/lang/String;)Z:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AuthorizationException:
+field stackTrace:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method buildACL(Ljava/lang/String;)V:
+new *3:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+field AUTHZ_SUCCESSFUL_FOR:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/String;Lorg/apache/hadoop/conf/Configuration;)V:
+local group:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AuthorizationException:
+method printStackTrace(Ljava/io/PrintWriter;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method getString(Ljava/util/Set;)Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method getString(Ljava/util/Set;)Ljava/lang/String;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method buildACL(Ljava/lang/String;)V:
+new *1:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/String;Lorg/apache/hadoop/conf/Configuration;)V:
+local hostAddr:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/Class;Lorg/apache/hadoop/conf/Configuration;Ljava/net/InetAddress;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/Class;Lorg/apache/hadoop/conf/Configuration;Ljava/net/InetAddress;)V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class Service:
+field protocol:
+type:
+inner-type 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/String;Lorg/apache/hadoop/conf/Configuration;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AuthorizationException:
+field stackTrace:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class PolicyProvider$1:
+method getServices()[Lorg/apache/hadoop/security/authorize/Service;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method isWildCardACLValue(Ljava/lang/String;)Z:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method getUsers()Ljava/util/Set;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class Service:
+method getProtocol()Ljava/lang/Class;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+field proxyHosts:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method getString(Ljava/util/Set;)Ljava/lang/String;:
+local sb:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method refresh(Lorg/apache/hadoop/conf/Configuration;Lorg/apache/hadoop/security/authorize/PolicyProvider;)V:
+local policyFile:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AuthorizationException:
+method printStackTrace(Ljava/io/PrintStream;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method toString()Ljava/lang/String;:
+local str:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method refreshSuperUserGroupsConfiguration(Lorg/apache/hadoop/conf/Configuration;)V:
+local allMatchKeys:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class PolicyProvider:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method buildACL(Ljava/lang/String;)V:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AuthorizationException:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method refresh(Lorg/apache/hadoop/conf/Configuration;Lorg/apache/hadoop/security/authorize/PolicyProvider;)V:
+new *1:
+inner-type 3,0, 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+field proxyHosts:
+new *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method buildACL(Ljava/lang/String;)V:
+local groupsList:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method getGroupsString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+field protocolToAcl:
+new *0:
+inner-type 3,0, 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method buildACL(Ljava/lang/String;)V:
+local userGroupStrings:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+field INITIAL_CAPACITY:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/Class;Lorg/apache/hadoop/conf/Configuration;Ljava/net/InetAddress;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method refresh(Lorg/apache/hadoop/conf/Configuration;Lorg/apache/hadoop/security/authorize/PolicyProvider;)V:
+local services:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+field allAllowed:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method getProxySuperuserGroupConfKey(Ljava/lang/String;)Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method getUsers()Ljava/util/Set;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method buildACL(Ljava/lang/String;)V:
+local usersList:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method refresh(Lorg/apache/hadoop/conf/Configuration;Lorg/apache/hadoop/security/authorize/PolicyProvider;)V:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+field init:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList$1:
+method newInstance()Lorg/apache/hadoop/io/Writable;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/Class;Lorg/apache/hadoop/conf/Configuration;Ljava/net/InetAddress;)V:
+local acl:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method refresh(Lorg/apache/hadoop/conf/Configuration;Lorg/apache/hadoop/security/authorize/PolicyProvider;)V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/Class;Lorg/apache/hadoop/conf/Configuration;Ljava/net/InetAddress;)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method buildACL(Ljava/lang/String;)V:
+local userGroupStrings:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method getProtocolsWithAcls()Ljava/util/Set;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method readFields(Ljava/io/DataInput;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method buildACL(Ljava/lang/String;)V:
+new *3: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method refresh(Lorg/apache/hadoop/conf/Configuration;Lorg/apache/hadoop/security/authorize/PolicyProvider;)V:
+local newAcls:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class PolicyProvider$1:
+method getServices()[Lorg/apache/hadoop/security/authorize/Service;:
+return:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method refresh(Lorg/apache/hadoop/conf/Configuration;Lorg/apache/hadoop/security/authorize/PolicyProvider;)V:
+local acl:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method addGroup(Ljava/lang/String;)V:
+local groupsList:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method isAllAllowed()Z:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class PolicyProvider$1:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AuthorizationException:
+method printStackTrace(Ljava/io/PrintStream;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+field proxyGroups:
+type:
+inner-type 3,1, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method removeGroup(Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method addGroup(Ljava/lang/String;)V:
+local groupsList:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+field proxyGroups:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method getString(Ljava/util/Set;)Ljava/lang/String;:
+local first:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method toString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method addGroup(Ljava/lang/String;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class Service:
+method <init>(Ljava/lang/String;Ljava/lang/Class;)V:
+parameter 1:
+type:
+inner-type 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method isWildCardACLValue(Ljava/lang/String;)Z:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/Class;Lorg/apache/hadoop/conf/Configuration;Ljava/net/InetAddress;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method isWildcardList(Ljava/util/Collection;)Z:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method removeGroup(Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method refresh(Lorg/apache/hadoop/conf/Configuration;Lorg/apache/hadoop/security/authorize/PolicyProvider;)V:
+local newAcls:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+field CONF_HADOOP_PROXYUSER_RE:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method getGroupsString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method getString(Ljava/util/Set;)Ljava/lang/String;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method getProtocolsWithAcls()Ljava/util/Set;:
+return:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+field AUDITLOG:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+field protocolToAcl:
+new *0:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+field CONF_GROUPS:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method removeUser(Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AuthorizationException:
+method <init>(Ljava/lang/Throwable;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method refreshSuperUserGroupsConfiguration(Lorg/apache/hadoop/conf/Configuration;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method getGroups()Ljava/util/Set;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method refresh(Lorg/apache/hadoop/conf/Configuration;Lorg/apache/hadoop/security/authorize/PolicyProvider;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method addUser(Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+field CONF_HADOOP_PROXYUSER:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method getProxySuperuserIpConfKey(Ljava/lang/String;)Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method isUserAllowed(Lorg/apache/hadoop/security/UserGroupInformation;)Z:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method isUserAllowed(Lorg/apache/hadoop/security/UserGroupInformation;)Z:
+local group:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method refreshSuperUserGroupsConfiguration(Lorg/apache/hadoop/conf/Configuration;)V:
+local entry:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method cleanupList(Ljava/util/List;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+field protocolToAcl:
+new *0:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method isAllAllowed()Z:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method write(Ljava/io/DataOutput;)V:
+local aclString:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method removeUser(Ljava/lang/String;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method buildACL(Ljava/lang/String;)V:
+new *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class RefreshAuthorizationPolicyProtocol:
+field versionID:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AuthorizationException:
+method getStackTrace()[Ljava/lang/StackTraceElement;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+field proxyGroups:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method getProxySuperuserIpConfKey(Ljava/lang/String;)Ljava/lang/String;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method buildACL(Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/Class;Lorg/apache/hadoop/conf/Configuration;Ljava/net/InetAddress;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method refreshSuperUserGroupsConfiguration(Lorg/apache/hadoop/conf/Configuration;)V:
+local entry:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method cleanupList(Ljava/util/List;)V:
+local i:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/Class;Lorg/apache/hadoop/conf/Configuration;Ljava/net/InetAddress;)V:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method isUserAllowed(Lorg/apache/hadoop/security/UserGroupInformation;)Z:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+field protocolToAcl:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method isWildcardList(Ljava/util/Collection;)Z:
+parameter 0:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+field SERVICE_AUTHORIZATION_CONFIG:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class PolicyProvider:
+field POLICY_PROVIDER_CONFIG:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method write(Ljava/io/DataOutput;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method refresh(Lorg/apache/hadoop/conf/Configuration;Lorg/apache/hadoop/security/authorize/PolicyProvider;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method cleanupList(Ljava/util/List;)V:
+parameter 0:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method getUsers()Ljava/util/Set;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method refresh(Lorg/apache/hadoop/conf/Configuration;Lorg/apache/hadoop/security/authorize/PolicyProvider;)V:
+local newAcls:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method addUser(Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AuthorizationException:
+field stackTrace:
+new *0:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AuthorizationException:
+field stackTrace:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method getUsersString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method addToSet(Ljava/util/Set;Ljava/util/List;)V:
+parameter 1:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/Class;Lorg/apache/hadoop/conf/Configuration;Ljava/net/InetAddress;)V:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AuthorizationException:
+method printStackTrace(Ljava/io/PrintWriter;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method buildACL(Ljava/lang/String;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method getAclString()Ljava/lang/String;:
+local sb:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class Service:
+field protocol:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+field groupsMapping:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+field groupsMapping:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method cleanupList(Ljava/util/List;)V:
+local i:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class Service:
+method <init>(Ljava/lang/String;Ljava/lang/Class;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method isWildcardList(Ljava/util/Collection;)Z:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method refreshSuperUserGroupsConfiguration(Lorg/apache/hadoop/conf/Configuration;)V:
+local entry *1:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method addToSet(Ljava/util/Set;Ljava/util/List;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method getString(Ljava/util/Set;)Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method isUserAllowed(Lorg/apache/hadoop/security/UserGroupInformation;)Z:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+field protocolToAcl:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method getGroups()Ljava/util/Set;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/String;Lorg/apache/hadoop/conf/Configuration;)V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method removeUser(Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method buildACL(Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/String;Lorg/apache/hadoop/conf/Configuration;)V:
+local allowedHost:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class Service:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method cleanupList(Ljava/util/List;)V:
+local s:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/String;Lorg/apache/hadoop/conf/Configuration;)V:
+local e:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+field proxyHosts:
+type:
+inner-type 3,1, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class PolicyProvider:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class PolicyProvider$1:
+method getServices()[Lorg/apache/hadoop/security/authorize/Service;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+implements 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method refreshSuperUserGroupsConfiguration(Lorg/apache/hadoop/conf/Configuration;)V:
+local regex:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/Class;Lorg/apache/hadoop/conf/Configuration;Ljava/net/InetAddress;)V:
+local clientKey:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class Service:
+method getProtocol()Ljava/lang/Class;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ServiceAuthorizationManager:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/Class;Lorg/apache/hadoop/conf/Configuration;Ljava/net/InetAddress;)V:
+local clientPrincipal:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method <init>(Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+method authorize(Lorg/apache/hadoop/security/UserGroupInformation;Ljava/lang/String;Lorg/apache/hadoop/conf/Configuration;)V:
+local ipList:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class AccessControlList:
+method getAclString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+field proxyGroups:
+new *0:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.security.authorize:
+class ProxyUsers:
+field proxyHosts:
+new *0: @ostrusted.quals.OsUntrusted
+

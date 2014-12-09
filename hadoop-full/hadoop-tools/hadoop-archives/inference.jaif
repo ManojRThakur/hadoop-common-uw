@@ -1,0 +1,2382 @@
+package nninf.quals:
+annotation @Nullable:
+package nninf.quals:
+annotation @NonNull:
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+local srcfilelist:
+type: @checkers.inference.quals.VarAnnot(315)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method relPathToRoot(Lorg/apache/hadoop/fs/Path;Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/fs/Path;:
+new *1: @checkers.inference.quals.VarAnnot(103)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+parameter 0:
+type: @checkers.inference.quals.VarAnnot(63)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HarEntry:
+method write(Ljava/io/DataOutput;)V:
+receiver:  @checkers.inference.quals.VarAnnot(280)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+new *1: @checkers.inference.quals.VarAnnot(221)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$FileStatusDir:
+method setChildren([Lorg/apache/hadoop/fs/FileStatus;)V:
+parameter 0:
+type: @checkers.inference.quals.VarAnnot(85)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method realPath(Lorg/apache/hadoop/fs/Path;Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/fs/Path;:
+new *2: @checkers.inference.quals.VarAnnot(421)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+local numMaps:
+type: @checkers.inference.quals.VarAnnot(219)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local children *1:
+type: @checkers.inference.quals.VarAnnot(157)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+method reduce(Lorg/apache/hadoop/io/IntWritable;Ljava/util/Iterator;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+parameter 1:
+type:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(468)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+parameter 0:
+type: @checkers.inference.quals.VarAnnot(56)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+new *5: @checkers.inference.quals.VarAnnot(233)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method append(LSequenceFile/Writer;JLjava/lang/String;[Ljava/lang/String;)V:
+new *0: @checkers.inference.quals.VarAnnot(166)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+parameter 1:
+type: @checkers.inference.quals.VarAnnot(46)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+new *0: @checkers.inference.quals.VarAnnot(351)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HarEntry:
+method <init>(Ljava/lang/String;[Ljava/lang/String;)V:
+parameter 1:
+type: @checkers.inference.quals.VarAnnot(169)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+new *5: @checkers.inference.quals.VarAnnot(328)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+local jobDirectory:
+type: @checkers.inference.quals.VarAnnot(186)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+method configure(Lorg/apache/hadoop/mapred/JobConf;)V:
+new *2: @checkers.inference.quals.VarAnnot(485)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+field blockSize:
+type: @checkers.inference.quals.VarAnnot(16)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+local archiveName:
+type: @checkers.inference.quals.VarAnnot(230)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+new *6: @checkers.inference.quals.VarAnnot(189)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method map(Lorg/apache/hadoop/io/LongWritable;Lorg/apache/hadoop/tools/HadoopArchives$HarEntry;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+new *1: @checkers.inference.quals.VarAnnot(437)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+local size:
+type: @checkers.inference.quals.VarAnnot(341)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+method configure(Lorg/apache/hadoop/mapred/JobConf;)V:
+receiver:  @checkers.inference.quals.VarAnnot(463)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+new *8:
+inner-type 0,0: @checkers.inference.quals.VarAnnot(144)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method recursivels(Lorg/apache/hadoop/fs/FileSystem;Lorg/apache/hadoop/tools/HadoopArchives$FileStatusDir;Ljava/util/List;)V:
+receiver:  @checkers.inference.quals.VarAnnot(28)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method map(Lorg/apache/hadoop/io/LongWritable;Lorg/apache/hadoop/tools/HadoopArchives$HarEntry;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+parameter 2:
+type:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(396)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+new *5:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(150)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method map(Lorg/apache/hadoop/io/LongWritable;Lorg/apache/hadoop/tools/HadoopArchives$HarEntry;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+local startPos:
+type: @checkers.inference.quals.VarAnnot(429)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getRecordReader(Lorg/apache/hadoop/mapred/InputSplit;Lorg/apache/hadoop/mapred/JobConf;Lorg/apache/hadoop/mapred/Reporter;)Lorg/apache/hadoop/mapred/RecordReader;:
+return: @checkers.inference.quals.VarAnnot(308)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method recursivels(Lorg/apache/hadoop/fs/FileSystem;Lorg/apache/hadoop/tools/HadoopArchives$FileStatusDir;Ljava/util/List;)V:
+parameter 2:
+type:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(32)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method main([Ljava/lang/String;)V:
+local job:
+type: @checkers.inference.quals.VarAnnot(263)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+field SRC_COUNT_LABEL:
+type: @checkers.inference.quals.VarAnnot(9)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method copyData(Lorg/apache/hadoop/fs/Path;Lorg/apache/hadoop/fs/FSDataInputStream;Lorg/apache/hadoop/fs/FSDataOutputStream;Lorg/apache/hadoop/mapred/Reporter;)V:
+local cbread:
+type: @checkers.inference.quals.VarAnnot(418)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+field HAR_BLOCKSIZE_LABEL:
+type: @checkers.inference.quals.VarAnnot(13)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method configure(Lorg/apache/hadoop/mapred/JobConf;)V:
+new *0: @checkers.inference.quals.VarAnnot(404)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+method configure(Lorg/apache/hadoop/mapred/JobConf;)V:
+local version:
+type: @checkers.inference.quals.VarAnnot(483)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+implements 0:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(445)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+implements 0:
+inner-type 3,1: @checkers.inference.quals.VarAnnot(446)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+local reader:
+type: @checkers.inference.quals.VarAnnot(329)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local keyVals:
+type: @checkers.inference.quals.VarAnnot(114)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+new *6:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(160)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method checkPaths(Lorg/apache/hadoop/conf/Configuration;Ljava/util/List;)V:
+new *0: @checkers.inference.quals.VarAnnot(79)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method main([Ljava/lang/String;)V:
+parameter 0:
+type: @checkers.inference.quals.VarAnnot(65)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method largestDepth(Ljava/util/List;)Lorg/apache/hadoop/fs/Path;:
+parameter 0:
+type:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(39)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local justDirs:
+type: @checkers.inference.quals.VarAnnot(112)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+implements 0:
+inner-type 3,3: @checkers.inference.quals.VarAnnot(365)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+new *10:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(242)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method relPathToRoot(Lorg/apache/hadoop/fs/Path;Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/fs/Path;:
+new *3: @checkers.inference.quals.VarAnnot(106)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method map(Lorg/apache/hadoop/io/LongWritable;Lorg/apache/hadoop/tools/HadoopArchives$HarEntry;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+local hash:
+type: @checkers.inference.quals.VarAnnot(426)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$FileStatusDir:
+method <init>(Lorg/apache/hadoop/fs/FileStatus;[Lorg/apache/hadoop/fs/FileStatus;)V:
+parameter 1:
+type: @checkers.inference.quals.VarAnnot(91)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+new *4: @checkers.inference.quals.VarAnnot(326)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+local destPath:
+type: @checkers.inference.quals.VarAnnot(229)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+implements 0:
+inner-type 3,3: @checkers.inference.quals.VarAnnot(448)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HarEntry:
+extends: @checkers.inference.quals.VarAnnot(273)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+typecast *1:
+inner-type 0,0: @checkers.inference.quals.VarAnnot(339)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+method configure(Lorg/apache/hadoop/mapred/JobConf;)V:
+new *1: @checkers.inference.quals.VarAnnot(478)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+field destFs:
+type: @checkers.inference.quals.VarAnnot(373)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+parameter 0:
+type: @checkers.inference.quals.VarAnnot(45)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$FileStatusDir:
+method setChildren([Lorg/apache/hadoop/fs/FileStatus;)V:
+parameter 0:
+type:
+inner-type 0,0: @checkers.inference.quals.VarAnnot(86)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local p *1:
+type: @checkers.inference.quals.VarAnnot(153)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$FileStatusDir:
+method getFileStatus()Lorg/apache/hadoop/fs/FileStatus;:
+return: @checkers.inference.quals.VarAnnot(82)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+new *10: @checkers.inference.quals.VarAnnot(212)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method recursivels(Lorg/apache/hadoop/fs/FileSystem;Lorg/apache/hadoop/tools/HadoopArchives$FileStatusDir;Ljava/util/List;)V:
+local listStatus:
+type:
+inner-type 0,0: @checkers.inference.quals.VarAnnot(81)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method configure(Lorg/apache/hadoop/mapred/JobConf;)V:
+new *2: @checkers.inference.quals.VarAnnot(417)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local keyVals:
+type:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(115)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+new *7: @checkers.inference.quals.VarAnnot(192)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+local src:
+type: @checkers.inference.quals.VarAnnot(194)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getRecordReader(Lorg/apache/hadoop/mapred/InputSplit;Lorg/apache/hadoop/mapred/JobConf;Lorg/apache/hadoop/mapred/Reporter;)Lorg/apache/hadoop/mapred/RecordReader;:
+typecast *0: @checkers.inference.quals.VarAnnot(352)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local entry:
+type: @checkers.inference.quals.VarAnnot(119)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local keyVals:
+type:
+inner-type 3,0, 3,0: @checkers.inference.quals.VarAnnot(116)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+new *10:
+inner-type 0,0: @checkers.inference.quals.VarAnnot(213)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$FileStatusDir:
+method <init>(Lorg/apache/hadoop/fs/FileStatus;[Lorg/apache/hadoop/fs/FileStatus;)V:
+parameter 0:
+type: @checkers.inference.quals.VarAnnot(90)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+local currentCount:
+type: @checkers.inference.quals.VarAnnot(331)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+field JOB_DIR_LABEL:
+type: @checkers.inference.quals.VarAnnot(8)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+local fdir:
+type: @checkers.inference.quals.VarAnnot(198)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method configure(Lorg/apache/hadoop/mapred/JobConf;)V:
+new *4:
+inner-type 0,0: @checkers.inference.quals.VarAnnot(415)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local i *1:
+type: @checkers.inference.quals.VarAnnot(145)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+local targetSize:
+type: @checkers.inference.quals.VarAnnot(334)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+typecast *1: @checkers.inference.quals.VarAnnot(220)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+new *0: @checkers.inference.quals.VarAnnot(178)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method getConf()Lorg/apache/hadoop/conf/Configuration;:
+return: @checkers.inference.quals.VarAnnot(21)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+new *8: @checkers.inference.quals.VarAnnot(195)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local children *1:
+type:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(158)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+field outStream:
+type: @checkers.inference.quals.VarAnnot(456)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method configure(Lorg/apache/hadoop/mapred/JobConf;)V:
+new *1: @checkers.inference.quals.VarAnnot(406)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+parameter 1:
+type: @checkers.inference.quals.VarAnnot(307)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local justDirs:
+type:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(113)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+new *2: @checkers.inference.quals.VarAnnot(180)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+local statuses:
+type: @checkers.inference.quals.VarAnnot(224)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+new *3:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(324)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method map(Lorg/apache/hadoop/io/LongWritable;Lorg/apache/hadoop/tools/HadoopArchives$HarEntry;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+local child:
+type: @checkers.inference.quals.VarAnnot(442)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+method configure(Lorg/apache/hadoop/mapred/JobConf;)V:
+local e:
+type: @checkers.inference.quals.VarAnnot(484)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local allpaths:
+type: @checkers.inference.quals.VarAnnot(125)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$FileStatusDir:
+extends: @checkers.inference.quals.VarAnnot(356)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method configure(Lorg/apache/hadoop/mapred/JobConf;)V:
+parameter 0:
+type: @checkers.inference.quals.VarAnnot(378)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+new *8: @checkers.inference.quals.VarAnnot(143)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+local srcPaths:
+type:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(223)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+local fs:
+type: @checkers.inference.quals.VarAnnot(245)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+new *6: @checkers.inference.quals.VarAnnot(159)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method map(Lorg/apache/hadoop/io/LongWritable;Lorg/apache/hadoop/tools/HadoopArchives$HarEntry;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+local input:
+type: @checkers.inference.quals.VarAnnot(433)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+method close()V:
+typecast *1: @checkers.inference.quals.VarAnnot(491)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+new *2: @checkers.inference.quals.VarAnnot(260)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method main([Ljava/lang/String;)V:
+local s:
+type: @checkers.inference.quals.VarAnnot(269)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method realPath(Lorg/apache/hadoop/fs/Path;Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/fs/Path;:
+parameter 0:
+type: @checkers.inference.quals.VarAnnot(386)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method map(Lorg/apache/hadoop/io/LongWritable;Lorg/apache/hadoop/tools/HadoopArchives$HarEntry;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+receiver:  @checkers.inference.quals.VarAnnot(392)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method setConf(Lorg/apache/hadoop/conf/Configuration;)V:
+typecast *0: @checkers.inference.quals.VarAnnot(70)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HarEntry:
+field children:
+type:
+inner-type 0,0: @checkers.inference.quals.VarAnnot(284)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method checkPaths(Lorg/apache/hadoop/conf/Configuration;Ljava/util/List;)V:
+local fs:
+type: @checkers.inference.quals.VarAnnot(78)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local relPath:
+type: @checkers.inference.quals.VarAnnot(138)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+field LOG:
+type: @checkers.inference.quals.VarAnnot(3)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method map(Lorg/apache/hadoop/io/LongWritable;Lorg/apache/hadoop/tools/HadoopArchives$HarEntry;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+parameter 0:
+type: @checkers.inference.quals.VarAnnot(393)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+local children:
+type: @checkers.inference.quals.VarAnnot(204)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method map(Lorg/apache/hadoop/io/LongWritable;Lorg/apache/hadoop/tools/HadoopArchives$HarEntry;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+new *3: @checkers.inference.quals.VarAnnot(441)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+new *3:
+inner-type 3,1, 3,0: @checkers.inference.quals.VarAnnot(132)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$FileStatusDir:
+method getChildren()[Lorg/apache/hadoop/fs/FileStatus;:
+return:
+inner-type 0,0: @checkers.inference.quals.VarAnnot(208)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method relPathToRoot(Lorg/apache/hadoop/fs/Path;Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/fs/Path;:
+parameter 1:
+type: @checkers.inference.quals.VarAnnot(43)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+extends: @checkers.inference.quals.VarAnnot(298)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method main([Ljava/lang/String;)V:
+new *0: @checkers.inference.quals.VarAnnot(264)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+parameter 0:
+type: @checkers.inference.quals.VarAnnot(306)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+field VERSION:
+type: @checkers.inference.quals.VarAnnot(2)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HarEntry:
+method readFields(Ljava/io/DataInput;)V:
+new *0: @checkers.inference.quals.VarAnnot(291)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+local ie:
+type: @checkers.inference.quals.VarAnnot(182)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+local list:
+type: @checkers.inference.quals.VarAnnot(210)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+local splits:
+type:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(322)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+new *0:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(124)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+field indexStream:
+type: @checkers.inference.quals.VarAnnot(457)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HarEntry:
+method <init>(Ljava/lang/String;[Ljava/lang/String;)V:
+parameter 0:
+type: @checkers.inference.quals.VarAnnot(168)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method setConf(Lorg/apache/hadoop/conf/Configuration;)V:
+local testJar:
+type: @checkers.inference.quals.VarAnnot(72)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+field DST_HAR_LABEL:
+type: @checkers.inference.quals.VarAnnot(11)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+new *4: @checkers.inference.quals.VarAnnot(187)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+new *2: @checkers.inference.quals.VarAnnot(318)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method relPathToRoot(Lorg/apache/hadoop/fs/Path;Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/fs/Path;:
+local retPath:
+type: @checkers.inference.quals.VarAnnot(102)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HarEntry:
+field path:
+type: @checkers.inference.quals.VarAnnot(282)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method checkPaths(Lorg/apache/hadoop/conf/Configuration;Ljava/util/List;)V:
+parameter 1:
+type:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(27)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+parameter 1:
+type:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(47)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method map(Lorg/apache/hadoop/io/LongWritable;Lorg/apache/hadoop/tools/HadoopArchives$HarEntry;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+new *0: @checkers.inference.quals.VarAnnot(425)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method relPathToRoot(Lorg/apache/hadoop/fs/Path;Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/fs/Path;:
+local i:
+type: @checkers.inference.quals.VarAnnot(105)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method map(Lorg/apache/hadoop/io/LongWritable;Lorg/apache/hadoop/tools/HadoopArchives$HarEntry;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+local towrite:
+type: @checkers.inference.quals.VarAnnot(427)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local children:
+type: @checkers.inference.quals.VarAnnot(161)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+return: @checkers.inference.quals.VarAnnot(303)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+field conf:
+type: @checkers.inference.quals.VarAnnot(366)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method map(Lorg/apache/hadoop/io/LongWritable;Lorg/apache/hadoop/tools/HadoopArchives$HarEntry;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+local srcStatus:
+type: @checkers.inference.quals.VarAnnot(431)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+local srcWriter:
+type: @checkers.inference.quals.VarAnnot(193)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+local stat:
+type: @checkers.inference.quals.VarAnnot(201)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+method configure(Lorg/apache/hadoop/mapred/JobConf;)V:
+parameter 0:
+type: @checkers.inference.quals.VarAnnot(464)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+local path:
+type: @checkers.inference.quals.VarAnnot(203)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+field tmpOutputDir:
+type: @checkers.inference.quals.VarAnnot(368)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+field fs:
+type: @checkers.inference.quals.VarAnnot(455)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+local statuses:
+type:
+inner-type 0,0: @checkers.inference.quals.VarAnnot(225)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+typecast *0: @checkers.inference.quals.VarAnnot(342)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method checkValidName(Ljava/lang/String;)Z:
+return: @checkers.inference.quals.VarAnnot(33)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+field DST_DIR_LABEL:
+type: @checkers.inference.quals.VarAnnot(6)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+field SRC_LIST_LABEL:
+type: @checkers.inference.quals.VarAnnot(5)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+local parentPath:
+type: @checkers.inference.quals.VarAnnot(226)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method map(Lorg/apache/hadoop/io/LongWritable;Lorg/apache/hadoop/tools/HadoopArchives$HarEntry;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+new *2: @checkers.inference.quals.VarAnnot(440)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method <init>()V:
+return: @checkers.inference.quals.VarAnnot(376)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method relPathToRoot(Lorg/apache/hadoop/fs/Path;Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/fs/Path;:
+return: @checkers.inference.quals.VarAnnot(40)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local children:
+type:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(162)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method realPath(Lorg/apache/hadoop/fs/Path;Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/fs/Path;:
+local rootPath:
+type: @checkers.inference.quals.VarAnnot(419)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+new *0: @checkers.inference.quals.VarAnnot(227)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+field blockSize:
+type: @checkers.inference.quals.VarAnnot(375)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local entry:
+type:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(120)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+return: @checkers.inference.quals.VarAnnot(23)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method append(LSequenceFile/Writer;JLjava/lang/String;[Ljava/lang/String;)V:
+new *1: @checkers.inference.quals.VarAnnot(171)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local keyVals:
+type:
+inner-type 3,0, 3,1, 3,0: @checkers.inference.quals.VarAnnot(118)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+parameter 2:
+type: @checkers.inference.quals.VarAnnot(59)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method append(LSequenceFile/Writer;JLjava/lang/String;[Ljava/lang/String;)V:
+parameter 0:
+type: @checkers.inference.quals.VarAnnot(50)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method recursivels(Lorg/apache/hadoop/fs/FileSystem;Lorg/apache/hadoop/tools/HadoopArchives$FileStatusDir;Ljava/util/List;)V:
+local listStatus:
+type: @checkers.inference.quals.VarAnnot(80)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+method <init>()V:
+return: @checkers.inference.quals.VarAnnot(462)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+receiver:  @checkers.inference.quals.VarAnnot(62)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method recursivels(Lorg/apache/hadoop/fs/FileSystem;Lorg/apache/hadoop/tools/HadoopArchives$FileStatusDir;Ljava/util/List;)V:
+parameter 2:
+type: @checkers.inference.quals.VarAnnot(31)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method largestDepth(Ljava/util/List;)Lorg/apache/hadoop/fs/Path;:
+local deepest:
+type: @checkers.inference.quals.VarAnnot(96)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+field conf:
+type: @checkers.inference.quals.VarAnnot(67)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local parent:
+type: @checkers.inference.quals.VarAnnot(154)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+new *6: @checkers.inference.quals.VarAnnot(335)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+local ie:
+type: @checkers.inference.quals.VarAnnot(262)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+parameter 0:
+type:
+inner-type 0,0: @checkers.inference.quals.VarAnnot(64)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+local value:
+type: @checkers.inference.quals.VarAnnot(327)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+field index:
+type: @checkers.inference.quals.VarAnnot(454)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method map(Lorg/apache/hadoop/io/LongWritable;Lorg/apache/hadoop/tools/HadoopArchives$HarEntry;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+local sbuff:
+type: @checkers.inference.quals.VarAnnot(436)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+local children:
+type:
+inner-type 0,0: @checkers.inference.quals.VarAnnot(205)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getRecordReader(Lorg/apache/hadoop/mapred/InputSplit;Lorg/apache/hadoop/mapred/JobConf;Lorg/apache/hadoop/mapred/Reporter;)Lorg/apache/hadoop/mapred/RecordReader;:
+parameter 1:
+type: @checkers.inference.quals.VarAnnot(313)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+extends: @checkers.inference.quals.VarAnnot(443)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+field buffer:
+type: @checkers.inference.quals.VarAnnot(400)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+implements 0:
+inner-type 3,1: @checkers.inference.quals.VarAnnot(363)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+local statDir:
+type: @checkers.inference.quals.VarAnnot(200)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+implements 0: @checkers.inference.quals.VarAnnot(361)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+local status:
+type: @checkers.inference.quals.VarAnnot(248)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getRecordReader(Lorg/apache/hadoop/mapred/InputSplit;Lorg/apache/hadoop/mapred/JobConf;Lorg/apache/hadoop/mapred/Reporter;)Lorg/apache/hadoop/mapred/RecordReader;:
+return:
+inner-type 3,1: @checkers.inference.quals.VarAnnot(310)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+local allFiles:
+type:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(173)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method encodeName(Ljava/lang/String;)Ljava/lang/String;:
+return: @checkers.inference.quals.VarAnnot(388)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+local key:
+type: @checkers.inference.quals.VarAnnot(325)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method copyData(Lorg/apache/hadoop/fs/Path;Lorg/apache/hadoop/fs/FSDataInputStream;Lorg/apache/hadoop/fs/FSDataOutputStream;Lorg/apache/hadoop/mapred/Reporter;)V:
+parameter 3:
+type: @checkers.inference.quals.VarAnnot(383)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+parameter 3:
+type: @checkers.inference.quals.VarAnnot(60)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+field rootPath:
+type: @checkers.inference.quals.VarAnnot(371)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method largestDepth(Ljava/util/List;)Lorg/apache/hadoop/fs/Path;:
+parameter 0:
+type: @checkers.inference.quals.VarAnnot(38)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+new *5: @checkers.inference.quals.VarAnnot(185)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method encodeProperties(Lorg/apache/hadoop/fs/FileStatus;)Ljava/lang/String;:
+local propStr:
+type: @checkers.inference.quals.VarAnnot(423)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method setConf(Lorg/apache/hadoop/conf/Configuration;)V:
+parameter 0:
+type: @checkers.inference.quals.VarAnnot(20)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+new *0: @checkers.inference.quals.VarAnnot(123)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HarEntry:
+method write(Ljava/io/DataOutput;)V:
+local dir:
+type: @checkers.inference.quals.VarAnnot(296)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+new *11: @checkers.inference.quals.VarAnnot(243)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+local list:
+type:
+inner-type 0,0: @checkers.inference.quals.VarAnnot(211)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+new *3: @checkers.inference.quals.VarAnnot(183)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method main([Ljava/lang/String;)V:
+local e:
+type: @checkers.inference.quals.VarAnnot(268)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+local mapredSysPerms:
+type: @checkers.inference.quals.VarAnnot(188)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+local srcFiles:
+type: @checkers.inference.quals.VarAnnot(191)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HarEntry:
+method write(Ljava/io/DataOutput;)V:
+local c:
+type: @checkers.inference.quals.VarAnnot(297)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HarEntry:
+method <init>(Ljava/lang/String;[Ljava/lang/String;)V:
+parameter 1:
+type:
+inner-type 0,0: @checkers.inference.quals.VarAnnot(170)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method recursivels(Lorg/apache/hadoop/fs/FileSystem;Lorg/apache/hadoop/tools/HadoopArchives$FileStatusDir;Ljava/util/List;)V:
+local fstatDir:
+type: @checkers.inference.quals.VarAnnot(88)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+new *3:
+inner-type 3,1: @checkers.inference.quals.VarAnnot(131)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$FileStatusDir:
+method getChildren()[Lorg/apache/hadoop/fs/FileStatus;:
+return: @checkers.inference.quals.VarAnnot(207)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+field partId:
+type: @checkers.inference.quals.VarAnnot(367)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+field TEST_HADOOP_ARCHIVES_JAR_PATH:
+type: @checkers.inference.quals.VarAnnot(18)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method relPathToRoot(Lorg/apache/hadoop/fs/Path;Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/fs/Path;:
+local parent:
+type: @checkers.inference.quals.VarAnnot(104)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+method reduce(Lorg/apache/hadoop/io/IntWritable;Ljava/util/Iterator;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+local masterWrite:
+type: @checkers.inference.quals.VarAnnot(488)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+method reduce(Lorg/apache/hadoop/io/IntWritable;Ljava/util/Iterator;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+parameter 3:
+type: @checkers.inference.quals.VarAnnot(472)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HarEntry:
+method <init>(Ljava/lang/String;[Ljava/lang/String;)V:
+return: @checkers.inference.quals.VarAnnot(167)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HarEntry:
+method write(Ljava/io/DataOutput;)V:
+parameter 0:
+type: @checkers.inference.quals.VarAnnot(281)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+new *9: @checkers.inference.quals.VarAnnot(199)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+local fstatus:
+type: @checkers.inference.quals.VarAnnot(320)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method map(Lorg/apache/hadoop/io/LongWritable;Lorg/apache/hadoop/tools/HadoopArchives$HarEntry;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+local srcPath:
+type: @checkers.inference.quals.VarAnnot(428)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+local fstatus:
+type: @checkers.inference.quals.VarAnnot(197)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method map(Lorg/apache/hadoop/io/LongWritable;Lorg/apache/hadoop/tools/HadoopArchives$HarEntry;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+local srcFs:
+type: @checkers.inference.quals.VarAnnot(430)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+new *4: @checkers.inference.quals.VarAnnot(135)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+new *6: @checkers.inference.quals.VarAnnot(253)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local parents:
+type:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(148)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+local i:
+type: @checkers.inference.quals.VarAnnot(232)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getRecordReader(Lorg/apache/hadoop/mapred/InputSplit;Lorg/apache/hadoop/mapred/JobConf;Lorg/apache/hadoop/mapred/Reporter;)Lorg/apache/hadoop/mapred/RecordReader;:
+parameter 2:
+type: @checkers.inference.quals.VarAnnot(314)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+parameter 1:
+type: @checkers.inference.quals.VarAnnot(57)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+method reduce(Lorg/apache/hadoop/io/IntWritable;Ljava/util/Iterator;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+local towrite:
+type: @checkers.inference.quals.VarAnnot(487)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+return: @checkers.inference.quals.VarAnnot(61)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local p:
+type: @checkers.inference.quals.VarAnnot(163)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method append(LSequenceFile/Writer;JLjava/lang/String;[Ljava/lang/String;)V:
+parameter 2:
+type: @checkers.inference.quals.VarAnnot(52)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+new *7: @checkers.inference.quals.VarAnnot(137)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+local fs:
+type: @checkers.inference.quals.VarAnnot(319)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+field TOTAL_SIZE_LABEL:
+type: @checkers.inference.quals.VarAnnot(10)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method relPathToRoot(Lorg/apache/hadoop/fs/Path;Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/fs/Path;:
+receiver:  @checkers.inference.quals.VarAnnot(41)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HarEntry:
+method <init>()V:
+return: @checkers.inference.quals.VarAnnot(275)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+method close()V:
+typecast *0: @checkers.inference.quals.VarAnnot(490)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method encodeName(Ljava/lang/String;)Ljava/lang/String;:
+parameter 0:
+type: @checkers.inference.quals.VarAnnot(389)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+implements 0: @checkers.inference.quals.VarAnnot(299)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+local startPos:
+type: @checkers.inference.quals.VarAnnot(333)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+new *8: @checkers.inference.quals.VarAnnot(252)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method append(LSequenceFile/Writer;JLjava/lang/String;[Ljava/lang/String;)V:
+parameter 1:
+type: @checkers.inference.quals.VarAnnot(51)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getRecordReader(Lorg/apache/hadoop/mapred/InputSplit;Lorg/apache/hadoop/mapred/JobConf;Lorg/apache/hadoop/mapred/Reporter;)Lorg/apache/hadoop/mapred/RecordReader;:
+new *0:
+inner-type 3,1: @checkers.inference.quals.VarAnnot(355)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+local jobfs:
+type: @checkers.inference.quals.VarAnnot(190)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method close()V:
+receiver:  @checkers.inference.quals.VarAnnot(399)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method map(Lorg/apache/hadoop/io/LongWritable;Lorg/apache/hadoop/tools/HadoopArchives$HarEntry;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+parameter 2:
+type: @checkers.inference.quals.VarAnnot(395)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+new *1: @checkers.inference.quals.VarAnnot(261)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local allpaths:
+type:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(126)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+extends: @checkers.inference.quals.VarAnnot(360)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method configure(Lorg/apache/hadoop/mapred/JobConf;)V:
+new *4: @checkers.inference.quals.VarAnnot(414)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method realPath(Lorg/apache/hadoop/fs/Path;Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/fs/Path;:
+parameter 1:
+type: @checkers.inference.quals.VarAnnot(387)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+new *3: @checkers.inference.quals.VarAnnot(259)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local root:
+type: @checkers.inference.quals.VarAnnot(134)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+new *3:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(130)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method map(Lorg/apache/hadoop/io/LongWritable;Lorg/apache/hadoop/tools/HadoopArchives$HarEntry;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+local propStr:
+type: @checkers.inference.quals.VarAnnot(432)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HarEntry:
+method readFields(Ljava/io/DataInput;)V:
+local i:
+type: @checkers.inference.quals.VarAnnot(294)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+new *4: @checkers.inference.quals.VarAnnot(258)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+method reduce(Lorg/apache/hadoop/io/IntWritable;Ljava/util/Iterator;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+receiver:  @checkers.inference.quals.VarAnnot(465)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method main([Ljava/lang/String;)V:
+new *1: @checkers.inference.quals.VarAnnot(266)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+field buf_size:
+type: @checkers.inference.quals.VarAnnot(374)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HarEntry:
+implements 0: @checkers.inference.quals.VarAnnot(274)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HarEntry:
+method isDir()Z:
+receiver:  @checkers.inference.quals.VarAnnot(277)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+new *3: @checkers.inference.quals.VarAnnot(323)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method <init>()V:
+return: @checkers.inference.quals.VarAnnot(302)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+implements 0:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(300)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method recursivels(Lorg/apache/hadoop/fs/FileSystem;Lorg/apache/hadoop/tools/HadoopArchives$FileStatusDir;Ljava/util/List;)V:
+new *0: @checkers.inference.quals.VarAnnot(93)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+field tmpOutputDir:
+type: @checkers.inference.quals.VarAnnot(459)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+new *7: @checkers.inference.quals.VarAnnot(250)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+field keyVal:
+type: @checkers.inference.quals.VarAnnot(461)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method copyData(Lorg/apache/hadoop/fs/Path;Lorg/apache/hadoop/fs/FSDataInputStream;Lorg/apache/hadoop/fs/FSDataOutputStream;Lorg/apache/hadoop/mapred/Reporter;)V:
+receiver:  @checkers.inference.quals.VarAnnot(379)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method relPathToRoot(Lorg/apache/hadoop/fs/Path;Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/fs/Path;:
+local justRoot:
+type: @checkers.inference.quals.VarAnnot(100)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method append(LSequenceFile/Writer;JLjava/lang/String;[Ljava/lang/String;)V:
+receiver:  @checkers.inference.quals.VarAnnot(49)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local i:
+type: @checkers.inference.quals.VarAnnot(136)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getRecordReader(Lorg/apache/hadoop/mapred/InputSplit;Lorg/apache/hadoop/mapred/JobConf;Lorg/apache/hadoop/mapred/Reporter;)Lorg/apache/hadoop/mapred/RecordReader;:
+new *0:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(354)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+local len:
+type: @checkers.inference.quals.VarAnnot(202)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+field SRC_PARENT_LABEL:
+type: @checkers.inference.quals.VarAnnot(12)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method configure(Lorg/apache/hadoop/mapred/JobConf;)V:
+receiver:  @checkers.inference.quals.VarAnnot(377)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+implements 0: @checkers.inference.quals.VarAnnot(1)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+receiver:  @checkers.inference.quals.VarAnnot(44)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getRecordReader(Lorg/apache/hadoop/mapred/InputSplit;Lorg/apache/hadoop/mapred/JobConf;Lorg/apache/hadoop/mapred/Reporter;)Lorg/apache/hadoop/mapred/RecordReader;:
+new *0: @checkers.inference.quals.VarAnnot(353)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+local argPath:
+type: @checkers.inference.quals.VarAnnot(249)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method recursivels(Lorg/apache/hadoop/fs/FileSystem;Lorg/apache/hadoop/tools/HadoopArchives$FileStatusDir;Ljava/util/List;)V:
+parameter 1:
+type: @checkers.inference.quals.VarAnnot(30)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+local outFs:
+type: @checkers.inference.quals.VarAnnot(179)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+field TMP_DIR_LABEL:
+type: @checkers.inference.quals.VarAnnot(7)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method append(LSequenceFile/Writer;JLjava/lang/String;[Ljava/lang/String;)V:
+parameter 3:
+type:
+inner-type 0,0: @checkers.inference.quals.VarAnnot(54)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method relPathToRoot(Lorg/apache/hadoop/fs/Path;Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/fs/Path;:
+parameter 0:
+type: @checkers.inference.quals.VarAnnot(42)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$FileStatusDir:
+field children:
+type: @checkers.inference.quals.VarAnnot(357)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method copyData(Lorg/apache/hadoop/fs/Path;Lorg/apache/hadoop/fs/FSDataInputStream;Lorg/apache/hadoop/fs/FSDataOutputStream;Lorg/apache/hadoop/mapred/Reporter;)V:
+parameter 2:
+type: @checkers.inference.quals.VarAnnot(382)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method realPath(Lorg/apache/hadoop/fs/Path;Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/fs/Path;:
+new *1: @checkers.inference.quals.VarAnnot(422)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method setConf(Lorg/apache/hadoop/conf/Configuration;)V:
+instanceof *0: @checkers.inference.quals.VarAnnot(68)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$FileStatusDir:
+method getChildren()[Lorg/apache/hadoop/fs/FileStatus;:
+receiver:  @checkers.inference.quals.VarAnnot(209)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HarEntry:
+field children:
+type: @checkers.inference.quals.VarAnnot(283)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+parameter 0:
+type: @checkers.inference.quals.VarAnnot(24)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method checkValidName(Ljava/lang/String;)Z:
+receiver:  @checkers.inference.quals.VarAnnot(34)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method largestDepth(Ljava/util/List;)Lorg/apache/hadoop/fs/Path;:
+receiver:  @checkers.inference.quals.VarAnnot(37)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method checkPaths(Lorg/apache/hadoop/conf/Configuration;Ljava/util/List;)V:
+parameter 0:
+type: @checkers.inference.quals.VarAnnot(25)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+method reduce(Lorg/apache/hadoop/io/IntWritable;Ljava/util/Iterator;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+parameter 0:
+type: @checkers.inference.quals.VarAnnot(466)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local entry:
+type:
+inner-type 3,1: @checkers.inference.quals.VarAnnot(121)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+extends: @checkers.inference.quals.VarAnnot(0)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+method reduce(Lorg/apache/hadoop/io/IntWritable;Ljava/util/Iterator;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+parameter 1:
+type: @checkers.inference.quals.VarAnnot(467)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method main([Ljava/lang/String;)V:
+parameter 0:
+type:
+inner-type 0,0: @checkers.inference.quals.VarAnnot(66)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local deepest:
+type: @checkers.inference.quals.VarAnnot(133)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method largestDepth(Ljava/util/List;)Lorg/apache/hadoop/fs/Path;:
+return: @checkers.inference.quals.VarAnnot(36)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+new *1: @checkers.inference.quals.VarAnnot(350)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method map(Lorg/apache/hadoop/io/LongWritable;Lorg/apache/hadoop/tools/HadoopArchives$HarEntry;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+local relPath:
+type: @checkers.inference.quals.VarAnnot(424)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+method close()V:
+local masterWrite:
+type: @checkers.inference.quals.VarAnnot(489)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+method configure(Lorg/apache/hadoop/mapred/JobConf;)V:
+new *0: @checkers.inference.quals.VarAnnot(475)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+new *10: @checkers.inference.quals.VarAnnot(241)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+field tmpOutput:
+type: @checkers.inference.quals.VarAnnot(369)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+field startIndex:
+type: @checkers.inference.quals.VarAnnot(450)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+field partStream:
+type: @checkers.inference.quals.VarAnnot(372)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method main([Ljava/lang/String;)V:
+local ret:
+type: @checkers.inference.quals.VarAnnot(267)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+new *1: @checkers.inference.quals.VarAnnot(165)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$FileStatusDir:
+field fstatus:
+type: @checkers.inference.quals.VarAnnot(359)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method map(Lorg/apache/hadoop/io/LongWritable;Lorg/apache/hadoop/tools/HadoopArchives$HarEntry;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+parameter 2:
+type:
+inner-type 3,1: @checkers.inference.quals.VarAnnot(397)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+method close()V:
+receiver:  @checkers.inference.quals.VarAnnot(473)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method copyData(Lorg/apache/hadoop/fs/Path;Lorg/apache/hadoop/fs/FSDataInputStream;Lorg/apache/hadoop/fs/FSDataOutputStream;Lorg/apache/hadoop/mapred/Reporter;)V:
+parameter 1:
+type: @checkers.inference.quals.VarAnnot(381)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method main([Ljava/lang/String;)V:
+local harchives:
+type: @checkers.inference.quals.VarAnnot(265)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+insert-annotation Block.statement 17, Return.expression, MethodInvocation.typeArgument 0: @checkers.inference.quals.VarAnnot(349)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method configure(Lorg/apache/hadoop/mapred/JobConf;)V:
+local ie:
+type: @checkers.inference.quals.VarAnnot(411)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+typecast *1: @checkers.inference.quals.VarAnnot(338)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method recursivels(Lorg/apache/hadoop/fs/FileSystem;Lorg/apache/hadoop/tools/HadoopArchives$FileStatusDir;Ljava/util/List;)V:
+parameter 0:
+type: @checkers.inference.quals.VarAnnot(29)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getRecordReader(Lorg/apache/hadoop/mapred/InputSplit;Lorg/apache/hadoop/mapred/JobConf;Lorg/apache/hadoop/mapred/Reporter;)Lorg/apache/hadoop/mapred/RecordReader;:
+return:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(309)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+local stagingArea:
+type: @checkers.inference.quals.VarAnnot(181)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+return:
+inner-type 0,0: @checkers.inference.quals.VarAnnot(304)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+receiver:  @checkers.inference.quals.VarAnnot(55)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+method reduce(Lorg/apache/hadoop/io/IntWritable;Ljava/util/Iterator;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+parameter 2:
+type:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(470)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method checkValidName(Ljava/lang/String;)Z:
+parameter 0:
+type: @checkers.inference.quals.VarAnnot(35)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+field usage:
+type: @checkers.inference.quals.VarAnnot(17)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+method reduce(Lorg/apache/hadoop/io/IntWritable;Ljava/util/Iterator;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+local value:
+type: @checkers.inference.quals.VarAnnot(486)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method recursivels(Lorg/apache/hadoop/fs/FileSystem;Lorg/apache/hadoop/tools/HadoopArchives$FileStatusDir;Ljava/util/List;)V:
+local stat:
+type: @checkers.inference.quals.VarAnnot(87)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+implements 0:
+inner-type 3,2: @checkers.inference.quals.VarAnnot(364)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+local p:
+type: @checkers.inference.quals.VarAnnot(244)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local entry:
+type:
+inner-type 3,1, 3,0: @checkers.inference.quals.VarAnnot(122)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local child:
+type: @checkers.inference.quals.VarAnnot(146)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+parameter 1:
+type:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(58)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+new *9: @checkers.inference.quals.VarAnnot(251)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+local ie *1:
+type: @checkers.inference.quals.VarAnnot(571)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method checkPaths(Lorg/apache/hadoop/conf/Configuration;Ljava/util/List;)V:
+parameter 1:
+type: @checkers.inference.quals.VarAnnot(26)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+local numFiles:
+type: @checkers.inference.quals.VarAnnot(174)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HarEntry:
+method readFields(Ljava/io/DataInput;)V:
+receiver:  @checkers.inference.quals.VarAnnot(278)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method largestDepth(Ljava/util/List;)Lorg/apache/hadoop/fs/Path;:
+local p:
+type: @checkers.inference.quals.VarAnnot(97)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+new *9: @checkers.inference.quals.VarAnnot(347)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method encodeProperties(Lorg/apache/hadoop/fs/FileStatus;)Ljava/lang/String;:
+parameter 0:
+type: @checkers.inference.quals.VarAnnot(391)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+field partSize:
+type: @checkers.inference.quals.VarAnnot(15)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local children *2:
+type:
+inner-type 0,0: @checkers.inference.quals.VarAnnot(142)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method realPath(Lorg/apache/hadoop/fs/Path;Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/fs/Path;:
+receiver:  @checkers.inference.quals.VarAnnot(385)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+new *2: @checkers.inference.quals.VarAnnot(164)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+field buffer:
+type:
+inner-type 0,0: @checkers.inference.quals.VarAnnot(401)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+implements 0:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(362)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method getConf()Lorg/apache/hadoop/conf/Configuration;:
+receiver:  @checkers.inference.quals.VarAnnot(22)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$FileStatusDir:
+method getFileStatus()Lorg/apache/hadoop/fs/FileStatus;:
+receiver:  @checkers.inference.quals.VarAnnot(83)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$FileStatusDir:
+method <init>(Lorg/apache/hadoop/fs/FileStatus;[Lorg/apache/hadoop/fs/FileStatus;)V:
+parameter 1:
+type:
+inner-type 0,0: @checkers.inference.quals.VarAnnot(92)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method copyData(Lorg/apache/hadoop/fs/Path;Lorg/apache/hadoop/fs/FSDataInputStream;Lorg/apache/hadoop/fs/FSDataOutputStream;Lorg/apache/hadoop/mapred/Reporter;)V:
+parameter 0:
+type: @checkers.inference.quals.VarAnnot(380)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+new *5: @checkers.inference.quals.VarAnnot(149)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method relPathToRoot(Lorg/apache/hadoop/fs/Path;Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/fs/Path;:
+new *2: @checkers.inference.quals.VarAnnot(107)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+field startPos:
+type: @checkers.inference.quals.VarAnnot(452)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local allpaths:
+type:
+inner-type 3,1: @checkers.inference.quals.VarAnnot(127)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$FileStatusDir:
+method setChildren([Lorg/apache/hadoop/fs/FileStatus;)V:
+receiver:  @checkers.inference.quals.VarAnnot(84)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+field HAR_PARTSIZE_LABEL:
+type: @checkers.inference.quals.VarAnnot(14)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method relPathToRoot(Lorg/apache/hadoop/fs/Path;Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/fs/Path;:
+new *0: @checkers.inference.quals.VarAnnot(101)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method configure(Lorg/apache/hadoop/mapred/JobConf;)V:
+new *3: @checkers.inference.quals.VarAnnot(412)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+implements 0:
+inner-type 3,1: @checkers.inference.quals.VarAnnot(301)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+method reduce(Lorg/apache/hadoop/io/IntWritable;Ljava/util/Iterator;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+parameter 2:
+type:
+inner-type 3,1: @checkers.inference.quals.VarAnnot(471)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method append(LSequenceFile/Writer;JLjava/lang/String;[Ljava/lang/String;)V:
+parameter 3:
+type: @checkers.inference.quals.VarAnnot(53)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+field numIndexes:
+type: @checkers.inference.quals.VarAnnot(458)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+local outputPath:
+type: @checkers.inference.quals.VarAnnot(177)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+local fs:
+type: @checkers.inference.quals.VarAnnot(176)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+field NAME:
+type: @checkers.inference.quals.VarAnnot(4)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method setConf(Lorg/apache/hadoop/conf/Configuration;)V:
+new *0: @checkers.inference.quals.VarAnnot(69)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+new *8:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(196)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+local remaining:
+type: @checkers.inference.quals.VarAnnot(330)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local children *2:
+type: @checkers.inference.quals.VarAnnot(141)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+parameter 2:
+type: @checkers.inference.quals.VarAnnot(48)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+implements 0: @checkers.inference.quals.VarAnnot(444)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HarEntry:
+method readFields(Ljava/io/DataInput;)V:
+parameter 0:
+type: @checkers.inference.quals.VarAnnot(279)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method setConf(Lorg/apache/hadoop/conf/Configuration;)V:
+receiver:  @checkers.inference.quals.VarAnnot(19)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+new *0:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(228)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method checkValidName(Ljava/lang/String;)Z:
+local tmp:
+type: @checkers.inference.quals.VarAnnot(94)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+typecast *0: @checkers.inference.quals.VarAnnot(218)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local parents:
+type: @checkers.inference.quals.VarAnnot(147)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+field conf:
+type: @checkers.inference.quals.VarAnnot(449)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HarEntry:
+method readFields(Ljava/io/DataInput;)V:
+new *0:
+inner-type 0,0: @checkers.inference.quals.VarAnnot(292)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+new *8: @checkers.inference.quals.VarAnnot(340)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method encodeProperties(Lorg/apache/hadoop/fs/FileStatus;)Ljava/lang/String;:
+return: @checkers.inference.quals.VarAnnot(390)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+local lastPos:
+type: @checkers.inference.quals.VarAnnot(332)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+new *9:
+inner-type 0,0: @checkers.inference.quals.VarAnnot(348)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+new *7: @checkers.inference.quals.VarAnnot(344)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+local allFiles:
+type: @checkers.inference.quals.VarAnnot(172)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+method reduce(Lorg/apache/hadoop/io/IntWritable;Ljava/util/Iterator;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+parameter 2:
+type: @checkers.inference.quals.VarAnnot(469)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method map(Lorg/apache/hadoop/io/LongWritable;Lorg/apache/hadoop/tools/HadoopArchives$HarEntry;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+parameter 1:
+type: @checkers.inference.quals.VarAnnot(394)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local keyVals:
+type:
+inner-type 3,0, 3,1: @checkers.inference.quals.VarAnnot(117)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+local totalSize:
+type: @checkers.inference.quals.VarAnnot(316)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+field endIndex:
+type: @checkers.inference.quals.VarAnnot(451)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+local i:
+type: @checkers.inference.quals.VarAnnot(215)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method archive(Lorg/apache/hadoop/fs/Path;Ljava/util/List;Ljava/lang/String;Lorg/apache/hadoop/fs/Path;)V:
+local totalSize:
+type: @checkers.inference.quals.VarAnnot(175)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+local src:
+type: @checkers.inference.quals.VarAnnot(317)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method realPath(Lorg/apache/hadoop/fs/Path;Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/fs/Path;:
+return: @checkers.inference.quals.VarAnnot(384)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HarEntry:
+method isDir()Z:
+return: @checkers.inference.quals.VarAnnot(276)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getRecordReader(Lorg/apache/hadoop/mapred/InputSplit;Lorg/apache/hadoop/mapred/JobConf;Lorg/apache/hadoop/mapred/Reporter;)Lorg/apache/hadoop/mapred/RecordReader;:
+parameter 0:
+type: @checkers.inference.quals.VarAnnot(312)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$FileStatusDir:
+field children:
+type:
+inner-type 0,0: @checkers.inference.quals.VarAnnot(358)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+field written:
+type: @checkers.inference.quals.VarAnnot(460)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+typecast *0:
+inner-type 0,0: @checkers.inference.quals.VarAnnot(343)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method checkPaths(Lorg/apache/hadoop/conf/Configuration;Ljava/util/List;)V:
+local p:
+type: @checkers.inference.quals.VarAnnot(77)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+new *3: @checkers.inference.quals.VarAnnot(129)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method writeTopLevelDirs(LSequenceFile/Writer;Ljava/util/List;Lorg/apache/hadoop/fs/Path;)V:
+local allpaths:
+type:
+inner-type 3,1, 3,0: @checkers.inference.quals.VarAnnot(128)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method map(Lorg/apache/hadoop/io/LongWritable;Lorg/apache/hadoop/tools/HadoopArchives$HarEntry;Lorg/apache/hadoop/mapred/OutputCollector;Lorg/apache/hadoop/mapred/Reporter;)V:
+parameter 3:
+type: @checkers.inference.quals.VarAnnot(398)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getRecordReader(Lorg/apache/hadoop/mapred/InputSplit;Lorg/apache/hadoop/mapred/JobConf;Lorg/apache/hadoop/mapred/Reporter;)Lorg/apache/hadoop/mapred/RecordReader;:
+receiver:  @checkers.inference.quals.VarAnnot(311)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+local globPaths:
+type:
+inner-type 3,0: @checkers.inference.quals.VarAnnot(240)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+field partname:
+type: @checkers.inference.quals.VarAnnot(370)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+receiver:  @checkers.inference.quals.VarAnnot(305)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+local srcPaths:
+type: @checkers.inference.quals.VarAnnot(222)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method checkValidName(Ljava/lang/String;)Z:
+new *0: @checkers.inference.quals.VarAnnot(95)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchiveInputFormat:
+method getSplits(Lorg/apache/hadoop/mapred/JobConf;I)[Lorg/apache/hadoop/mapred/InputSplit;:
+local splits:
+type: @checkers.inference.quals.VarAnnot(321)
+
+package org.apache.hadoop.tools:
+class HadoopArchives:
+method run([Ljava/lang/String;)I:
+local globPaths:
+type: @checkers.inference.quals.VarAnnot(239)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+field masterIndex:
+type: @checkers.inference.quals.VarAnnot(453)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesReducer:
+implements 0:
+inner-type 3,2: @checkers.inference.quals.VarAnnot(447)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$HArchivesMapper:
+method realPath(Lorg/apache/hadoop/fs/Path;Lorg/apache/hadoop/fs/Path;)Lorg/apache/hadoop/fs/Path;:
+new *0: @checkers.inference.quals.VarAnnot(420)
+
+package org.apache.hadoop.tools:
+class HadoopArchives$FileStatusDir:
+method <init>(Lorg/apache/hadoop/fs/FileStatus;[Lorg/apache/hadoop/fs/FileStatus;)V:
+return: @checkers.inference.quals.VarAnnot(89)

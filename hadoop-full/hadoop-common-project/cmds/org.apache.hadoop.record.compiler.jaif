@@ -1,0 +1,4459 @@
+
+package ostrusted.quals:
+annotation @OsUntrusted:
+package ostrusted.quals:
+annotation @OsTrusted:
+
+
+package org.apache.hadoop.record.compiler:
+class JMap:
+field level:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *11:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local name *4:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local type *4:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JInt$JavaInt:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JCompType$JavaCompType:
+method genCompareTo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local i *7:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+method genReadMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Z)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer$JavaBuffer:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JInt$JavaInt:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+method genJavaCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer$CppBuffer:
+method genGetSet(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JInt:
+method <init>()V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 1:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFile:
+method genCode(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;)I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+method <init>(ILjava/lang/String;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$CppVector:
+method getTypeIDObjectString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local name *1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector:
+method getId(Ljava/lang/String;)Ljava/lang/String;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local name *4:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeGenerator:
+field generators:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer$JavaBuffer:
+method genEquals(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local jf *2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JByte$JavaByte:
+method getTypeIDObjectString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+method genCppCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+parameter 2:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method genReadMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Z)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFile:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap:
+field valueType:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *4:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+new *4: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+field fields:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local jf *5:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JDouble$JavaDouble:
+method genCompareBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+method toString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+field signature:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeGenerator:
+field generators:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JString$CppString:
+method getTypeIDObjectString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jf *11:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CppGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFloat$JavaFloat:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jf *4:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *8:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector:
+method <init>(Lorg/apache/hadoop/record/compiler/JType;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer$CppBuffer:
+method genGetSet(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local fIdx:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jf *4:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genClone(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genSetRTIFilter(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/util/Map;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local i *8:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genSetRTIFilter(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/util/Map;)V:
+parameter 1:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jf *12:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genCompareTo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JInt:
+method getSignature()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+method genCppCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genGetSet(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeGenerator:
+field generators:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeGenerator:
+field generators:
+new *0:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JLong$JavaLong:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JByte$JavaByte:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *1:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JCompType$JavaCompType:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JLong$JavaLong:
+method genCompareBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JString$JavaString:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method getTypeIDObjectString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFloat$JavaFloat:
+method getTypeIDObjectString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$CppMap:
+method <init>(LJType/CppType;LJType/CppType;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType:
+method getSignature()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genWriteMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *6:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local type *12:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+field name:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+method append(Ljava/lang/String;)V:
+local idx:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBoolean$CppBoolean:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+method genSetRTIFilter(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/util/Map;)V:
+parameter 1:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local type *9:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JString$CppString:
+method getTypeIDObjectString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local iter:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JavaGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+local iter:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap:
+method getSignature()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CppGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+local fileName:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JString$JavaString:
+method genClone(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer$JavaBuffer:
+method genCompareBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer$JavaBuffer:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JInt$JavaInt:
+method genCompareBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+instanceof *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JDouble:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genConstructorParam(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jf *5:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JString$CppString:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+parameter 2:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local iter:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local type *8:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFile:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;)V:
+parameter 1:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method <init>(LJType/JavaType;LJType/JavaType;)V:
+parameter 1:
+type:
+inner-type 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JString:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType:
+method getCppType()Lorg/apache/hadoop/record/compiler/JType$CppType;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFloat:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JInt$JavaInt:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JByte$JavaByte:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JDouble$JavaDouble:
+method getTypeIDObjectString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer$JavaBuffer:
+method getTypeIDObjectString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$CppType:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+method getTypeIDObjectString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genWriteMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JCompType$JavaCompType:
+method genClone(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method genCompareTo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genCompareTo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 1:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JavaGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 4:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JDouble$JavaDouble:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType:
+field cType:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CppGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer:
+method <init>()V:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local i *8:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer$JavaBuffer:
+method genCompareBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class Consts:
+field RTI_FILTER:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+field endMarkers:
+new *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jf *6:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method getTypeIDObjectString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JInt:
+method <init>()V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$CppType:
+method genSetRTIFilter(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 4:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBoolean:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JDouble$JavaDouble:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$CppVector:
+field element:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$CppMap:
+method getTypeIDObjectString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jf *3:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method getTypeIDObjectString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap:
+method getLevel()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JString:
+method <init>()V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JByte$JavaByte:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jf *13:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genWriteMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JLong$JavaLong:
+method getTypeIDObjectString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType:
+method toCamelCase(Ljava/lang/String;)Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *13:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBoolean$JavaBoolean:
+method genHashCode(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+new *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genCompareBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local type *7:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genSetupRtiFields(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType:
+method getJavaType()Lorg/apache/hadoop/record/compiler/JType$JavaType;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeGenerator:
+field generators:
+new *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBoolean$JavaBoolean:
+method genCompareTo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JByte:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBoolean$JavaBoolean:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jf *3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$CppVector:
+field element:
+type:
+inner-type 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer$JavaBuffer:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JDouble$JavaDouble:
+method genCompareBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JInt$JavaInt:
+method getTypeIDObjectString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBoolean$JavaBoolean:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JString$JavaString:
+method genCompareBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JDouble$CppDouble:
+method getTypeIDObjectString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+method genCompareBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFloat:
+method getSignature()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JavaGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JField:
+method <init>(Ljava/lang/String;Ljava/lang/Object;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer:
+method getSignature()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+method genSetRTIFilter(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/util/Map;)V:
+parameter 1:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jf *9:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+field fields:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFile:
+field mInclFiles:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JLong$JavaLong:
+method genCompareBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+method genReadMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Z)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method genSetRTIFilter(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/util/Map;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JField:
+typeparam 0 : @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$CppType:
+method genDecl(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JByte$CppByte:
+method getTypeIDObjectString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genReadMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Z)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBoolean$JavaBoolean:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local type *3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method genReadMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Z)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFile:
+method getName()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+instanceof *1:
+inner-type 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genReadMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Z)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class Consts:
+field RECORD_OUTPUT:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer$CppBuffer:
+method getTypeIDObjectString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genEquals(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 4:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local name *10:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JString:
+method <init>()V:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JDouble$JavaDouble:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genReadMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Z)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap:
+method <init>(Lorg/apache/hadoop/record/compiler/JType;Lorg/apache/hadoop/record/compiler/JType;)V:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local name *7:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local name *11:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local f:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genSetupRtiFields(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genReadMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Z)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+method genJavaCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 1:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+method <init>(LJType/JavaType;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JLong$JavaLong:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local jf:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jf *10:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local pkg:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JByte:
+method getSignature()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+method genWriteMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CppGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+local cc:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFloat$JavaFloat:
+method genHashCode(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CppGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 4:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JDouble:
+method getSignature()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JDouble$JavaDouble:
+method genHashCode(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method genWriteMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+local entryType:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeGenerator:
+staticinit *0:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$CppVector:
+method genSetRTIFilter(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType:
+method setCType(Lorg/apache/hadoop/record/compiler/JType$CType;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$CppMap:
+field key:
+type:
+inner-type 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JString:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer$JavaBuffer:
+method genHashCode(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer:
+method <init>()V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genSetRTIFilter(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/util/Map;)V:
+parameter 1:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap:
+method <init>(Lorg/apache/hadoop/record/compiler/JType;Lorg/apache/hadoop/record/compiler/JType;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JCompType$JavaCompType:
+method genClone(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local type *4:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+method getSignature()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jf *8:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBoolean:
+method getSignature()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeGenerator:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$CppType:
+method genDecl(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JCompType$JavaCompType:
+method <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JLong:
+method getSignature()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local ns:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *12:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JString$JavaString:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFloat:
+method <init>()V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jf:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+field fields:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JLong$JavaLong:
+method genHashCode(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+field startMarkers:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method genReadMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Z)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local name *13:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CppGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+local iter:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFile:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method getType()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *13:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeGenerator:
+staticinit *0:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap:
+method getId(Ljava/lang/String;)Ljava/lang/String;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+method genSetRTIFilter(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/util/Map;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+method genReadMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Z)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local s:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBoolean$JavaBoolean:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer$JavaBuffer:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genHashCode(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer:
+method <init>()V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+method genCompareTo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JCompType$CppCompType:
+method <init>(Ljava/lang/String;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+field module:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JDouble$JavaDouble:
+method genHashCode(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genEquals(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genReadMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Z)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JByte:
+method <init>()V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+instanceof *2:
+inner-type 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JCompType$CppCompType:
+method genGetSet(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genDecl(Ljava/lang/String;)Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local name *9:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CppGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method getTypeIDByteString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *5:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CppGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+local iter *1:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local f:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genWriteMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *10:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local jf *5:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method <init>(LJType/JavaType;LJType/JavaType;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+field value:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genReadMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Z)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jf *1:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local nestedStructMap:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method genReadMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Z)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JString$JavaString:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local type *6:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *6:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$CppMap:
+method <init>(LJType/CppType;LJType/CppType;)V:
+parameter 1:
+type:
+inner-type 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method getType()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBoolean$JavaBoolean:
+method genCompareBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+field key:
+type:
+inner-type 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JCompType$JavaCompType:
+method <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JavaGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 1:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genGetSet(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JCompType$JavaCompType:
+method genHashCode(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genSetupRTIFields(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer$CppBuffer:
+method genGetSet(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFile:
+method genCode(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;)I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+method genJavaCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JLong$JavaLong:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$CppMap:
+method <init>(LJType/CppType;LJType/CppType;)V:
+parameter 0:
+type:
+inner-type 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method genWriteMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+method genJavaCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JCompType$CppCompType:
+method genGetSet(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JByte$JavaByte:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+method genReadMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Z)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method getTypeIDObjectString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeGenerator:
+method get(Ljava/lang/String;)Lorg/apache/hadoop/record/compiler/CodeGenerator;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local nestedStructMap:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method genSetRTIFilter(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/util/Map;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genSetRTIFilter(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/util/Map;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+field typeIDByteString:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genDecl(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JString$JavaString:
+method genCompareBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 1:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CppGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+local iter *1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$CppMap:
+field key:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$CType:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JInt$CppInt:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CppGenerator:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local type *5:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 2:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+field name:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+field element:
+type:
+inner-type 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+field key:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeGenerator:
+field generators:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local name:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genHashCode(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JString:
+method getSignature()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer$JavaBuffer:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method getTypeIDByteString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genSetRTIFilter(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/util/Map;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genConstructorSet(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JByte$CppByte:
+method getTypeIDObjectString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JInt:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFloat$JavaFloat:
+method genCompareBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+field fields:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JCompType$JavaCompType:
+method genEquals(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genEquals(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JString$CppString:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genCompareBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBoolean$JavaBoolean:
+method genCompareTo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local i *4:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local i *2:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local name *3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JLong$JavaLong:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jf *9:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local jf *4:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local i:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JLong$JavaLong:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+method genCompareTo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+field level:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JField:
+field name:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFloat$JavaFloat:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 1:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local i *9:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JCompType$JavaCompType:
+method <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JCompType$CppCompType:
+method genGetSet(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *4:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JLong$JavaLong:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local type *13:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector:
+method <init>(Lorg/apache/hadoop/record/compiler/JType;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local pkgdir:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBoolean:
+method <init>()V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JString$JavaString:
+method getTypeIDObjectString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local name *12:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genStaticTypeInfo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local type:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer$JavaBuffer:
+method genCompareTo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method getTypeIDObjectString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local ct:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBoolean$JavaBoolean:
+method getTypeIDObjectString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JCompType$JavaCompType:
+method genEquals(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap:
+method getSignature()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local ret:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JCompType$JavaCompType:
+method genCompareTo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBoolean:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBoolean$CppBoolean:
+method getTypeIDObjectString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JInt:
+method getSignature()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+method getSignature()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBoolean$JavaBoolean:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFile:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CppGenerator:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JDouble$CppDouble:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+field fields:
+new *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+field module:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer$JavaBuffer:
+method genCompareTo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+method genJavaCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 1:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType:
+method setCppType(Lorg/apache/hadoop/record/compiler/JType$CppType;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+method genCppCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+instanceof *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$CppMap:
+method <init>(LJType/CppType;LJType/CppType;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+instanceof *0:
+inner-type 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genWriteMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap:
+field keyType:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method genSetRTIFilter(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/util/Map;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector:
+method getSignature()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local jf *6:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genGetSet(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method genCompareTo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JLong:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFloat:
+method <init>()V:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class Consts:
+field RIO_PREFIX:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFloat$CppFloat:
+method getTypeIDObjectString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer$CppBuffer:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+local cc:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer$JavaBuffer:
+method genCompareTo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CRecord:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *8:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+method genCompareTo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local iter:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JavaGenerator:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method genReadMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Z)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local jf *7:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$CppVector:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genWriteMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFloat$JavaFloat:
+method genCompareBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$CppMap:
+method <init>(LJType/CppType;LJType/CppType;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genDecl(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+new *5: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFloat$CppFloat:
+method getTypeIDObjectString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+method append(C)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JDouble:
+method <init>()V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$CType:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local type *6:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+field fields:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method genCompareTo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *3:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local type *10:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$CppType:
+method getTypeIDObjectString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genDecl(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local i *1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+field fields:
+new *0:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local type *5:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+field fields:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local type *2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jf *14:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+method append(C)V:
+local num:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JDouble:
+method <init>()V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+method genCompareBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jf *5:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap:
+method <init>(Lorg/apache/hadoop/record/compiler/JType;Lorg/apache/hadoop/record/compiler/JType;)V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$CppType:
+method genSetRTIFilter(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+method genReadMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Z)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JCompType$JavaCompType:
+method genEquals(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CppGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 4:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JString$JavaString:
+method genClone(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JInt$CppInt:
+method getTypeIDObjectString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType:
+method getJavaType()Lorg/apache/hadoop/record/compiler/JType$JavaType;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBoolean$JavaBoolean:
+method genCompareTo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genReadMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Z)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jf:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *11:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+method append(C)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jj:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local cb:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *12:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JInt$JavaInt:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+field fullName:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local type *1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBoolean:
+method <init>()V:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JCompType:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JavaGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFile:
+method genCode(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;)I:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JField:
+method getName()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+method <init>(ILjava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CppGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 2:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+local iter:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local name *3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+local hh:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local name *6:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JInt:
+method <init>()V:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+method genWriteMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JString$JavaString:
+method genClone(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeGenerator:
+method register(Ljava/lang/String;Lorg/apache/hadoop/record/compiler/CodeGenerator;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFloat$JavaFloat:
+method getTypeIDObjectString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local i *3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+method <init>(ILjava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+field wrapper:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jf *7:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JString$JavaString:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFloat$JavaFloat:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method <init>(LJType/JavaType;LJType/JavaType;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCompareBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genReadMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Z)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *9:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JLong$JavaLong:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local idx:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+field numSpaces:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JCompType$JavaCompType:
+method genHashCode(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genWriteMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JField:
+method getName()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$CppType:
+method genGetSet(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genClone(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBoolean$JavaBoolean:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CppGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+new *3: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$CppType:
+method getType()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFloat$JavaFloat:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local i *9:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *5:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector:
+method getSignature()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jf *11:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 1:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *7:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method getWrapperType()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local i *10:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *5:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genCompareTo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JString$JavaString:
+method getTypeIDObjectString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+field methodSuffix:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer:
+method getSignature()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local type *1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+instanceof *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genSetRTIFilter(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local i *6:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genHashCode(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFile:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;)V:
+parameter 2:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genSetRTIFilter(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+field fields:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method genWriteMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+local iterType:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local i *5:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local jf *8:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$CppMap:
+method genSetRTIFilter(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+method <init>(Ljava/lang/String;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+method genWriteMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer$CppBuffer:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CppGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 1:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JByte$JavaByte:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JInt$CppInt:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFloat:
+method <init>()V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JLong:
+method getSignature()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeGenerator:
+staticinit *0:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType:
+method toCamelCase(Ljava/lang/String;)Ljava/lang/String;:
+local firstChar:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local ct:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JInt$JavaInt:
+method genCompareBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBoolean$JavaBoolean:
+method getTypeIDObjectString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JLong$CppLong:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JLong:
+method <init>()V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JLong$CppLong:
+method getTypeIDObjectString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector:
+method <init>(Lorg/apache/hadoop/record/compiler/JType;)V:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFile:
+method getName()Ljava/lang/String;:
+local idx:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local i *7:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local jf:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+new *6: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local type *2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap:
+method getId(Ljava/lang/String;)Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFloat$JavaFloat:
+method genHashCode(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local i *10:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFile:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JCompType$JavaCompType:
+method genCompareTo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method getTypeIDObjectString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JString:
+method <init>()V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JavaGenerator:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local jf *7:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local jf *6:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFloat$JavaFloat:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$CppVector:
+method getTypeIDObjectString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+new *5:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genSetRTIFilter(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/util/Map;)V:
+parameter 1:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+field startMarkers:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method <init>(LJType/JavaType;LJType/JavaType;)V:
+parameter 0:
+type:
+inner-type 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class Consts:
+field RTI_FILTER_FIELDS:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JByte:
+method <init>()V:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType:
+method getSignature()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CGenerator:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+method append(Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CppGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+method <init>(LJType/JavaType;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class Consts:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local idx:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local iter:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFile:
+field mRecords:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector:
+method <init>(Lorg/apache/hadoop/record/compiler/JType;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JavaGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+local iter:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CppGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+new *4: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JCompType:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFloat$JavaFloat:
+method genHashCode(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+method append(Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genSetRTIFilter(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/util/Map;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local i *2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JLong:
+method <init>()V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JByte:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class Consts:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBoolean$JavaBoolean:
+method genHashCode(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$CppType:
+method genStaticTypeInfo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genClone(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType:
+method setCType(Lorg/apache/hadoop/record/compiler/JType$CType;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local i *6:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local f:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local hb:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer$JavaBuffer:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JavaGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JDouble:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local type *3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+field startMarkers:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JLong$JavaLong:
+method genHashCode(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genSetupRTIFields(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local pkgpath:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType:
+field javaType:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer$JavaBuffer:
+method genEquals(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 1:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JCompType$JavaCompType:
+method <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 1:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local cb:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType:
+method getCType()Lorg/apache/hadoop/record/compiler/JType$CType;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genConstructorParam(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *10:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local name *7:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method genSetRTIFilter(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/util/Map;)V:
+parameter 1:
+type:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JField:
+field type:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+method addMarkers(CC)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *4:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JDouble$CppDouble:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFile:
+method genCode(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;)I:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JInt$CppInt:
+method getTypeIDObjectString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+field endMarkers:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer$JavaBuffer:
+method genEquals(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method getTypeIDObjectString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFile:
+method genCode(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;)I:
+parameter 2:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local recName:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+new *5:
+inner-type 3,1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local i *1:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JavaGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+local rec:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBoolean$CppBoolean:
+method getTypeIDObjectString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JByte:
+method <init>()V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genCompareTo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JByte:
+method getSignature()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local jf *1:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType:
+method setJavaType(Lorg/apache/hadoop/record/compiler/JType$JavaType;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+method getTypeIDObjectString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBoolean:
+method <init>()V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JByte$JavaByte:
+method getTypeIDObjectString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JDouble$JavaDouble:
+method getTypeIDObjectString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *3:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer$JavaBuffer:
+method getTypeIDObjectString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local jf *1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFloat$JavaFloat:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$CppType:
+method getType()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jf *8:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$CppMap:
+method getTypeIDObjectString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local name:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JField:
+method <init>(Ljava/lang/String;Ljava/lang/Object;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFile:
+method genCode(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;)I:
+local gen:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JLong:
+method <init>()V:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JLong$JavaLong:
+method genHashCode(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+method append(Ljava/lang/String;)V:
+local ch:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method genWriteMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFile:
+method getName()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+method addMarkers(CC)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType:
+field cppType:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genConstructorSet(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$CppType:
+field name:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$CppType:
+method genStaticTypeInfo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$CppVector:
+method <init>(LJType/CppType;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFloat:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$CppType:
+method genDecl(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local ns:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCompareBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *9:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap:
+method <init>(Lorg/apache/hadoop/record/compiler/JType;Lorg/apache/hadoop/record/compiler/JType;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jf *2:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genDecl(Ljava/lang/String;)Ljava/lang/String;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method getTypeIDObjectString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JavaGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class Consts:
+field RTI_VAR:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local f:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBoolean$JavaBoolean:
+method genHashCode(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JDouble:
+method <init>()V:
+new *2: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method genCompareTo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+local setType:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *7:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method <init>(LJType/JavaType;LJType/JavaType;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genSetRTIFilter(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/util/Map;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jf *1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JDouble$CppDouble:
+method getTypeIDObjectString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local name *1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local iter:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JByte$JavaByte:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local i *2:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+method genCppCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+method <init>(ILjava/lang/String;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local i *4:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local i *5:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jf *7:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *11:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method genWriteMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector:
+method getLevel()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class Consts:
+field RECORD_INPUT:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+method <init>(Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+new *3: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local name *5:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JByte$JavaByte:
+method genCompareBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JCompType$CppCompType:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBoolean$CppBoolean:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local name *8:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 2:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JField:
+method getType()Ljava/lang/Object;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFile:
+field mInclFiles:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$CppMap:
+method genSetRTIFilter(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local idx:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+method append(C)V:
+local idx:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+new *3: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genConstructorParam(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+local iter:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genReadMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Z)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local name *2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector:
+method <init>(Lorg/apache/hadoop/record/compiler/JType;)V:
+new *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$CppType:
+method <init>(Ljava/lang/String;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *8:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+method genSetRTIFilter(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/util/Map;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genConstructorSet(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap:
+method <init>(Lorg/apache/hadoop/record/compiler/JType;Lorg/apache/hadoop/record/compiler/JType;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 4:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jf *10:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method genCompareBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local type *11:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+method append(Ljava/lang/String;)V:
+local length:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JByte$JavaByte:
+method genCompareBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+method genWriteMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local iter:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JavaGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 2:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JLong$CppLong:
+method getTypeIDObjectString()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFloat$CppFloat:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method getWrapperType()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CppGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+local hh:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JCompType$JavaCompType:
+method <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+method <init>(LJType/JavaType;)V:
+parameter 0:
+type:
+inner-type 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$CppType:
+method <init>(Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JDouble$JavaDouble:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genSetRTIFilter(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/util/Map;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+method genCompareTo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JavaGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 4:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+new *3: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genDecl(Ljava/lang/String;)Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JByte$CppByte:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap:
+method <init>(Lorg/apache/hadoop/record/compiler/JType;Lorg/apache/hadoop/record/compiler/JType;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JLong$JavaLong:
+method getTypeIDObjectString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer$CppBuffer:
+method getTypeIDObjectString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CRecord:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local jf *4:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JCompType$CCompType:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$CppVector:
+method genSetRTIFilter(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method genWriteMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+field sb:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+field endMarkers:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genWriteMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JDouble$JavaDouble:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JDouble$JavaDouble:
+method genHashCode(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+local tmp:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local type *14:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CppGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local nestedStructMap:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method genCompareTo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+local iterType:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JLong:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JField:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JString$JavaString:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local jf *3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$CppType:
+method genGetSet(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JField:
+bound 0 & 0:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jfile:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JCompType$CppCompType:
+method <init>(Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$CppMap:
+field value:
+type:
+inner-type 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JField:
+method <init>(Ljava/lang/String;Ljava/lang/Object;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBoolean$JavaBoolean:
+method genCompareTo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType:
+method setCppType(Lorg/apache/hadoop/record/compiler/JType$CppType;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *13:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer$JavaBuffer:
+method genEquals(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JDouble$JavaDouble:
+method genHashCode(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFloat$CppFloat:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBoolean$JavaBoolean:
+extends:
+inner-type 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local jf *8:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CppGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local name *6:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+field name:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JDouble$JavaDouble:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genEquals(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CGenerator:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local type:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local i *6:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+method rawAppend(C)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$CppType:
+method getTypeIDObjectString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jf *2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JCompType$CCompType:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+method genSetRTIFilter(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/util/Map;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local name *2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CppGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method genCompareBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeGenerator:
+method register(Ljava/lang/String;Lorg/apache/hadoop/record/compiler/CodeGenerator;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeGenerator:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+field fullName:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JavaGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JCompType$JavaCompType:
+method genHashCode(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local jf *3:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *9:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer$JavaBuffer:
+method genHashCode(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JString:
+method getSignature()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JField:
+method getType()Ljava/lang/Object;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genReadMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Z)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *7:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local i *7:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local i *9:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+method genCppCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JLong$CppLong:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFloat$JavaFloat:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local i *1:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jf *14:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jf *6:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method getMethodSuffix()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jf *13:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JInt$JavaInt:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method genSetRTIFilter(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/util/Map;)V:
+parameter 1:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+method toString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local i *8:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+method rawAppend(C)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeGenerator:
+method get(Ljava/lang/String;)Lorg/apache/hadoop/record/compiler/CodeGenerator;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+new *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBoolean$JavaBoolean:
+method genCompareBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class Consts:
+field TAG:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType:
+method setJavaType(Lorg/apache/hadoop/record/compiler/JType$JavaType;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBoolean:
+method getSignature()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *6:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *10:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 4:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+field firstChar:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JInt$JavaInt:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType:
+method toCamelCase(Ljava/lang/String;)Ljava/lang/String;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+field startMarkers:
+new *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$CppMap:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *1:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$CppVector:
+method <init>(LJType/CppType;)V:
+parameter 0:
+type:
+inner-type 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JInt$JavaInt:
+method getTypeIDObjectString()Ljava/lang/String;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+parameter 1:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *2:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+field fields:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$CppType:
+method genStaticTypeInfo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType:
+method getCType()Lorg/apache/hadoop/record/compiler/JType$CType;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *12:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer$JavaBuffer:
+method genHashCode(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+field element:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JByte$JavaByte:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$CppMap:
+field value:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFile:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$JavaVector:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local jf *12:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method getMethodSuffix()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+field fields:
+new *0:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+field fields:
+new *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$CppType:
+method genGetSet(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local i *10:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType:
+method getCppType()Lorg/apache/hadoop/record/compiler/JType$CppType;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer$JavaBuffer:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method genWriteMethod(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+local setType:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JByte$CppByte:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector:
+method getId(Ljava/lang/String;)Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genStaticTypeInfo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CppGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+local iter:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genSetRTIFilter(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/util/Map;)V:
+parameter 1:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local i *4:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local jf *2:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local name *5:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$JavaRecord:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local i *2:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JCompType$JavaCompType:
+method genCompareTo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBuffer$JavaBuffer:
+method genCompareTo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JInt:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFile:
+field mName:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JDouble:
+method getSignature()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+method <init>(Ljava/lang/String;Ljava/util/ArrayList;)V:
+local sb:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFile:
+method genCode(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;)I:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JInt$JavaInt:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JCompType$JavaCompType:
+method genClone(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JDouble$JavaDouble:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JCompType$JavaCompType:
+method genEquals(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CodeBuffer:
+field endMarkers:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class CppGenerator:
+method genCode(Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFloat:
+method getSignature()Ljava/lang/String;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JString$JavaString:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector$CppVector:
+method <init>(LJType/CppType;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JType$JavaType:
+method genStaticTypeInfo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+method genCompareTo(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord:
+method genCppCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JString$JavaString:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector:
+field type:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JMap$JavaMap:
+field value:
+type:
+inner-type 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JFile:
+field mRecords:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JBoolean$JavaBoolean:
+method genSlurpBytes(Lorg/apache/hadoop/record/compiler/CodeBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JRecord$CppRecord:
+method genCode(Ljava/io/FileWriter;Ljava/io/FileWriter;Ljava/util/ArrayList;)V:
+local i *5:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.record.compiler:
+class JVector:
+field level:
+type: @ostrusted.quals.OsUntrusted
+

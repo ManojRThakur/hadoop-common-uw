@@ -1,0 +1,1027 @@
+
+package ostrusted.quals:
+annotation @OsUntrusted:
+package ostrusted.quals:
+annotation @OsTrusted:
+
+
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableDeserializer:
+method deserialize(Lorg/apache/hadoop/io/Writable;)Lorg/apache/hadoop/io/Writable;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class DeserializerComparator:
+bound 0 & 0:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableDeserializer:
+method <init>(Lorg/apache/hadoop/conf/Configuration;Ljava/lang/Class;)V:
+parameter 1:
+type:
+inner-type 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method getSerialization(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serialization;:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class Serialization:
+bound 0 & 0:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationSerializer:
+method open(Ljava/io/OutputStream;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class DeserializerComparator:
+method <init>(Lorg/apache/hadoop/io/serializer/Deserializer;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class Deserializer:
+method deserialize(Ljava/lang/Object;)Ljava/lang/Object;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableDeserializer:
+method open(Ljava/io/InputStream;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableDeserializer:
+method deserialize(Lorg/apache/hadoop/io/Writable;)Lorg/apache/hadoop/io/Writable;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class Serializer:
+method open(Ljava/io/OutputStream;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization:
+method getSerializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serializer;:
+parameter 0:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableDeserializer:
+field writableClass:
+type:
+inner-type 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization:
+method getSerializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serializer;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableDeserializer:
+method deserialize(Lorg/apache/hadoop/io/Writable;)Lorg/apache/hadoop/io/Writable;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerializationComparator:
+method compare(Ljava/io/Serializable;Ljava/io/Serializable;)I:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method getSerialization(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serialization;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization:
+method accept(Ljava/lang/Class;)Z:
+parameter 0:
+type:
+inner-type 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization:
+method getDeserializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Deserializer;:
+parameter 0:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerializationComparator:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+local serializerName:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class DeserializerComparator:
+method compare([BII[BII)I:
+parameter 3:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableSerializer:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+field serializations:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class Serialization:
+method getSerializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serializer;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method getDeserializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Deserializer;:
+insert-annotation Block.statement 0, Variable.initializer, MethodInvocation.typeArgument 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class Serialization:
+method getDeserializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Deserializer;:
+parameter 0:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method add(Lorg/apache/hadoop/conf/Configuration;Ljava/lang/String;)V:
+typecast *0:
+inner-type 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method getDeserializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Deserializer;:
+local serializer:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableDeserializer:
+method open(Ljava/io/InputStream;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method getSerializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serializer;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class Deserializer:
+bound 0 & 0:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class Serialization:
+method getDeserializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Deserializer;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableDeserializer:
+method <init>(Lorg/apache/hadoop/conf/Configuration;Ljava/lang/Class;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationSerializer:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method getSerializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serializer;:
+bound 0 & 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization:
+implements 0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableDeserializer:
+method open(Ljava/io/InputStream;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+field serializations:
+new *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class DeserializerComparator:
+method compare([BII[BII)I:
+local e:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerializationComparator:
+method compare(Ljava/io/Serializable;Ljava/io/Serializable;)I:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+field serializations:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization:
+method getDeserializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Deserializer;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class DeserializerComparator:
+method compare([BII[BII)I:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method add(Lorg/apache/hadoop/conf/Configuration;Ljava/lang/String;)V:
+typecast *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+field serializations:
+type:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationDeserializer:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization:
+method getSerializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serializer;:
+parameter 0:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationSerializer:
+method serialize(Ljava/io/Serializable;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class Serialization:
+typeparam 0 : @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerializationComparator:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method getSerializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serializer;:
+typeparam 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method getSerializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serializer;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method getDeserializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Deserializer;:
+parameter 0:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization:
+method accept(Ljava/lang/Class;)Z:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationDeserializer$1:
+method readStreamHeader()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationDeserializer:
+method open(Ljava/io/InputStream;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationSerializer:
+implements 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class Serialization:
+method getDeserializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Deserializer;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization:
+method accept(Ljava/lang/Class;)Z:
+parameter 0:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method getSerialization(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serialization;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationSerializer:
+method serialize(Ljava/io/Serializable;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class Serializer:
+method open(Ljava/io/OutputStream;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableDeserializer:
+method close()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableDeserializer:
+field writableClass:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method add(Lorg/apache/hadoop/conf/Configuration;Ljava/lang/String;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationDeserializer:
+method open(Ljava/io/InputStream;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerializationComparator:
+method compare(Ljava/io/Serializable;Ljava/io/Serializable;)I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class Serializer:
+method close()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method getSerialization(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serialization;:
+typecast *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class DeserializerComparator:
+field key1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationDeserializer:
+method deserialize(Ljava/io/Serializable;)Ljava/io/Serializable;:
+local e:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization:
+method getSerializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serializer;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class Serialization:
+method getSerializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serializer;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableDeserializer:
+field dataIn:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class Deserializer:
+method deserialize(Ljava/lang/Object;)Ljava/lang/Object;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method getSerialization(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serialization;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableDeserializer:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationSerializer$1:
+method <init>(Ljava/io/OutputStream;)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class DeserializerComparator:
+typeparam 0 : @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableDeserializer:
+method open(Ljava/io/InputStream;)V:
+instanceof *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationSerializer$1:
+method writeStreamHeader()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationDeserializer:
+typeparam 0 : @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableDeserializer:
+method <init>(Lorg/apache/hadoop/conf/Configuration;Ljava/lang/Class;)V:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class DeserializerComparator:
+method compare([BII[BII)I:
+parameter 0:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization:
+method getDeserializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Deserializer;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class Serialization:
+method getSerializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serializer;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+field LOG:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class DeserializerComparator:
+field buffer:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableSerializer:
+method open(Ljava/io/OutputStream;)V:
+instanceof *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class DeserializerComparator:
+method compare([BII[BII)I:
+parameter 5:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization:
+method getDeserializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Deserializer;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationDeserializer:
+method deserialize(Ljava/io/Serializable;)Ljava/io/Serializable;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization:
+method accept(Ljava/lang/Class;)Z:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class Deserializer:
+method open(Ljava/io/InputStream;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method getDeserializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Deserializer;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableDeserializer:
+method open(Ljava/io/InputStream;)V:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization:
+method accept(Ljava/lang/Class;)Z:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization:
+implements 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+field serializations:
+new *0:
+inner-type 3,0, 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization:
+method accept(Ljava/lang/Class;)Z:
+parameter 0:
+type:
+inner-type 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization:
+method getSerializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serializer;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class Serializer:
+method serialize(Ljava/lang/Object;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization:
+method accept(Ljava/lang/Class;)Z:
+parameter 0:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method <init>(Lorg/apache/hadoop/conf/Configuration;)V:
+new *0:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization:
+method getDeserializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Deserializer;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization:
+method getSerializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serializer;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableSerializer:
+field dataOut:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization:
+method getDeserializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Deserializer;:
+parameter 0:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableSerializer:
+method open(Ljava/io/OutputStream;)V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization:
+method getDeserializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Deserializer;:
+new *0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization:
+method getSerializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serializer;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationSerializer:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class DeserializerComparator:
+field buffer:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationDeserializer:
+method deserialize(Ljava/io/Serializable;)Ljava/io/Serializable;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class Serialization:
+method accept(Ljava/lang/Class;)Z:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class DeserializerComparator:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+field serializations:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationSerializer$1:
+method <init>(Ljava/io/OutputStream;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class Deserializer:
+method close()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableDeserializer:
+method <init>(Lorg/apache/hadoop/conf/Configuration;Ljava/lang/Class;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization:
+method getSerializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serializer;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationDeserializer:
+method close()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class Deserializer:
+typeparam 0 : @ostrusted.quals.OsTrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+field serializations:
+type:
+inner-type 3,0, 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableSerializer:
+method open(Ljava/io/OutputStream;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization:
+method getSerializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serializer;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class DeserializerComparator:
+method <init>(Lorg/apache/hadoop/io/serializer/Deserializer;)V:
+parameter 0:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method add(Lorg/apache/hadoop/conf/Configuration;Ljava/lang/String;)V:
+local serializionClass:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationSerializer:
+implements 0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method add(Lorg/apache/hadoop/conf/Configuration;Ljava/lang/String;)V:
+local serializionClass:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization:
+method getSerializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serializer;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class Serialization:
+method getSerializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serializer;:
+parameter 0:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class DeserializerComparator:
+method compare([BII[BII)I:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method getSerialization(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serialization;:
+bound 0 & 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationSerializer:
+method close()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method add(Lorg/apache/hadoop/conf/Configuration;Ljava/lang/String;)V:
+typecast *1: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization:
+implements 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method add(Lorg/apache/hadoop/conf/Configuration;Ljava/lang/String;)V:
+local e:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method add(Lorg/apache/hadoop/conf/Configuration;Ljava/lang/String;)V:
+local serializionClass:
+type:
+inner-type 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationDeserializer:
+method open(Ljava/io/InputStream;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class DeserializerComparator:
+field key2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationDeserializer:
+method deserialize(Ljava/io/Serializable;)Ljava/io/Serializable;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method getDeserializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Deserializer;:
+typeparam 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableSerializer:
+method serialize(Lorg/apache/hadoop/io/Writable;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableDeserializer:
+method <init>(Lorg/apache/hadoop/conf/Configuration;Ljava/lang/Class;)V:
+parameter 1:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class Serialization:
+method accept(Ljava/lang/Class;)Z:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationDeserializer:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationDeserializer$1:
+method <init>(Ljava/io/InputStream;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerializationComparator:
+typeparam 0 : @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class Serializer:
+bound 0 & 0:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+extends: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class Serialization:
+method getSerializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serializer;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationDeserializer:
+implements 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method getSerializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serializer;:
+local serializer:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization:
+method accept(Ljava/lang/Class;)Z:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class Serialization:
+method getDeserializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Deserializer;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method add(Lorg/apache/hadoop/conf/Configuration;Ljava/lang/String;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method getSerializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serializer;:
+insert-annotation Block.statement 0, Variable.initializer, MethodInvocation.typeArgument 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerializationComparator:
+method compare(Ljava/io/Serializable;Ljava/io/Serializable;)I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableDeserializer:
+implements 0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerializationComparator:
+method <init>()V:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationDeserializer:
+method deserialize(Ljava/io/Serializable;)Ljava/io/Serializable;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class DeserializerComparator:
+method compare([BII[BII)I:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class Serialization:
+method getDeserializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Deserializer;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableSerializer:
+method open(Ljava/io/OutputStream;)V:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class DeserializerComparator:
+method compare([BII[BII)I:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class Deserializer:
+method deserialize(Ljava/lang/Object;)Ljava/lang/Object;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method getSerialization(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serialization;:
+typeparam 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationDeserializer:
+bound 0 & 0:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class DeserializerComparator:
+method <init>(Lorg/apache/hadoop/io/serializer/Deserializer;)V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+field serializations:
+new *0:
+inner-type 3,0, 3,0, 2,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableDeserializer:
+field writableClass:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableDeserializer:
+method deserialize(Lorg/apache/hadoop/io/Writable;)Lorg/apache/hadoop/io/Writable;:
+insert-annotation Block.statement 1, If.thenStatement, Block.statement 0, ExpressionStatement.expression, Assignment.expression, TypeCast.expression, MethodInvocation.typeArgument 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class DeserializerComparator:
+implements 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableDeserializer:
+method deserialize(Lorg/apache/hadoop/io/Writable;)Lorg/apache/hadoop/io/Writable;:
+local writable:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization:
+method getSerializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serializer;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization:
+method getDeserializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Deserializer;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization:
+implements 0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableSerializer:
+method serialize(Lorg/apache/hadoop/io/Writable;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization:
+method getDeserializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Deserializer;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationSerializer:
+field oos:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method getDeserializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Deserializer;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method getDeserializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Deserializer;:
+bound 0 & 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization:
+method getSerializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serializer;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method getDeserializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Deserializer;:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method getSerialization(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serialization;:
+local serialization:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method getSerializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serializer;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationSerializer:
+method open(Ljava/io/OutputStream;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method getDeserializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Deserializer;:
+local serializer:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class Serializer:
+typeparam 0 : @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class DeserializerComparator:
+field deserializer:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableSerializer:
+implements 0:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method getDeserializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Deserializer;:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableSerializer:
+implements 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization:
+method getDeserializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Deserializer;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class Serializer:
+method serialize(Ljava/lang/Object;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization:
+method accept(Ljava/lang/Class;)Z:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationSerializer:
+method open(Ljava/io/OutputStream;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationDeserializer$1:
+method <init>(Ljava/io/InputStream;)V:
+parameter 0:
+type:
+inner-type 1,0, 1,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method add(Lorg/apache/hadoop/conf/Configuration;Ljava/lang/String;)V:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableSerializer:
+method open(Ljava/io/OutputStream;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization:
+method getDeserializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Deserializer;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization$JavaSerializationDeserializer:
+field ois:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method getSerializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serializer;:
+local serializer:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class Deserializer:
+method open(Ljava/io/InputStream;)V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableSerializer:
+method close()V:
+receiver:  @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method getSerializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serializer;:
+parameter 0:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableSerializer:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method getSerialization(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serialization;:
+parameter 0:
+type:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableDeserializer:
+method deserialize(Lorg/apache/hadoop/io/Writable;)Lorg/apache/hadoop/io/Writable;:
+typecast *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class DeserializerComparator:
+method compare([BII[BII)I:
+parameter 4:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class DeserializerComparator:
+field deserializer:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class JavaSerialization:
+method accept(Ljava/lang/Class;)Z:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class DeserializerComparator:
+method compare([BII[BII)I:
+parameter 1:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method getSerializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serializer;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization:
+method <init>()V:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class Serialization:
+method accept(Ljava/lang/Class;)Z:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization:
+method getDeserializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Deserializer;:
+new *0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method add(Lorg/apache/hadoop/conf/Configuration;Ljava/lang/String;)V:
+insert-annotation Block.statement 0, Try.block, Block.statement 1, ExpressionStatement.expression, MethodInvocation.argument 0, TypeCast.expression, MethodInvocation.typeArgument 0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method getSerialization(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Serialization;:
+return: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class DeserializerComparator:
+method compare([BII[BII)I:
+parameter 3:
+type:
+inner-type 0,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization:
+method getDeserializer(Ljava/lang/Class;)Lorg/apache/hadoop/io/serializer/Deserializer;:
+return:
+inner-type 3,0: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class SerializationFactory:
+method add(Lorg/apache/hadoop/conf/Configuration;Ljava/lang/String;)V:
+parameter 0:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class DeserializerComparator:
+method compare([BII[BII)I:
+parameter 2:
+type: @ostrusted.quals.OsUntrusted
+package org.apache.hadoop.io.serializer:
+class WritableSerialization$WritableDeserializer:
+implements 0: @ostrusted.quals.OsUntrusted
+

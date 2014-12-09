@@ -1,0 +1,792 @@
+diff -r 96e69a0f420d hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/AbstractFileSystem.java
+--- a/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/AbstractFileSystem.java	Sat Nov 30 16:58:13 2013 -0800
++++ b/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/AbstractFileSystem.java	Sat Nov 30 17:43:28 2013 -0800
+@@ -14,16 +14,17 @@
+  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  * See the License for the specific language governing permissions and
+  * limitations under the License.
+  */
+ package org.apache.hadoop.fs;
+ 
+ 
+ import ostrusted.quals.OsUntrusted;
++import ostrusted.quals.OsTrusted;
+ import java.io.FileNotFoundException;
+ import java.io.IOException;
+ import java.lang.reflect.Constructor;
+ import java.net.URI;
+ import java.net.URISyntaxException;
+ import java.util.ArrayList;
+ import java.util.EnumSet;
+ import java.util.HashMap;
+@@ -74,17 +75,17 @@
+     new @OsUntrusted ConcurrentHashMap<@OsUntrusted Class<@OsUntrusted ? extends java.lang.@OsUntrusted Object>, @OsUntrusted Constructor<@OsUntrusted ? extends java.lang.@OsUntrusted Object>>();
+   
+   private static final @OsUntrusted Class<@OsUntrusted ? extends java.lang.@OsUntrusted Object> @OsUntrusted [] URI_CONFIG_ARGS = 
+     new @OsUntrusted Class @OsUntrusted []{URI.class, Configuration.class};
+   
+   /** The statistics for this file system. */
+   protected @OsUntrusted Statistics statistics;
+   
+-  private final @OsUntrusted URI myUri;
++  private final @OsTrusted URI myUri;
+   
+   public @OsUntrusted Statistics getStatistics(@OsUntrusted AbstractFileSystem this) {
+     return statistics;
+   }
+   
+   /**
+    * Returns true if the specified string is considered valid in the path part
+    * of a URI by this file system.  The default implementation enforces the rules
+@@ -300,73 +301,73 @@
+    * @param authorityNeeded if true authority cannot be null in the URI. If
+    *          false authority must be null.
+    * @param defaultPort default port to use if port is not specified in the URI.
+    * 
+    * @return URI of the file system
+    * 
+    * @throws URISyntaxException <code>uri</code> has syntax error
+    */
+-  private @OsUntrusted URI getUri(@OsUntrusted AbstractFileSystem this, @OsUntrusted URI uri, @OsUntrusted String supportedScheme,
++  private @OsTrusted URI getUri(@OsUntrusted AbstractFileSystem this, @OsTrusted URI uri, @OsTrusted String supportedScheme,
+       @OsUntrusted
+       boolean authorityNeeded, @OsUntrusted int defaultPort) throws URISyntaxException {
+     checkScheme(uri, supportedScheme);
+     // A file system implementation that requires authority must always
+     // specify default port
+     if (defaultPort < 0 && authorityNeeded) {
+       throw new @OsUntrusted HadoopIllegalArgumentException(
+           "FileSystem implementation error -  default port " + defaultPort
+               + " is not valid");
+     }
+     @OsUntrusted
+     String authority = uri.getAuthority();
+     if (authority == null) {
+        if (authorityNeeded) {
+          throw new @OsUntrusted HadoopIllegalArgumentException("Uri without authority: " + uri);
+        } else {
+-         return new @OsUntrusted URI(supportedScheme + ":///");
++         return new @OsTrusted URI(supportedScheme + ":///");
+        }   
+     }
+     // authority is non null  - AuthorityNeeded may be true or false.
+     @OsUntrusted
+     int port = uri.getPort();
+     port = (port == -1 ? defaultPort : port);
+     if (port == -1) { // no port supplied and default port is not specified
+-      return new @OsUntrusted URI(supportedScheme, authority, "/", null);
++      return new @OsTrusted URI(supportedScheme, authority, "/", null);
+     }
+-    return new @OsUntrusted URI(supportedScheme + "://" + uri.getHost() + ":" + port);
++    return new @OsTrusted URI(supportedScheme + "://" + uri.getHost() + ":" + port);
+   }
+   
+   /**
+    * The default port of this file system.
+    * 
+    * @return default port of this file system's Uri scheme
+    *         A uri with a port of -1 => default port;
+    */
+   public abstract @OsUntrusted int getUriDefaultPort(@OsUntrusted AbstractFileSystem this);
+ 
+   /**
+    * Returns a URI whose scheme and authority identify this FileSystem.
+    * 
+    * @return the uri of this file system.
+    */
+-  public @OsUntrusted URI getUri(@OsUntrusted AbstractFileSystem this) {
++  public @OsTrusted URI getUri(@OsUntrusted AbstractFileSystem this) {
+     return myUri;
+   }
+   
+   /**
+    * Check that a Path belongs to this FileSystem.
+    * 
+    * If the path is fully qualified URI, then its scheme and authority
+    * matches that of this file system. Otherwise the path must be 
+    * slash-relative name.
+    * 
+    * @throws InvalidPathException if the path is invalid
+    */
+-  public void checkPath(@OsUntrusted AbstractFileSystem this, @OsUntrusted Path path) {
++  public void checkPath(@OsUntrusted AbstractFileSystem this, @OsTrusted Path path) {
+     @OsUntrusted
+     URI uri = path.toUri();
+     @OsUntrusted
+     String thatScheme = uri.getScheme();
+     @OsUntrusted
+     String thatAuthority = uri.getAuthority();
+     if (thatScheme == null) {
+       if (thatAuthority == null) {
+@@ -415,57 +416,58 @@
+   /**
+    * Get the path-part of a pathname. Checks that URI matches this file system
+    * and that the path-part is a valid name.
+    * 
+    * @param p path
+    * 
+    * @return path-part of the Path p
+    */
+-  public @OsUntrusted String getUriPath(@OsUntrusted AbstractFileSystem this, final @OsUntrusted Path p) {
++  public @OsUntrusted String getUriPath(@OsUntrusted AbstractFileSystem this, final @OsTrusted Path p) {
+     checkPath(p);
+     @OsUntrusted
+     String s = p.toUri().getPath();
+     if (!isValidName(s)) {
+       throw new @OsUntrusted InvalidPathException("Path part " + s + " from URI " + p
+           + " is not a valid filename.");
+     }
+     return s;
+   }
+   
+   /**
+    * Make the path fully qualified to this file system
+    * @param path
+    * @return the qualified path
+    */
+-  public @OsUntrusted Path makeQualified(@OsUntrusted AbstractFileSystem this, @OsUntrusted Path path) {
++  public @OsTrusted Path makeQualified(@OsUntrusted AbstractFileSystem this, @OsTrusted Path path) {
+     checkPath(path);
+     return path.makeQualified(this.getUri(), null);
+   }
+   
+   /**
+    * Some file systems like LocalFileSystem have an initial workingDir
+    * that is used as the starting workingDir. For other file systems
+    * like HDFS there is no built in notion of an initial workingDir.
+    * 
+    * @return the initial workingDir if the file system has such a notion
+    *         otherwise return a null.
+    */
+-  public @OsUntrusted Path getInitialWorkingDirectory(@OsUntrusted AbstractFileSystem this) {
++  public @OsTrusted Path getInitialWorkingDirectory(@OsUntrusted AbstractFileSystem this) {
+     return null;
+   }
+   
+   /** 
+    * Return the current user's home directory in this file system.
+    * The default implementation returns "/user/$USER/".
+    * 
+    * @return current user's home directory.
+    */
+-  public @OsUntrusted Path getHomeDirectory(@OsUntrusted AbstractFileSystem this) {
+-    return new @OsUntrusted Path("/user/"+System.getProperty("user.name")).makeQualified(
++  @SuppressWarnings("ostrusted") // Path poly
++  public @OsTrusted Path getHomeDirectory(@OsUntrusted AbstractFileSystem this) {
++    return new @OsTrusted Path("/user/"+System.getProperty("user.name")).makeQualified(
+                                                                 getUri(), null);
+   }
+   
+   /**
+    * Return a set of server default configuration values.
+    * 
+    * @return server default configuration values
+    * 
+@@ -477,29 +479,30 @@
+    * Return the fully-qualified path of path f resolving the path
+    * through any internal symlinks or mount point
+    * @param p path to be resolved
+    * @return fully qualified path 
+    * @throws FileNotFoundException, AccessControlException, IOException
+    *         UnresolvedLinkException if symbolic link on path cannot be resolved
+    *          internally
+    */
+-   public @OsUntrusted Path resolvePath(@OsUntrusted AbstractFileSystem this, final @OsUntrusted Path p) throws FileNotFoundException,
++  @SuppressWarnings("ostrusted") // Poly on fileStatus
++   public @OsTrusted Path resolvePath(@OsUntrusted AbstractFileSystem this, final @OsTrusted Path p) throws FileNotFoundException,
+            UnresolvedLinkException, AccessControlException, IOException {
+      checkPath(p);
+      return getFileStatus(p).getPath(); // default impl is to return the path
+    }
+   
+   /**
+    * The specification of this method matches that of
+    * {@link FileContext#create(Path, EnumSet, Options.CreateOpts...)} except
+    * that the Path f must be fully qualified and the permission is absolute
+    * (i.e. umask has been applied).
+    */
+-  public final @OsUntrusted FSDataOutputStream create(@OsUntrusted AbstractFileSystem this, final @OsUntrusted Path f,
++  public final @OsUntrusted FSDataOutputStream create(@OsUntrusted AbstractFileSystem this, final @OsTrusted Path f,
+       final @OsUntrusted EnumSet<@OsUntrusted CreateFlag> createFlag, Options.@OsUntrusted CreateOpts @OsUntrusted ... opts)
+       throws AccessControlException, FileAlreadyExistsException,
+       FileNotFoundException, ParentNotDirectoryException,
+       UnsupportedFileSystemException, UnresolvedLinkException, IOException {
+     checkPath(f);
+     @OsUntrusted
+     int bufferSize = -1;
+     @OsUntrusted
+@@ -616,81 +619,81 @@
+       replication, blockSize, progress, checksumOpt, createParent);
+   }
+ 
+   /**
+    * The specification of this method matches that of
+    * {@link #create(Path, EnumSet, Options.CreateOpts...)} except that the opts
+    * have been declared explicitly.
+    */
+-  public abstract @OsUntrusted FSDataOutputStream createInternal(@OsUntrusted AbstractFileSystem this, @OsUntrusted Path f,
++  public abstract @OsUntrusted FSDataOutputStream createInternal(@OsUntrusted AbstractFileSystem this, @OsTrusted Path f,
+       @OsUntrusted
+       EnumSet<@OsUntrusted CreateFlag> flag, @OsUntrusted FsPermission absolutePermission,
+       @OsUntrusted
+       int bufferSize, @OsUntrusted short replication, @OsUntrusted long blockSize, @OsUntrusted Progressable progress,
+       @OsUntrusted
+       ChecksumOpt checksumOpt, @OsUntrusted boolean createParent)
+       throws AccessControlException, FileAlreadyExistsException,
+       FileNotFoundException, ParentNotDirectoryException,
+       UnsupportedFileSystemException, UnresolvedLinkException, IOException;
+ 
+   /**
+    * The specification of this method matches that of
+    * {@link FileContext#mkdir(Path, FsPermission, boolean)} except that the Path
+    * f must be fully qualified and the permission is absolute (i.e. 
+    * umask has been applied).
+    */
+-  public abstract void mkdir(@OsUntrusted AbstractFileSystem this, final @OsUntrusted Path dir, final @OsUntrusted FsPermission permission,
++  public abstract void mkdir(@OsUntrusted AbstractFileSystem this, final @OsTrusted Path dir, final @OsUntrusted FsPermission permission,
+       final @OsUntrusted boolean createParent) throws AccessControlException,
+       FileAlreadyExistsException, FileNotFoundException,
+       UnresolvedLinkException, IOException;
+ 
+   /**
+    * The specification of this method matches that of
+    * {@link FileContext#delete(Path, boolean)} except that Path f must be for
+    * this file system.
+    */
+-  public abstract @OsUntrusted boolean delete(@OsUntrusted AbstractFileSystem this, final @OsUntrusted Path f, final @OsUntrusted boolean recursive)
++  public abstract @OsUntrusted boolean delete(@OsUntrusted AbstractFileSystem this, final @OsTrusted Path f, final @OsUntrusted boolean recursive)
+       throws AccessControlException, FileNotFoundException,
+       UnresolvedLinkException, IOException;
+ 
+   /**
+    * The specification of this method matches that of
+    * {@link FileContext#open(Path)} except that Path f must be for this
+    * file system.
+    */
+-  public @OsUntrusted FSDataInputStream open(@OsUntrusted AbstractFileSystem this, final @OsUntrusted Path f) throws AccessControlException,
++  public @OsUntrusted FSDataInputStream open(@OsUntrusted AbstractFileSystem this, final @OsTrusted Path f) throws AccessControlException,
+       FileNotFoundException, UnresolvedLinkException, IOException {
+     return open(f, getServerDefaults().getFileBufferSize());
+   }
+ 
+   /**
+    * The specification of this method matches that of
+    * {@link FileContext#open(Path, int)} except that Path f must be for this
+    * file system.
+    */
+-  public abstract @OsUntrusted FSDataInputStream open(@OsUntrusted AbstractFileSystem this, final @OsUntrusted Path f, @OsUntrusted int bufferSize)
++  public abstract @OsUntrusted FSDataInputStream open(@OsUntrusted AbstractFileSystem this, final @OsTrusted Path f, @OsUntrusted int bufferSize)
+       throws AccessControlException, FileNotFoundException,
+       UnresolvedLinkException, IOException;
+ 
+   /**
+    * The specification of this method matches that of
+    * {@link FileContext#setReplication(Path, short)} except that Path f must be
+    * for this file system.
+    */
+-  public abstract @OsUntrusted boolean setReplication(@OsUntrusted AbstractFileSystem this, final @OsUntrusted Path f,
++  public abstract @OsUntrusted boolean setReplication(@OsUntrusted AbstractFileSystem this, final @OsTrusted Path f,
+       final @OsUntrusted short replication) throws AccessControlException,
+       FileNotFoundException, UnresolvedLinkException, IOException;
+ 
+   /**
+    * The specification of this method matches that of
+    * {@link FileContext#rename(Path, Path, Options.Rename...)} except that Path
+    * f must be for this file system.
+    */
+-  public final void rename(@OsUntrusted AbstractFileSystem this, final @OsUntrusted Path src, final @OsUntrusted Path dst,
++  public final void rename(@OsUntrusted AbstractFileSystem this, final @OsTrusted Path src, final @OsTrusted Path dst,
+       final Options.@OsUntrusted Rename @OsUntrusted ... options) throws AccessControlException,
+       FileAlreadyExistsException, FileNotFoundException,
+       ParentNotDirectoryException, UnresolvedLinkException, IOException {
+     @OsUntrusted
+     boolean overwrite = false;
+     if (null != options) {
+       for (@OsUntrusted Rename option : options) {
+         if (option == Rename.OVERWRITE) {
+@@ -705,27 +708,27 @@
+    * The specification of this method matches that of
+    * {@link FileContext#rename(Path, Path, Options.Rename...)} except that Path
+    * f must be for this file system and NO OVERWRITE is performed.
+    * 
+    * File systems that do not have a built in overwrite need implement only this
+    * method and can take advantage of the default impl of the other
+    * {@link #renameInternal(Path, Path, boolean)}
+    */
+-  public abstract void renameInternal(@OsUntrusted AbstractFileSystem this, final @OsUntrusted Path src, final @OsUntrusted Path dst)
++  public abstract void renameInternal(@OsUntrusted AbstractFileSystem this, final @OsTrusted Path src, final @OsTrusted Path dst)
+       throws AccessControlException, FileAlreadyExistsException,
+       FileNotFoundException, ParentNotDirectoryException,
+       UnresolvedLinkException, IOException;
+   
+   /**
+    * The specification of this method matches that of
+    * {@link FileContext#rename(Path, Path, Options.Rename...)} except that Path
+    * f must be for this file system.
+    */
+-  public void renameInternal(@OsUntrusted AbstractFileSystem this, final @OsUntrusted Path src, final @OsUntrusted Path dst,
++  public void renameInternal(@OsUntrusted AbstractFileSystem this, final @OsTrusted Path src, final @OsTrusted Path dst,
+       @OsUntrusted
+       boolean overwrite) throws AccessControlException,
+       FileAlreadyExistsException, FileNotFoundException,
+       ParentNotDirectoryException, UnresolvedLinkException, IOException {
+     // Default implementation deals with overwrite in a non-atomic way
+     final @OsUntrusted FileStatus srcStatus = getFileLinkStatus(src);
+ 
+     @OsUntrusted
+@@ -759,17 +762,17 @@
+         RemoteIterator<@OsUntrusted FileStatus> list = listStatusIterator(dst);
+         if (list != null && list.hasNext()) {
+           throw new @OsUntrusted IOException(
+               "Rename cannot overwrite non empty destination directory " + dst);
+         }
+       }
+       delete(dst, false);
+     } else {
+-      final @OsUntrusted Path parent = dst.getParent();
++      final @OsTrusted Path parent = dst.getParent();
+       final @OsUntrusted FileStatus parentStatus = getFileStatus(parent);
+       if (parentStatus.isFile()) {
+         throw new @OsUntrusted ParentNotDirectoryException("Rename destination parent "
+             + parent + " is a file.");
+       }
+     }
+     renameInternal(src, dst);
+   }
+@@ -781,109 +784,109 @@
+   public @OsUntrusted boolean supportsSymlinks(@OsUntrusted AbstractFileSystem this) {
+     return false;
+   }
+   
+   /**
+    * The specification of this method matches that of  
+    * {@link FileContext#createSymlink(Path, Path, boolean)};
+    */
+-  public void createSymlink(@OsUntrusted AbstractFileSystem this, final @OsUntrusted Path target, final @OsUntrusted Path link,
++  public void createSymlink(@OsUntrusted AbstractFileSystem this, final @OsTrusted Path target, final @OsTrusted Path link,
+       final @OsUntrusted boolean createParent) throws IOException, UnresolvedLinkException {
+     throw new @OsUntrusted IOException("File system does not support symlinks");    
+   }
+ 
+   /**
+    * Partially resolves the path. This is used during symlink resolution in
+    * {@link FSLinkResolver}, and differs from the similarly named method
+    * {@link FileContext#getLinkTarget(Path)}.
+    */
+-  public @OsUntrusted Path getLinkTarget(@OsUntrusted AbstractFileSystem this, final @OsUntrusted Path f) throws IOException {
++  public @OsTrusted Path getLinkTarget(@OsUntrusted AbstractFileSystem this, final @OsTrusted Path f) throws IOException {
+     /* We should never get here. Any file system that threw an
+      * UnresolvedLinkException, causing this function to be called,
+      * needs to override this method.
+      */
+     throw new @OsUntrusted AssertionError();
+   }
+     
+   /**
+    * The specification of this method matches that of
+    * {@link FileContext#setPermission(Path, FsPermission)} except that Path f
+    * must be for this file system.
+    */
+-  public abstract void setPermission(@OsUntrusted AbstractFileSystem this, final @OsUntrusted Path f,
++  public abstract void setPermission(@OsUntrusted AbstractFileSystem this, final @OsTrusted Path f,
+       final @OsUntrusted FsPermission permission) throws AccessControlException,
+       FileNotFoundException, UnresolvedLinkException, IOException;
+ 
+   /**
+    * The specification of this method matches that of
+    * {@link FileContext#setOwner(Path, String, String)} except that Path f must
+    * be for this file system.
+    */
+-  public abstract void setOwner(@OsUntrusted AbstractFileSystem this, final @OsUntrusted Path f, final @OsUntrusted String username,
++  public abstract void setOwner(@OsUntrusted AbstractFileSystem this, final @OsTrusted Path f, final @OsUntrusted String username,
+       final @OsUntrusted String groupname) throws AccessControlException,
+       FileNotFoundException, UnresolvedLinkException, IOException;
+ 
+   /**
+    * The specification of this method matches that of
+    * {@link FileContext#setTimes(Path, long, long)} except that Path f must be
+    * for this file system.
+    */
+-  public abstract void setTimes(@OsUntrusted AbstractFileSystem this, final @OsUntrusted Path f, final @OsUntrusted long mtime,
++  public abstract void setTimes(@OsUntrusted AbstractFileSystem this, final @OsTrusted Path f, final @OsUntrusted long mtime,
+     final @OsUntrusted long atime) throws AccessControlException, FileNotFoundException,
+       UnresolvedLinkException, IOException;
+ 
+   /**
+    * The specification of this method matches that of
+    * {@link FileContext#getFileChecksum(Path)} except that Path f must be for
+    * this file system.
+    */
+-  public abstract @OsUntrusted FileChecksum getFileChecksum(@OsUntrusted AbstractFileSystem this, final @OsUntrusted Path f)
++  public abstract @OsUntrusted FileChecksum getFileChecksum(@OsUntrusted AbstractFileSystem this, final @OsTrusted Path f)
+       throws AccessControlException, FileNotFoundException,
+       UnresolvedLinkException, IOException;
+   
+   /**
+    * The specification of this method matches that of
+    * {@link FileContext#getFileStatus(Path)} 
+    * except that an UnresolvedLinkException may be thrown if a symlink is 
+    * encountered in the path.
+    */
+-  public abstract @OsUntrusted FileStatus getFileStatus(@OsUntrusted AbstractFileSystem this, final @OsUntrusted Path f)
++  public abstract @OsUntrusted FileStatus getFileStatus(@OsUntrusted AbstractFileSystem this, final @OsTrusted Path f)
+       throws AccessControlException, FileNotFoundException,
+       UnresolvedLinkException, IOException;
+ 
+   /**
+    * The specification of this method matches that of
+    * {@link FileContext#getFileLinkStatus(Path)}
+    * except that an UnresolvedLinkException may be thrown if a symlink is  
+    * encountered in the path leading up to the final path component.
+    * If the file system does not support symlinks then the behavior is
+    * equivalent to {@link AbstractFileSystem#getFileStatus(Path)}.
+    */
+-  public @OsUntrusted FileStatus getFileLinkStatus(@OsUntrusted AbstractFileSystem this, final @OsUntrusted Path f)
++  public @OsUntrusted FileStatus getFileLinkStatus(@OsUntrusted AbstractFileSystem this, final @OsTrusted Path f)
+       throws AccessControlException, FileNotFoundException,
+       UnsupportedFileSystemException, IOException {
+     return getFileStatus(f);
+   }
+ 
+   /**
+    * The specification of this method matches that of
+    * {@link FileContext#getFileBlockLocations(Path, long, long)} except that
+    * Path f must be for this file system.
+    */
+-  public abstract @OsUntrusted BlockLocation @OsUntrusted [] getFileBlockLocations(@OsUntrusted AbstractFileSystem this, final @OsUntrusted Path f,
++  public abstract @OsUntrusted BlockLocation @OsUntrusted [] getFileBlockLocations(@OsUntrusted AbstractFileSystem this, final @OsTrusted Path f,
+       final @OsUntrusted long start, final @OsUntrusted long len) throws AccessControlException,
+       FileNotFoundException, UnresolvedLinkException, IOException;
+ 
+   /**
+    * The specification of this method matches that of
+    * {@link FileContext#getFsStatus(Path)} except that Path f must be for this
+    * file system.
+    */
+-  public @OsUntrusted FsStatus getFsStatus(@OsUntrusted AbstractFileSystem this, final @OsUntrusted Path f) throws AccessControlException,
++  public @OsUntrusted FsStatus getFsStatus(@OsUntrusted AbstractFileSystem this, final @OsTrusted Path f) throws AccessControlException,
+       FileNotFoundException, UnresolvedLinkException, IOException {
+     // default impl gets FsStatus of root
+     return getFsStatus();
+   }
+   
+   /**
+    * The specification of this method matches that of
+    * {@link FileContext#getFsStatus(Path)}.
+@@ -891,17 +894,17 @@
+   public abstract @OsUntrusted FsStatus getFsStatus(@OsUntrusted AbstractFileSystem this) throws AccessControlException,
+       FileNotFoundException, IOException;
+ 
+   /**
+    * The specification of this method matches that of
+    * {@link FileContext#listStatus(Path)} except that Path f must be for this
+    * file system.
+    */
+-  public @OsUntrusted RemoteIterator<@OsUntrusted FileStatus> listStatusIterator(@OsUntrusted AbstractFileSystem this, final @OsUntrusted Path f)
++  public @OsUntrusted RemoteIterator<@OsUntrusted FileStatus> listStatusIterator(@OsUntrusted AbstractFileSystem this, final @OsTrusted Path f)
+       throws AccessControlException, FileNotFoundException,
+       UnresolvedLinkException, IOException {
+     return new @OsUntrusted RemoteIterator<@OsUntrusted FileStatus>() {
+       private @OsUntrusted int i = 0;
+       private @OsUntrusted FileStatus @OsUntrusted [] statusList = listStatus(f);
+       
+       @Override
+       public @OsUntrusted boolean hasNext() {
+@@ -918,17 +921,17 @@
+     };
+   }
+ 
+   /**
+    * The specification of this method matches that of
+    * {@link FileContext#listLocatedStatus(Path)} except that Path f 
+    * must be for this file system.
+    */
+-  public @OsUntrusted RemoteIterator<@OsUntrusted LocatedFileStatus> listLocatedStatus(@OsUntrusted AbstractFileSystem this, final @OsUntrusted Path f)
++  public @OsUntrusted RemoteIterator<@OsUntrusted LocatedFileStatus> listLocatedStatus(@OsUntrusted AbstractFileSystem this, final @OsTrusted Path f)
+       throws AccessControlException, FileNotFoundException,
+       UnresolvedLinkException, IOException {
+     return new @OsUntrusted RemoteIterator<@OsUntrusted LocatedFileStatus>() {
+       private @OsUntrusted RemoteIterator<@OsUntrusted FileStatus> itor = listStatusIterator(f);
+       
+       @Override
+       public @OsUntrusted boolean hasNext() throws IOException {
+         return itor.hasNext();
+@@ -952,26 +955,26 @@
+     };
+   }
+ 
+   /**
+    * The specification of this method matches that of
+    * {@link FileContext.Util#listStatus(Path)} except that Path f must be 
+    * for this file system.
+    */
+-  public abstract @OsUntrusted FileStatus @OsUntrusted [] listStatus(@OsUntrusted AbstractFileSystem this, final @OsUntrusted Path f)
++  public abstract @OsUntrusted FileStatus @OsUntrusted [] listStatus(@OsUntrusted AbstractFileSystem this, final @OsTrusted Path f)
+       throws AccessControlException, FileNotFoundException,
+       UnresolvedLinkException, IOException;
+ 
+   /**
+    * @return an iterator over the corrupt files under the given path
+    * (may contain duplicates if a file has more than one corrupt block)
+    * @throws IOException
+    */
+-  public @OsUntrusted RemoteIterator<@OsUntrusted Path> listCorruptFileBlocks(@OsUntrusted AbstractFileSystem this, @OsUntrusted Path path)
++  public @OsUntrusted RemoteIterator<@OsTrusted Path> listCorruptFileBlocks(@OsUntrusted AbstractFileSystem this, @OsTrusted Path path)
+     throws IOException {
+     throw new @OsUntrusted UnsupportedOperationException(getClass().getCanonicalName() +
+                                             " does not support" +
+                                             " listCorruptFileBlocks");
+   }
+ 
+   /**
+    * The specification of this method matches that of
+diff -r 96e69a0f420d hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/DelegateToFileSystem.java
+--- a/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/DelegateToFileSystem.java	Sat Nov 30 16:58:13 2013 -0800
++++ b/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/DelegateToFileSystem.java	Sat Nov 30 17:43:28 2013 -0800
+@@ -13,16 +13,17 @@
+  * distributed under the License is distributed on an "AS IS" BASIS,
+  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  * See the License for the specific language governing permissions and
+  * limitations under the License.
+  */
+ package org.apache.hadoop.fs;
+ 
+ import ostrusted.quals.OsUntrusted;
++import ostrusted.quals.OsTrusted;
+ import java.io.FileNotFoundException;
+ import java.io.IOException;
+ import java.net.URI;
+ import java.net.URISyntaxException;
+ import java.util.Arrays;
+ import java.util.EnumSet;
+ import java.util.List;
+ 
+@@ -51,78 +52,80 @@
+     super(theUri, supportedScheme, authorityRequired, 
+         FileSystem.getDefaultUri(conf).getPort());
+     fsImpl = theFsImpl;
+     fsImpl.initialize(theUri, conf);
+     fsImpl.statistics = getStatistics();
+   }
+ 
+   @Override
+-  public @OsUntrusted Path getInitialWorkingDirectory(@OsUntrusted DelegateToFileSystem this) {
++  public @OsTrusted Path getInitialWorkingDirectory(@OsUntrusted DelegateToFileSystem this) {
+     return fsImpl.getInitialWorkingDirectory();
+   }
+   
+   @Override
+   @SuppressWarnings("deprecation") // call to primitiveCreate
+-  public @OsUntrusted FSDataOutputStream createInternal (@OsUntrusted DelegateToFileSystem this, @OsUntrusted Path f,
++  public @OsUntrusted FSDataOutputStream createInternal (@OsUntrusted DelegateToFileSystem this, @OsTrusted Path f,
+       @OsUntrusted
+       EnumSet<@OsUntrusted CreateFlag> flag, @OsUntrusted FsPermission absolutePermission, @OsUntrusted int bufferSize,
+       @OsUntrusted
+       short replication, @OsUntrusted long blockSize, @OsUntrusted Progressable progress,
+       @OsUntrusted
+       ChecksumOpt checksumOpt, @OsUntrusted boolean createParent) throws IOException {
+     checkPath(f);
+     
+     // Default impl assumes that permissions do not matter
+     // calling the regular create is good enough.
+     // FSs that implement permissions should override this.
+ 
+     if (!createParent) { // parent must exist.
+       // since this.create makes parent dirs automatically
+       // we must throw exception if parent does not exist.
+-      final @OsUntrusted FileStatus stat = getFileStatus(f.getParent());
++      @SuppressWarnings("ostrusted:cast.unsafe")
++      @OsTrusted Path parent = (@OsTrusted Path) f.getParent();
++      final @OsUntrusted FileStatus stat = getFileStatus(parent);
+       if (stat == null) {
+         throw new @OsUntrusted FileNotFoundException("Missing parent:" + f);
+       }
+       if (!stat.isDirectory()) {
+           throw new @OsUntrusted ParentNotDirectoryException("parent is not a dir:" + f);
+       }
+       // parent does exist - go ahead with create of file.
+     }
+     return fsImpl.primitiveCreate(f, absolutePermission, flag,
+         bufferSize, replication, blockSize, progress, checksumOpt);
+   }
+ 
+   @Override
+-  public @OsUntrusted boolean delete(@OsUntrusted DelegateToFileSystem this, @OsUntrusted Path f, @OsUntrusted boolean recursive) throws IOException {
++  public @OsUntrusted boolean delete(@OsUntrusted DelegateToFileSystem this, @OsTrusted Path f, @OsUntrusted boolean recursive) throws IOException {
+     checkPath(f);
+     return fsImpl.delete(f, recursive);
+   }
+ 
+   @Override
+-  public @OsUntrusted BlockLocation @OsUntrusted [] getFileBlockLocations(@OsUntrusted DelegateToFileSystem this, @OsUntrusted Path f, @OsUntrusted long start, @OsUntrusted long len)
++  public @OsUntrusted BlockLocation @OsUntrusted [] getFileBlockLocations(@OsUntrusted DelegateToFileSystem this, @OsTrusted Path f, @OsUntrusted long start, @OsUntrusted long len)
+       throws IOException {
+     checkPath(f);
+     return fsImpl.getFileBlockLocations(f, start, len);
+   }
+ 
+   @Override
+-  public @OsUntrusted FileChecksum getFileChecksum(@OsUntrusted DelegateToFileSystem this, @OsUntrusted Path f) throws IOException {
++  public @OsUntrusted FileChecksum getFileChecksum(@OsUntrusted DelegateToFileSystem this, @OsTrusted Path f) throws IOException {
+     checkPath(f);
+     return fsImpl.getFileChecksum(f);
+   }
+ 
+   @Override
+-  public @OsUntrusted FileStatus getFileStatus(@OsUntrusted DelegateToFileSystem this, @OsUntrusted Path f) throws IOException {
++  public @OsUntrusted FileStatus getFileStatus(@OsUntrusted DelegateToFileSystem this, @OsTrusted Path f) throws IOException {
+     checkPath(f);
+     return fsImpl.getFileStatus(f);
+   }
+ 
+   @Override
+-  public @OsUntrusted FileStatus getFileLinkStatus(@OsUntrusted DelegateToFileSystem this, final @OsUntrusted Path f) throws IOException {
++  public @OsUntrusted FileStatus getFileLinkStatus(@OsUntrusted DelegateToFileSystem this, final @OsTrusted Path f) throws IOException {
+     @OsUntrusted
+     FileStatus status = fsImpl.getFileLinkStatus(f);
+     // FileSystem#getFileLinkStatus qualifies the link target
+     // AbstractFileSystem needs to return it plain since it's qualified
+     // in FileContext, so re-get and set the plain target
+     if (status.isSymlink()) {
+       status.setSymlink(fsImpl.getLinkTarget(f));
+     }
+@@ -135,104 +138,104 @@
+   }
+ 
+   @Override
+   public @OsUntrusted FsServerDefaults getServerDefaults(@OsUntrusted DelegateToFileSystem this) throws IOException {
+     return fsImpl.getServerDefaults();
+   }
+   
+   @Override
+-  public @OsUntrusted Path getHomeDirectory(@OsUntrusted DelegateToFileSystem this) {
++  public @OsTrusted Path getHomeDirectory(@OsUntrusted DelegateToFileSystem this) {
+     return fsImpl.getHomeDirectory();
+   }
+ 
+   @Override
+   public @OsUntrusted int getUriDefaultPort(@OsUntrusted DelegateToFileSystem this) {
+     return 0;
+   }
+ 
+   @Override
+-  public @OsUntrusted FileStatus @OsUntrusted [] listStatus(@OsUntrusted DelegateToFileSystem this, @OsUntrusted Path f) throws IOException {
++  public @OsUntrusted FileStatus @OsUntrusted [] listStatus(@OsUntrusted DelegateToFileSystem this, @OsTrusted Path f) throws IOException {
+     checkPath(f);
+     return fsImpl.listStatus(f);
+   }
+ 
+   @Override
+   @SuppressWarnings("deprecation") // call to primitiveMkdir
+-  public void mkdir(@OsUntrusted DelegateToFileSystem this, @OsUntrusted Path dir, @OsUntrusted FsPermission permission, @OsUntrusted boolean createParent)
++  public void mkdir(@OsUntrusted DelegateToFileSystem this, @OsTrusted Path dir, @OsUntrusted FsPermission permission, @OsUntrusted boolean createParent)
+       throws IOException {
+     checkPath(dir);
+     fsImpl.primitiveMkdir(dir, permission, createParent);
+     
+   }
+ 
+   @Override
+-  public @OsUntrusted FSDataInputStream open(@OsUntrusted DelegateToFileSystem this, @OsUntrusted Path f, @OsUntrusted int bufferSize) throws IOException {
++  public @OsUntrusted FSDataInputStream open(@OsUntrusted DelegateToFileSystem this, @OsTrusted Path f, @OsUntrusted int bufferSize) throws IOException {
+     checkPath(f);
+     return fsImpl.open(f, bufferSize);
+   }
+ 
+   @Override
+   @SuppressWarnings("deprecation") // call to rename
+-  public void renameInternal(@OsUntrusted DelegateToFileSystem this, @OsUntrusted Path src, @OsUntrusted Path dst) throws IOException {
++  public void renameInternal(@OsUntrusted DelegateToFileSystem this, @OsTrusted Path src, @OsTrusted Path dst) throws IOException {
+     checkPath(src);
+     checkPath(dst);
+     fsImpl.rename(src, dst, Options.Rename.NONE);
+   }
+ 
+   @Override
+-  public void setOwner(@OsUntrusted DelegateToFileSystem this, @OsUntrusted Path f, @OsUntrusted String username, @OsUntrusted String groupname)
++  public void setOwner(@OsUntrusted DelegateToFileSystem this, @OsTrusted Path f, @OsUntrusted String username, @OsUntrusted String groupname)
+       throws IOException {
+     checkPath(f);
+     fsImpl.setOwner(f, username, groupname);
+   }
+ 
+   @Override
+-  public void setPermission(@OsUntrusted DelegateToFileSystem this, @OsUntrusted Path f, @OsUntrusted FsPermission permission)
++  public void setPermission(@OsUntrusted DelegateToFileSystem this, @OsTrusted Path f, @OsUntrusted FsPermission permission)
+       throws IOException {
+     checkPath(f);
+     fsImpl.setPermission(f, permission);
+   }
+ 
+   @Override
+-  public @OsUntrusted boolean setReplication(@OsUntrusted DelegateToFileSystem this, @OsUntrusted Path f, @OsUntrusted short replication)
++  public @OsUntrusted boolean setReplication(@OsUntrusted DelegateToFileSystem this, @OsTrusted Path f, @OsUntrusted short replication)
+       throws IOException {
+     checkPath(f);
+     return fsImpl.setReplication(f, replication);
+   }
+ 
+   @Override
+-  public void setTimes(@OsUntrusted DelegateToFileSystem this, @OsUntrusted Path f, @OsUntrusted long mtime, @OsUntrusted long atime) throws IOException {
++  public void setTimes(@OsUntrusted DelegateToFileSystem this, @OsTrusted Path f, @OsUntrusted long mtime, @OsUntrusted long atime) throws IOException {
+     checkPath(f);
+     fsImpl.setTimes(f, mtime, atime);
+   }
+ 
+   @Override
+   public void setVerifyChecksum(@OsUntrusted DelegateToFileSystem this, @OsUntrusted boolean verifyChecksum) throws IOException {
+     fsImpl.setVerifyChecksum(verifyChecksum);
+   }
+ 
+   @Override
+   public @OsUntrusted boolean supportsSymlinks(@OsUntrusted DelegateToFileSystem this) {
+     return fsImpl.supportsSymlinks();
+   }  
+   
+   @Override
+-  public void createSymlink(@OsUntrusted DelegateToFileSystem this, @OsUntrusted Path target, @OsUntrusted Path link, @OsUntrusted boolean createParent) 
++  public void createSymlink(@OsUntrusted DelegateToFileSystem this, @OsTrusted Path target, @OsTrusted Path link, @OsUntrusted boolean createParent) 
+       throws IOException { 
+     fsImpl.createSymlink(target, link, createParent);
+   } 
+   
+   @Override
+-  public @OsUntrusted Path getLinkTarget(@OsUntrusted DelegateToFileSystem this, final @OsUntrusted Path f) throws IOException {
++  public @OsTrusted Path getLinkTarget(@OsUntrusted DelegateToFileSystem this, final @OsTrusted Path f) throws IOException {
+     return fsImpl.getLinkTarget(f);
+   }
+ 
+   @Override //AbstractFileSystem
+   public @OsUntrusted String getCanonicalServiceName(@OsUntrusted DelegateToFileSystem this) {
+     return fsImpl.getCanonicalServiceName();
+   }
+   
+   @Override //AbstractFileSystem
+   public @OsUntrusted List<@OsUntrusted Token<@OsUntrusted ? extends java.lang.@OsUntrusted Object>> getDelegationTokens(@OsUntrusted DelegateToFileSystem this, @OsUntrusted String renewer) throws IOException {
+     return Arrays.asList(fsImpl.addDelegationTokens(renewer, null));
+   }
+-}
+\ No newline at end of file
++}
+diff -r 96e69a0f420d hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/Path.java
+--- a/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/Path.java	Sat Nov 30 16:58:13 2013 -0800
++++ b/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/Path.java	Sat Nov 30 17:43:28 2013 -0800
+@@ -33,17 +33,17 @@
+ 
+ /** Names a file or directory in a {@link FileSystem}.
+  * Path strings use slash as the directory separator.  A path string is
+  * absolute if it begins with a slash.
+  */
+ @Stringable
+ @InterfaceAudience.Public
+ @InterfaceStability.Stable
+-public class Path implements @OsUntrusted Comparable {
++public class Path implements Comparable {
+ 
+   /** The directory separator, a slash. */
+   public static final @OsUntrusted String SEPARATOR = "/";
+   public static final @OsUntrusted char SEPARATOR_CHAR = '/';
+   
+   public static final @OsUntrusted String CUR_DIR = ".";
+   
+   public static final @OsUntrusted boolean WINDOWS

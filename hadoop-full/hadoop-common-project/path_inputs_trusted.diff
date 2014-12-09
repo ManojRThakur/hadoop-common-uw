@@ -1,0 +1,1176 @@
+diff -r 96e69a0f420d hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/conf/Configuration.java
+--- a/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/conf/Configuration.java	Sat Nov 30 16:58:13 2013 -0800
++++ b/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/conf/Configuration.java	Sat Nov 30 18:45:27 2013 -0800
+@@ -1918,19 +1918,19 @@
+    * the given <i>path</i>.  If <i>dirsProp</i> contains multiple directories,
+    * then one is chosen based on <i>path</i>'s hash code.  If the selected
+    * directory does not exist, an attempt is made to create it.
+    * 
+    * @param dirsProp directory in which to locate the file.
+    * @param path file-path.
+    * @return local file under the directory with the given path.
+    */
+-  public @OsUntrusted Path getLocalPath(@OsUntrusted Configuration this, @OsUntrusted String dirsProp, @OsUntrusted String path)
++  public @OsUntrusted Path getLocalPath(@OsUntrusted Configuration this, @OsUntrusted String dirsProp, @OsTrusted String path)
+     throws IOException {
+-    @OsUntrusted
++    @OsTrusted
+     String @OsUntrusted [] dirs = getTrimmedStrings(dirsProp);
+     @OsUntrusted
+     int hashCode = path.hashCode();
+     @OsUntrusted
+     FileSystem fs = FileSystem.getLocal(this);
+     for (@OsUntrusted int i = 0; i < dirs.length; i++) {  // try each local dir
+       @OsUntrusted
+       int index = (hashCode+i & Integer.MAX_VALUE) % dirs.length;
+diff -r 96e69a0f420d hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/AbstractFileSystem.java
+--- a/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/AbstractFileSystem.java	Sat Nov 30 16:58:13 2013 -0800
++++ b/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/AbstractFileSystem.java	Sat Nov 30 18:45:27 2013 -0800
+@@ -454,16 +454,17 @@
+   }
+   
+   /** 
+    * Return the current user's home directory in this file system.
+    * The default implementation returns "/user/$USER/".
+    * 
+    * @return current user's home directory.
+    */
++  @SuppressWarnings("ostrusted") // System properties are trusted
+   public @OsUntrusted Path getHomeDirectory(@OsUntrusted AbstractFileSystem this) {
+     return new @OsUntrusted Path("/user/"+System.getProperty("user.name")).makeQualified(
+                                                                 getUri(), null);
+   }
+   
+   /**
+    * Return a set of server default configuration values.
+    * 
+diff -r 96e69a0f420d hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/ChecksumFileSystem.java
+--- a/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/ChecksumFileSystem.java	Sat Nov 30 16:58:13 2013 -0800
++++ b/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/ChecksumFileSystem.java	Sat Nov 30 18:45:27 2013 -0800
+@@ -14,16 +14,17 @@
+  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  * See the License for the specific language governing permissions and
+  * limitations under the License.
+  */
+ 
+ package org.apache.hadoop.fs;
+ 
+ import ostrusted.quals.OsUntrusted;
++import ostrusted.quals.OsTrusted;
+ import java.io.*;
+ import java.nio.channels.ClosedChannelException;
+ import java.util.Arrays;
+ 
+ import org.apache.hadoop.classification.InterfaceAudience;
+ import org.apache.hadoop.classification.InterfaceStability;
+ import org.apache.hadoop.conf.Configuration;
+ import org.apache.hadoop.fs.permission.FsPermission;
+@@ -77,16 +78,17 @@
+   
+   /** get the raw file system */
+   @Override
+   public @OsUntrusted FileSystem getRawFileSystem(@OsUntrusted ChecksumFileSystem this) {
+     return fs;
+   }
+ 
+   /** Return the name of the checksum file associated with a file.*/
++  @SuppressWarnings("ostrusted") // Trusted path manipulation
+   public @OsUntrusted Path getChecksumFile(@OsUntrusted ChecksumFileSystem this, @OsUntrusted Path file) {
+     return new @OsUntrusted Path(file.getParent(), "." + file.getName() + ".crc");
+   }
+ 
+   /** Return true iff file is a checksum file name.*/
+   public static @OsUntrusted boolean isChecksumFile(@OsUntrusted Path file) {
+     @OsUntrusted
+     String name = file.getName();
+diff -r 96e69a0f420d hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java
+--- a/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java	Sat Nov 30 16:58:13 2013 -0800
++++ b/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java	Sat Nov 30 18:45:27 2013 -0800
+@@ -201,17 +201,17 @@
+     setDefaultUri(conf, (@OsTrusted URI) URI.create(fixName(uri)));
+   }
+ 
+   /** Called after a new FileSystem instance is constructed.
+    * @param name a uri whose authority section names the host, port, etc.
+    *   for this FileSystem
+    * @param conf the configuration
+    */
+-  public void initialize(@OsUntrusted FileSystem this, @OsUntrusted URI name, @OsUntrusted Configuration conf) throws IOException {
++  public void initialize(@OsUntrusted FileSystem this, @OsTrusted URI name, @OsUntrusted Configuration conf) throws IOException {
+     statistics = getStatistics(name.getScheme(), getClass());    
+     resolveSymlinks = conf.getBoolean(
+         CommonConfigurationKeys.FS_CLIENT_RESOLVE_REMOTE_SYMLINKS_KEY,
+         CommonConfigurationKeys.FS_CLIENT_RESOLVE_REMOTE_SYMLINKS_DEFAULT);
+   }
+ 
+   /**
+    * Return the protocol scheme for the FileSystem.
+@@ -1862,16 +1862,17 @@
+         throw new java.util.NoSuchElementException("No more entry in " + f);
+       }
+     };
+   }
+   
+   /** Return the current user's home directory in this filesystem.
+    * The default implementation returns "/user/$USER/".
+    */
++  @SuppressWarnings("ostrusted") // System properties are trusted.
+   public @OsUntrusted Path getHomeDirectory(@OsUntrusted FileSystem this) {
+     return this.makeQualified(
+         new @OsUntrusted Path("/user/"+System.getProperty("user.name")));
+   }
+ 
+ 
+   /**
+    * Set the current working directory for the given file system. All relative
+diff -r 96e69a0f420d hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/FilterFileSystem.java
+--- a/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/FilterFileSystem.java	Sat Nov 30 16:58:13 2013 -0800
++++ b/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/FilterFileSystem.java	Sat Nov 30 18:45:27 2013 -0800
+@@ -14,16 +14,17 @@
+  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  * See the License for the specific language governing permissions and
+  * limitations under the License.
+  */
+ 
+ package org.apache.hadoop.fs;
+ 
+ import ostrusted.quals.OsUntrusted;
++import ostrusted.quals.OsTrusted;
+ import ostrusted.quals.PolyOsTrusted;
+ import java.io.*;
+ import java.net.URI;
+ import java.net.URISyntaxException;
+ import java.util.EnumSet;
+ import org.apache.hadoop.classification.InterfaceAudience;
+ import org.apache.hadoop.classification.InterfaceStability;
+ import org.apache.hadoop.conf.Configuration;
+@@ -48,17 +49,17 @@
+  * and fields.
+  *
+  *****************************************************************/
+ @InterfaceAudience.Public
+ @InterfaceStability.Stable
+ public class FilterFileSystem extends @OsUntrusted FileSystem {
+   
+   protected @OsUntrusted FileSystem fs;
+-  protected @OsUntrusted String swapScheme;
++  protected @OsTrusted String swapScheme;
+   
+   /*
+    * so that extending classes can define it
+    */
+   public @OsUntrusted FilterFileSystem() {
+   }
+   
+   public @OsUntrusted FilterFileSystem(@OsUntrusted FileSystem fs) {
+@@ -75,25 +76,26 @@
+   }
+ 
+   /** Called after a new FileSystem instance is constructed.
+    * @param name a uri whose authority section names the host, port, etc.
+    *   for this FileSystem
+    * @param conf the configuration
+    */
+   @Override
+-  public void initialize(@OsUntrusted FilterFileSystem this, @OsUntrusted URI name, @OsUntrusted Configuration conf) throws IOException {
++  public void initialize(@OsUntrusted FilterFileSystem this, @OsTrusted URI name, @OsUntrusted Configuration conf) throws IOException {
+     super.initialize(name, conf);
+     // this is less than ideal, but existing filesystems sometimes neglect
+     // to initialize the embedded filesystem
+     if (fs.getConf() == null) {
+       fs.initialize(name, conf);
+     }
+-    @OsUntrusted
+-    String scheme = name.getScheme();
++    @SuppressWarnings("ostrusted:cast.unsafe") // URI poly
++    @OsTrusted
++    String scheme = (@OsTrusted String) name.getScheme();
+     if (!scheme.equals(fs.getUri().getScheme())) {
+       swapScheme = scheme;
+     }
+   }
+ 
+   /** Returns a URI whose scheme and authority identify this FileSystem.*/
+   @Override
+   public @OsUntrusted URI getUri(@OsUntrusted FilterFileSystem this) {
+diff -r 96e69a0f420d hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/HarFileSystem.java
+--- a/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/HarFileSystem.java	Sat Nov 30 16:58:13 2013 -0800
++++ b/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/HarFileSystem.java	Sat Nov 30 18:45:27 2013 -0800
+@@ -13,16 +13,17 @@
+  * distributed under the License is distributed on an "AS IS" BASIS,
+  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  * See the License for the specific language governing permissions and
+  * limitations under the License.
+  */
+ package org.apache.hadoop.fs;
+ 
+ import ostrusted.quals.OsUntrusted;
++import ostrusted.quals.OsTrusted;
+ import org.apache.commons.logging.Log;
+ import org.apache.commons.logging.LogFactory;
+ import org.apache.hadoop.conf.Configuration;
+ import org.apache.hadoop.fs.permission.FsPermission;
+ import org.apache.hadoop.io.IOUtils;
+ import org.apache.hadoop.io.Text;
+ import org.apache.hadoop.util.LineReader;
+ import org.apache.hadoop.util.Progressable;
+@@ -55,22 +56,22 @@
+   public static final @OsUntrusted String METADATA_CACHE_ENTRIES_KEY = "fs.har.metadatacache.entries";
+   public static final @OsUntrusted int METADATA_CACHE_ENTRIES_DEFAULT = 10;
+ 
+   public static final @OsUntrusted int VERSION = 3;
+ 
+   private static @OsUntrusted Map<@OsUntrusted URI, @OsUntrusted HarMetaData> harMetaCache;
+ 
+   // uri representation of this Har filesystem
+-  private @OsUntrusted URI uri;
++  private @OsTrusted URI uri;
+   // the top level path of the archive
+   // in the underlying file system
+   private @OsUntrusted Path archivePath;
+   // the har auth
+-  private @OsUntrusted String harAuth;
++  private @OsTrusted String harAuth;
+ 
+   // pointer into the static metadata cache
+   private @OsUntrusted HarMetaData metadata;
+ 
+   private @OsUntrusted FileSystem fs;
+ 
+   /**
+    * public construction of harfilesystem
+@@ -117,37 +118,40 @@
+    * path.getFileSystem().
+    * the uri of Har is 
+    * har://underlyingfsscheme-host:port/archivepath.
+    * or 
+    * har:///archivepath. This assumes the underlying filesystem
+    * to be used in case not specified.
+    */
+   @Override
+-  public void initialize(@OsUntrusted HarFileSystem this, @OsUntrusted URI name, @OsUntrusted Configuration conf) throws IOException {
++  public void initialize(@OsUntrusted HarFileSystem this, @OsTrusted URI name, @OsUntrusted Configuration conf) throws IOException {
+     // initialize the metadata cache, if needed
+     initializeMetadataCache(conf);
+ 
+     // decode the name
+     @OsUntrusted
+     URI underLyingURI = decodeHarURI(name, conf);
+     // we got the right har Path- now check if this is 
+     // truly a har filesystem
++    @SuppressWarnings("ostrusted") // Components from trusted URI
+     @OsUntrusted
+     Path harPath = archivePath(
+       new @OsUntrusted Path(name.getScheme(), name.getAuthority(), name.getPath()));
+     if (harPath == null) { 
+       throw new @OsUntrusted IOException("Invalid path for the Har Filesystem. " + 
+                            name.toString());
+     }
+     if (fs == null) {
+       fs = FileSystem.get(underLyingURI, conf);
+     }
+     uri = harPath.toUri();
+-    archivePath = new @OsUntrusted Path(uri.getPath());
++    @SuppressWarnings("ostrusted") // Components from trusted URI
++    @OsTrusted String uriPath = (@OsTrusted String) uri.getPath();
++    archivePath = new @OsUntrusted Path(uriPath);
+     harAuth = getHarAuth(underLyingURI);
+     //check for the underlying fs containing
+     // the index file
+     @OsUntrusted
+     Path masterIndexPath = new @OsUntrusted Path(archivePath, "_masterindex");
+     @OsUntrusted
+     Path archiveIndexPath = new @OsUntrusted Path(archivePath, "_index");
+     if (!fs.exists(masterIndexPath) || !fs.exists(archiveIndexPath)) {
+@@ -361,16 +365,17 @@
+    * this method returns the path 
+    * inside the har filesystem.
+    * this is relative path inside 
+    * the har filesystem.
+    * @param path the fully qualified path in the har filesystem.
+    * @return relative path in the filesystem.
+    */
+   private @OsUntrusted Path getPathInHar(@OsUntrusted HarFileSystem this, @OsUntrusted Path path) {
++    @SuppressWarnings("ostrusted") // uri from trusted path
+     @OsUntrusted
+     Path harPath = new @OsUntrusted Path(path.toUri().getPath());
+     if (archivePath.compareTo(harPath) == 0)
+       return new @OsUntrusted Path(Path.SEPARATOR);
+     @OsUntrusted
+     Path tmp = new @OsUntrusted Path(harPath.getName());
+     @OsUntrusted
+     Path parent = harPath.getParent();
+@@ -386,22 +391,24 @@
+       tmp = new @OsUntrusted Path(Path.SEPARATOR, tmp);
+     return tmp;
+   }
+   
+   //the relative path of p. basically 
+   // getting rid of /. Parsing and doing 
+   // string manipulation is not good - so
+   // just use the path api to do it.
+-  private @OsUntrusted Path makeRelative(@OsUntrusted HarFileSystem this, @OsUntrusted String initial, @OsUntrusted Path p) {
+-    @OsUntrusted
++  private @OsUntrusted Path makeRelative(@OsUntrusted HarFileSystem this, @OsTrusted String initial, @OsUntrusted Path p) {
++    @SuppressWarnings("ostrusted") // Trusted uri part
++    @OsTrusted
+     String scheme = this.uri.getScheme();
+-    @OsUntrusted
++    @SuppressWarnings("ostrusted") // Trusted uri part
++    @OsTrusted
+     String authority = this.uri.getAuthority();
+-    @OsUntrusted
++    @OsTrusted
+     Path root = new @OsUntrusted Path(Path.SEPARATOR);
+     if (root.compareTo(p) == 0)
+       return new @OsUntrusted Path(scheme, authority, initial);
+     @OsUntrusted
+     Path retPath = new @OsUntrusted Path(p.getName());
+     @OsUntrusted
+     Path parent = p.getParent();
+     for (@OsUntrusted int i=0; i < p.depth()-1; i++) {
+@@ -424,18 +431,21 @@
+     @OsUntrusted
+     Path fsPath = path;
+     if (!path.isAbsolute()) {
+       fsPath = new @OsUntrusted Path(archivePath, path);
+     }
+ 
+     @OsUntrusted
+     URI tmpURI = fsPath.toUri();
++    @SuppressWarnings("ostrusted:cast.unsafe") // poly uri
++    @OsTrusted
++    String uripath = (@OsTrusted String) tmpURI.getPath();
+     //change this to Har uri 
+-    return new @OsUntrusted Path(uri.getScheme(), harAuth, tmpURI.getPath());
++    return new @OsUntrusted Path(uri.getScheme(), harAuth, uripath);
+   }
+ 
+   /**
+    * Fix offset and length of block locations.
+    * Note that this method modifies the original array.
+    * @param locations block locations of har part file
+    * @param start the start of the desired range in the contained file
+    * @param len the length of the desired range
+diff -r 96e69a0f420d hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/Path.java
+--- a/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/Path.java	Sat Nov 30 16:58:13 2013 -0800
++++ b/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/Path.java	Sat Nov 30 18:45:27 2013 -0800
+@@ -14,16 +14,17 @@
+  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  * See the License for the specific language governing permissions and
+  * limitations under the License.
+  */
+ 
+ package org.apache.hadoop.fs;
+ 
+ import ostrusted.quals.OsUntrusted;
++import ostrusted.quals.OsTrusted;
+ import java.io.IOException;
+ import java.net.URI;
+ import java.net.URISyntaxException;
+ import java.util.regex.Pattern;
+ 
+ import org.apache.avro.reflect.Stringable;
+ import org.apache.commons.lang.StringUtils;
+ import org.apache.hadoop.HadoopIllegalArgumentException;
+@@ -33,23 +34,24 @@
+ 
+ /** Names a file or directory in a {@link FileSystem}.
+  * Path strings use slash as the directory separator.  A path string is
+  * absolute if it begins with a slash.
+  */
+ @Stringable
+ @InterfaceAudience.Public
+ @InterfaceStability.Stable
++@SuppressWarnings("ostrusted")
+ public class Path implements @OsUntrusted Comparable {
+ 
+   /** The directory separator, a slash. */
+-  public static final @OsUntrusted String SEPARATOR = "/";
+-  public static final @OsUntrusted char SEPARATOR_CHAR = '/';
++  public static final @OsTrusted String SEPARATOR = "/";
++  public static final @OsTrusted char SEPARATOR_CHAR = '/';
+   
+-  public static final @OsUntrusted String CUR_DIR = ".";
++  public static final @OsTrusted String CUR_DIR = ".";
+   
+   public static final @OsUntrusted boolean WINDOWS
+     = System.getProperty("os.name").startsWith("Windows");
+ 
+   /**
+    *  Pre-compiled regular expressions to detect path formats.
+    */
+   private static final @OsUntrusted Pattern hasUriScheme =
+@@ -82,27 +84,27 @@
+     @OsUntrusted
+     Path newPath = path.isUriPathAbsolute() ?
+       new @OsUntrusted Path(null, null, path.toUri().getPath()) :
+       path;
+     return newPath;
+   }
+ 
+   /** Resolve a child path against a parent path. */
+-  public @OsUntrusted Path(@OsUntrusted String parent, @OsUntrusted String child) {
++  public @OsUntrusted Path(@OsTrusted String parent, @OsTrusted String child) {
+     this(new @OsUntrusted Path(parent), new @OsUntrusted Path(child));
+   }
+ 
+   /** Resolve a child path against a parent path. */
+-  public @OsUntrusted Path(@OsUntrusted Path parent, @OsUntrusted String child) {
++  public @OsUntrusted Path(@OsUntrusted Path parent, @OsTrusted String child) {
+     this(parent, new @OsUntrusted Path(child));
+   }
+ 
+   /** Resolve a child path against a parent path. */
+-  public @OsUntrusted Path(@OsUntrusted String parent, @OsUntrusted Path child) {
++  public @OsUntrusted Path(@OsTrusted String parent, @OsUntrusted Path child) {
+     this(new @OsUntrusted Path(parent), child);
+   }
+ 
+   /** Resolve a child path against a parent path. */
+   public @OsUntrusted Path(@OsUntrusted Path parent, @OsUntrusted Path child) {
+     // Add a slash to parent's path so resolution is compatible with URI's
+     @OsUntrusted
+     URI parentUri = parent.uri;
+@@ -117,31 +119,31 @@
+       }
+     }
+     @OsUntrusted
+     URI resolved = parentUri.resolve(child.uri);
+     initialize(resolved.getScheme(), resolved.getAuthority(),
+                resolved.getPath(), resolved.getFragment());
+   }
+ 
+-  private void checkPathArg( @OsUntrusted Path this, @OsUntrusted String path ) throws IllegalArgumentException {
++  private void checkPathArg( @OsUntrusted Path this, @OsTrusted String path ) throws IllegalArgumentException {
+     // disallow construction of a Path from an empty string
+     if ( path == null ) {
+       throw new @OsUntrusted IllegalArgumentException(
+           "Can not create a Path from a null string");
+     }
+     if( path.length() == 0 ) {
+        throw new @OsUntrusted IllegalArgumentException(
+            "Can not create a Path from an empty string");
+     }   
+   }
+   
+   /** Construct a path from a String.  Path strings are URIs, but with
+    * unescaped elements and some additional normalization. */
+-  public @OsUntrusted Path(@OsUntrusted String pathString) throws IllegalArgumentException {
++  public @OsUntrusted Path(@OsTrusted String pathString) throws IllegalArgumentException {
+     checkPathArg( pathString );
+     
+     // We can't use 'new URI(String)' directly, since it assumes things are
+     // escaped, which we don't require of Paths. 
+     
+     // add a slash in front of paths with Windows drive letters
+     if (hasWindowsDrive(pathString) && pathString.charAt(0) != '/') {
+       pathString = "/" + pathString;
+@@ -183,22 +185,22 @@
+     String path = pathString.substring(start, pathString.length());
+ 
+     initialize(scheme, authority, path, null);
+   }
+ 
+   /**
+    * Construct a path from a URI
+    */
+-  public @OsUntrusted Path(@OsUntrusted URI aUri) {
++  public @OsUntrusted Path(@OsTrusted URI aUri) {
+     uri = aUri.normalize();
+   }
+   
+   /** Construct a Path from components. */
+-  public @OsUntrusted Path(@OsUntrusted String scheme, @OsUntrusted String authority, @OsUntrusted String path) {
++  public @OsUntrusted Path(@OsTrusted String scheme, @OsTrusted String authority, @OsTrusted String path) {
+     checkPathArg( path );
+ 
+     // add a slash in front of paths with Windows drive letters
+     if (hasWindowsDrive(path) && path.charAt(0) != '/') {
+       path = "/" + path;
+     }
+ 
+     // add "./" in front of Linux relative paths so that a path containing
+@@ -292,17 +294,17 @@
+     return
+         hasWindowsDrive(pathString) &&
+         pathString.length() >= (start + 3) &&
+         ((pathString.charAt(start + 2) == SEPARATOR_CHAR) ||
+           (pathString.charAt(start + 2) == '\\'));
+   }
+ 
+   /** Convert this to a URI. */
+-  public @OsUntrusted URI toUri(@OsUntrusted Path this) { return uri; }
++  public @OsTrusted URI toUri(@OsUntrusted Path this) { return uri; }
+ 
+   /** Return the FileSystem that owns this Path. */
+   public @OsUntrusted FileSystem getFileSystem(@OsUntrusted Path this, @OsUntrusted Configuration conf) throws IOException {
+     return FileSystem.get(this.toUri(), conf);
+   }
+ 
+   /**
+    * Is an absolute path (ie a slash relative path part)
+@@ -337,17 +339,17 @@
+   /**
+    * @return true if and only if this path represents the root of a file system
+    */
+   public @OsUntrusted boolean isRoot(@OsUntrusted Path this) {
+     return getParent() == null;
+   }
+ 
+   /** Returns the final component of this path.*/
+-  public @OsUntrusted String getName(@OsUntrusted Path this) {
++  public @OsTrusted String getName(@OsUntrusted Path this) {
+     @OsUntrusted
+     String path = uri.getPath();
+     @OsUntrusted
+     int slash = path.lastIndexOf(SEPARATOR);
+     return path.substring(slash+1);
+   }
+ 
+   /** Returns the parent of a path or null if at root. */
+@@ -370,22 +372,22 @@
+       @OsUntrusted
+       int end = hasWindowsDrive(path) ? 3 : 0;
+       parent = path.substring(0, lastSlash==end?end+1:lastSlash);
+     }
+     return new @OsUntrusted Path(uri.getScheme(), uri.getAuthority(), parent);
+   }
+ 
+   /** Adds a suffix to the final name in the path.*/
+-  public @OsUntrusted Path suffix(@OsUntrusted Path this, @OsUntrusted String suffix) {
++  public @OsUntrusted Path suffix(@OsUntrusted Path this, @OsTrusted String suffix) {
+     return new @OsUntrusted Path(getParent(), getName()+suffix);
+   }
+ 
+   @Override
+-  public @OsUntrusted String toString(@OsUntrusted Path this) {
++  public @OsTrusted String toString(@OsUntrusted Path this) {
+     // we can't use uri.toString(), which escapes everything, because we want
+     // illegal characters unescaped in the string, for glob processing, etc.
+     @OsUntrusted
+     StringBuilder buffer = new @OsUntrusted StringBuilder();
+     if (uri.getScheme() != null) {
+       buffer.append(uri.getScheme());
+       buffer.append(":");
+     }
+diff -r 96e69a0f420d hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/PathIOException.java
+--- a/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/PathIOException.java	Sat Nov 30 16:58:13 2013 -0800
++++ b/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/PathIOException.java	Sat Nov 30 18:45:27 2013 -0800
+@@ -13,33 +13,34 @@
+  * distributed under the License is distributed on an "AS IS" BASIS,
+  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  * See the License for the specific language governing permissions and
+  * limitations under the License.
+  */
+ package org.apache.hadoop.fs;
+ 
+ import ostrusted.quals.OsUntrusted;
++import ostrusted.quals.OsTrusted;
+ import java.io.IOException;
+ 
+ /**
+  * Exceptions based on standard posix/linux style exceptions for path related
+  * errors. Returns an exception with the format "path: standard error string".
+  * 
+  * This exception corresponds to Error Input/ouput(EIO)
+  */
+ public class PathIOException extends @OsUntrusted IOException {
+   static final @OsUntrusted long serialVersionUID = 0L;
+   private static final @OsUntrusted String EIO = "Input/output error";
+   // NOTE: this really should be a Path, but a Path is buggy and won't
+   // return the exact string used to construct the path, and it mangles
+   // uris with no authority
+   private @OsUntrusted String operation;
+-  private @OsUntrusted String path;
+-  private @OsUntrusted String targetPath;
++  private @OsTrusted String path;
++  private @OsTrusted String targetPath;
+ 
+   /**
+    * Constructor a generic I/O error exception
+    *  @param path for the exception
+    */
+   public @OsUntrusted PathIOException(@OsUntrusted String path) {
+     this(path, EIO, null);
+   }
+@@ -111,9 +112,9 @@
+    */
+   public void setTargetPath(@OsUntrusted PathIOException this, @OsUntrusted String targetPath) {
+     this.targetPath = targetPath;
+   }
+   
+   private @OsUntrusted String formatPath(@OsUntrusted PathIOException this, @OsUntrusted String path) {
+     return "`" + path + "'";
+   }
+-}
+\ No newline at end of file
++}
+diff -r 96e69a0f420d hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/shell/PathData.java
+--- a/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/shell/PathData.java	Sat Nov 30 16:58:13 2013 -0800
++++ b/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/shell/PathData.java	Sat Nov 30 18:45:27 2013 -0800
+@@ -142,17 +142,17 @@
+   /**
+    * Creates an object to wrap the given parameters as fields.  The string
+    * used to create the path will be recorded since the Path object does not
+    * return exactly the same string used to initialize it.
+    * @param fs the FileSystem
+    * @param pathString a String of the path
+    * @param stat the FileStatus (may be null if the path doesn't exist)
+    */
+-  private @OsUntrusted PathData(@OsUntrusted FileSystem fs, @OsUntrusted String pathString, @OsUntrusted FileStatus stat)
++  private @OsUntrusted PathData(@OsUntrusted FileSystem fs, @OsTrusted String pathString, @OsUntrusted FileStatus stat)
+   throws IOException {
+     this.fs = fs;
+     this.uri = stringToUri(pathString);
+     this.path = fs.makeQualified(new @OsUntrusted Path(uri));
+     setStat(stat);
+ 
+     if (Path.WINDOWS) {
+       inferredSchemeFromPath = checkIfSchemeInferredFromPath(pathString);
+@@ -163,17 +163,17 @@
+   /**
+    * Get the FileStatus info
+    * @param ignoreFNF if true, stat will be null if the path doesn't exist
+    * @return FileStatus for the given path
+    * @throws IOException if anything goes wrong
+    */
+   private static
+   @OsUntrusted
+-  FileStatus lookupStat(@OsUntrusted FileSystem fs, @OsUntrusted String pathString, @OsUntrusted boolean ignoreFNF)
++  FileStatus lookupStat(@OsUntrusted FileSystem fs, @OsTrusted String pathString, @OsUntrusted boolean ignoreFNF)
+   throws IOException {
+     @OsUntrusted
+     FileStatus status = null;
+     try {
+       status = fs.getFileStatus(new @OsUntrusted Path(pathString));
+     } catch (@OsUntrusted FileNotFoundException e) {
+       if (!ignoreFNF) throw new @OsUntrusted PathNotFoundException(pathString);
+     }
+@@ -327,17 +327,17 @@
+    * exist.
+    * @param pattern the pattern to expand as a glob
+    * @param conf the hadoop configuration
+    * @return list of {@link PathData} objects.  if the pattern is not a glob,
+    * and does not exist, the list will contain a single PathData with a null
+    * stat 
+    * @throws IOException anything else goes wrong...
+    */
+-  public static @OsUntrusted PathData @OsUntrusted [] expandAsGlob(@OsUntrusted String pattern, @OsUntrusted Configuration conf)
++  public static @OsUntrusted PathData @OsUntrusted [] expandAsGlob(@OsTrusted String pattern, @OsUntrusted Configuration conf)
+   throws IOException {
+     @OsUntrusted
+     Path globPath = new @OsUntrusted Path(pattern);
+     @OsUntrusted
+     FileSystem fs = globPath.getFileSystem(conf);    
+     @OsUntrusted
+     FileStatus @OsUntrusted [] stats = fs.globStatus(globPath);
+     @OsUntrusted
+@@ -350,20 +350,22 @@
+       items = new @OsUntrusted PathData @OsUntrusted []{ new @OsUntrusted PathData(fs, pattern, null) };
+     } else {
+       // figure out what type of glob path was given, will convert globbed
+       // paths to match the type to preserve relativity
+       @OsUntrusted
+       PathType globType;
+       @OsUntrusted
+       URI globUri = globPath.toUri();
++      @SuppressWarnings("ostrusted:cast.unsafe")
++      @OsTrusted String uriTmp = (@OsTrusted String) globUri.getPath();
+       if (globUri.getScheme() != null) {
+         globType = PathType.HAS_SCHEME;
+       } else if (!globUri.getPath().isEmpty() &&
+-                 new @OsUntrusted Path(globUri.getPath()).isAbsolute()) {
++                 new @OsUntrusted Path(uriTmp).isAbsolute()) {
+         globType = PathType.SCHEMELESS_ABSOLUTE;
+       } else {
+         globType = PathType.RELATIVE;
+       }
+ 
+       // convert stats to PathData
+       items = new @OsUntrusted PathData @OsUntrusted [stats.length];
+       @OsUntrusted
+diff -r 96e69a0f420d hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/ChRootedFs.java
+--- a/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/ChRootedFs.java	Sat Nov 30 16:58:13 2013 -0800
++++ b/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/ChRootedFs.java	Sat Nov 30 18:45:27 2013 -0800
+@@ -12,16 +12,17 @@
+  * Unless required by applicable law or agreed to in writing, software
+  * distributed under the License is distributed on an "AS IS" BASIS,
+  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  * See the License for the specific language governing permissions and
+  * limitations under the License.
+  */
+ package org.apache.hadoop.fs.viewfs;
+ import ostrusted.quals.OsUntrusted;
++import ostrusted.quals.OsTrusted;
+ import java.io.FileNotFoundException;
+ import java.io.IOException;
+ import java.net.URI;
+ import java.net.URISyntaxException;
+ import java.util.EnumSet;
+ import java.util.List;
+ 
+ import org.apache.hadoop.classification.InterfaceAudience;
+@@ -63,17 +64,17 @@
+  * 
+  */
+ @InterfaceAudience.Private
+ @InterfaceStability.Evolving /*Evolving for a release,to be changed to Stable */
+ class ChRootedFs extends @OsUntrusted AbstractFileSystem {
+   private final @OsUntrusted AbstractFileSystem myFs;  // the base file system whose root is changed
+   private final @OsUntrusted URI myUri; // the base URI + the chroot
+   private final @OsUntrusted Path chRootPathPart; // the root below the root of the base
+-  private final @OsUntrusted String chRootPathPartString;
++  private final @OsTrusted String chRootPathPartString;
+   
+   protected @OsUntrusted AbstractFileSystem getMyFs(@OsUntrusted ChRootedFs this) {
+     return myFs;
+   }
+   
+   /**
+    * 
+    * @param path
+diff -r 96e69a0f420d hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/ArrayFile.java
+--- a/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/ArrayFile.java	Sat Nov 30 16:58:13 2013 -0800
++++ b/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/ArrayFile.java	Sat Nov 30 18:45:27 2013 -0800
+@@ -14,16 +14,17 @@
+  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  * See the License for the specific language governing permissions and
+  * limitations under the License.
+  */
+ 
+ package org.apache.hadoop.io;
+ 
+ import ostrusted.quals.OsUntrusted;
++import ostrusted.quals.OsTrusted;
+ import java.io.*;
+ import org.apache.hadoop.fs.*;
+ import org.apache.hadoop.classification.InterfaceAudience;
+ import org.apache.hadoop.classification.InterfaceStability;
+ import org.apache.hadoop.conf.*;
+ import org.apache.hadoop.util.*;
+ import org.apache.hadoop.io.SequenceFile.CompressionType;
+ 
+@@ -69,17 +70,17 @@
+     }
+   }
+ 
+   /** Provide access to an existing array file. */
+   public static class Reader extends MapFile.@OsUntrusted Reader {
+     private @OsUntrusted LongWritable key = new @OsUntrusted LongWritable();
+ 
+     /** Construct an array reader for the named file.*/
+-    public @OsUntrusted Reader(@OsUntrusted FileSystem fs, @OsUntrusted String file, 
++    public @OsUntrusted Reader(@OsUntrusted FileSystem fs, @OsTrusted String file, 
+                   @OsUntrusted
+                   Configuration conf) throws IOException {
+       super(new @OsUntrusted Path(file), conf);
+     }
+ 
+     /** Positions the reader before its <code>n</code>th value. */
+     public synchronized void seek(ArrayFile.@OsUntrusted Reader this, @OsUntrusted long n) throws IOException {
+       key.set(n);
+diff -r 96e69a0f420d hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/MapFile.java
+--- a/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/MapFile.java	Sat Nov 30 16:58:13 2013 -0800
++++ b/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/MapFile.java	Sat Nov 30 18:45:27 2013 -0800
+@@ -14,16 +14,17 @@
+  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  * See the License for the specific language governing permissions and
+  * limitations under the License.
+  */
+ 
+ package org.apache.hadoop.io;
+ 
+ import ostrusted.quals.OsUntrusted;
++import ostrusted.quals.OsTrusted;
+ import java.io.EOFException;
+ import java.io.IOException;
+ import java.util.ArrayList;
+ import java.util.Arrays;
+ 
+ import org.apache.commons.logging.Log;
+ import org.apache.commons.logging.LogFactory;
+ import org.apache.hadoop.classification.InterfaceAudience;
+@@ -93,111 +94,111 @@
+      */
+     private @OsUntrusted long lastIndexKeyCount = Long.MIN_VALUE;
+ 
+ 
+     /** Create the named map for keys of the named class. 
+      * @deprecated Use Writer(Configuration, Path, Option...) instead.
+      */
+     @Deprecated
+-    public @OsUntrusted Writer(@OsUntrusted Configuration conf, @OsUntrusted FileSystem fs, @OsUntrusted String dirName,
++    public @OsUntrusted Writer(@OsUntrusted Configuration conf, @OsUntrusted FileSystem fs, @OsTrusted String dirName,
+                   @OsUntrusted
+                   Class<@OsUntrusted ? extends @OsUntrusted WritableComparable> keyClass, 
+                   @OsUntrusted
+                   Class valClass) throws IOException {
+       this(conf, new @OsUntrusted Path(dirName), keyClass(keyClass), valueClass(valClass));
+     }
+ 
+     /** Create the named map for keys of the named class. 
+      * @deprecated Use Writer(Configuration, Path, Option...) instead.
+      */
+     @Deprecated
+-    public @OsUntrusted Writer(@OsUntrusted Configuration conf, @OsUntrusted FileSystem fs, @OsUntrusted String dirName,
++    public @OsUntrusted Writer(@OsUntrusted Configuration conf, @OsUntrusted FileSystem fs, @OsTrusted String dirName,
+                   @OsUntrusted
+                   Class<@OsUntrusted ? extends @OsUntrusted WritableComparable> keyClass, @OsUntrusted Class valClass,
+                   @OsUntrusted
+                   CompressionType compress, 
+                   @OsUntrusted
+                   Progressable progress) throws IOException {
+       this(conf, new @OsUntrusted Path(dirName), keyClass(keyClass), valueClass(valClass),
+            compression(compress), progressable(progress));
+     }
+ 
+     /** Create the named map for keys of the named class. 
+      * @deprecated Use Writer(Configuration, Path, Option...) instead.
+      */
+     @Deprecated
+-    public @OsUntrusted Writer(@OsUntrusted Configuration conf, @OsUntrusted FileSystem fs, @OsUntrusted String dirName,
++    public @OsUntrusted Writer(@OsUntrusted Configuration conf, @OsUntrusted FileSystem fs, @OsTrusted String dirName,
+                   @OsUntrusted
+                   Class<@OsUntrusted ? extends @OsUntrusted WritableComparable> keyClass, @OsUntrusted Class valClass,
+                   @OsUntrusted
+                   CompressionType compress, @OsUntrusted CompressionCodec codec,
+                   @OsUntrusted
+                   Progressable progress) throws IOException {
+       this(conf, new @OsUntrusted Path(dirName), keyClass(keyClass), valueClass(valClass),
+            compression(compress, codec), progressable(progress));
+     }
+ 
+     /** Create the named map for keys of the named class. 
+      * @deprecated Use Writer(Configuration, Path, Option...) instead.
+      */
+     @Deprecated
+-    public @OsUntrusted Writer(@OsUntrusted Configuration conf, @OsUntrusted FileSystem fs, @OsUntrusted String dirName,
++    public @OsUntrusted Writer(@OsUntrusted Configuration conf, @OsUntrusted FileSystem fs, @OsTrusted String dirName,
+                   @OsUntrusted
+                   Class<@OsUntrusted ? extends @OsUntrusted WritableComparable> keyClass, @OsUntrusted Class valClass,
+                   @OsUntrusted
+                   CompressionType compress) throws IOException {
+       this(conf, new @OsUntrusted Path(dirName), keyClass(keyClass),
+            valueClass(valClass), compression(compress));
+     }
+ 
+     /** Create the named map using the named key comparator. 
+      * @deprecated Use Writer(Configuration, Path, Option...) instead.
+      */
+     @Deprecated
+-    public @OsUntrusted Writer(@OsUntrusted Configuration conf, @OsUntrusted FileSystem fs, @OsUntrusted String dirName,
++    public @OsUntrusted Writer(@OsUntrusted Configuration conf, @OsUntrusted FileSystem fs, @OsTrusted String dirName,
+                   @OsUntrusted
+                   WritableComparator comparator, @OsUntrusted Class valClass
+                   ) throws IOException {
+       this(conf, new @OsUntrusted Path(dirName), comparator(comparator), 
+            valueClass(valClass));
+     }
+ 
+     /** Create the named map using the named key comparator. 
+      * @deprecated Use Writer(Configuration, Path, Option...) instead.
+      */
+     @Deprecated
+-    public @OsUntrusted Writer(@OsUntrusted Configuration conf, @OsUntrusted FileSystem fs, @OsUntrusted String dirName,
++    public @OsUntrusted Writer(@OsUntrusted Configuration conf, @OsUntrusted FileSystem fs, @OsTrusted String dirName,
+                   @OsUntrusted
+                   WritableComparator comparator, @OsUntrusted Class valClass,
+                   SequenceFile.@OsUntrusted CompressionType compress) throws IOException {
+       this(conf, new @OsUntrusted Path(dirName), comparator(comparator),
+            valueClass(valClass), compression(compress));
+     }
+ 
+     /** Create the named map using the named key comparator. 
+      * @deprecated Use Writer(Configuration, Path, Option...)} instead.
+      */
+     @Deprecated
+-    public @OsUntrusted Writer(@OsUntrusted Configuration conf, @OsUntrusted FileSystem fs, @OsUntrusted String dirName,
++    public @OsUntrusted Writer(@OsUntrusted Configuration conf, @OsUntrusted FileSystem fs, @OsTrusted String dirName,
+                   @OsUntrusted
+                   WritableComparator comparator, @OsUntrusted Class valClass,
+                   SequenceFile.@OsUntrusted CompressionType compress,
+                   @OsUntrusted
+                   Progressable progress) throws IOException {
+       this(conf, new @OsUntrusted Path(dirName), comparator(comparator),
+            valueClass(valClass), compression(compress),
+            progressable(progress));
+     }
+ 
+     /** Create the named map using the named key comparator. 
+      * @deprecated Use Writer(Configuration, Path, Option...) instead.
+      */
+     @Deprecated
+-    public @OsUntrusted Writer(@OsUntrusted Configuration conf, @OsUntrusted FileSystem fs, @OsUntrusted String dirName,
++    public @OsUntrusted Writer(@OsUntrusted Configuration conf, @OsUntrusted FileSystem fs, @OsTrusted String dirName,
+                   @OsUntrusted
+                   WritableComparator comparator, @OsUntrusted Class valClass,
+                   SequenceFile.@OsUntrusted CompressionType compress, @OsUntrusted CompressionCodec codec,
+                   @OsUntrusted
+                   Progressable progress) throws IOException {
+       this(conf, new @OsUntrusted Path(dirName), comparator(comparator),
+            valueClass(valClass), compression(compress, codec),
+            progressable(progress));
+@@ -429,27 +430,27 @@
+       INDEX_SKIP = conf.getInt("io.map.index.skip", 0);
+       open(dir, comparator, conf, opts);
+     }
+  
+     /** Construct a map reader for the named map.
+      * @deprecated
+      */
+     @Deprecated
+-    public @OsUntrusted Reader(@OsUntrusted FileSystem fs, @OsUntrusted String dirName, 
++    public @OsUntrusted Reader(@OsUntrusted FileSystem fs, @OsTrusted String dirName, 
+                   @OsUntrusted
+                   Configuration conf) throws IOException {
+       this(new @OsUntrusted Path(dirName), conf);
+     }
+ 
+     /** Construct a map reader for the named map using the named comparator.
+      * @deprecated
+      */
+     @Deprecated
+-    public @OsUntrusted Reader(@OsUntrusted FileSystem fs, @OsUntrusted String dirName, @OsUntrusted WritableComparator comparator, 
++    public @OsUntrusted Reader(@OsUntrusted FileSystem fs, @OsTrusted String dirName, @OsUntrusted WritableComparator comparator, 
+                   @OsUntrusted
+                   Configuration conf) throws IOException {
+       this(new @OsUntrusted Path(dirName), conf, comparator(comparator));
+     }
+     
+     protected synchronized void open(MapFile.@OsUntrusted Reader this, @OsUntrusted Path dir,
+                                      @OsUntrusted
+                                      WritableComparator comparator,
+@@ -787,29 +788,29 @@
+         index.close();
+       }
+       data.close();
+     }
+ 
+   }
+ 
+   /** Renames an existing map directory. */
+-  public static void rename(@OsUntrusted FileSystem fs, @OsUntrusted String oldName, @OsUntrusted String newName)
++  public static void rename(@OsUntrusted FileSystem fs, @OsTrusted String oldName, @OsTrusted String newName)
+     throws IOException {
+     @OsUntrusted
+     Path oldDir = new @OsUntrusted Path(oldName);
+     @OsUntrusted
+     Path newDir = new @OsUntrusted Path(newName);
+     if (!fs.rename(oldDir, newDir)) {
+       throw new @OsUntrusted IOException("Could not rename " + oldDir + " to " + newDir);
+     }
+   }
+ 
+   /** Deletes the named map file. */
+-  public static void delete(@OsUntrusted FileSystem fs, @OsUntrusted String name) throws IOException {
++  public static void delete(@OsUntrusted FileSystem fs, @OsTrusted String name) throws IOException {
+     @OsUntrusted
+     Path dir = new @OsUntrusted Path(name);
+     @OsUntrusted
+     Path data = new @OsUntrusted Path(dir, DATA_FILE_NAME);
+     @OsUntrusted
+     Path index = new @OsUntrusted Path(dir, INDEX_FILE_NAME);
+ 
+     fs.delete(data, true);
+diff -r 96e69a0f420d hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/SecureIOUtils.java
+--- a/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/SecureIOUtils.java	Sat Nov 30 16:58:13 2013 -0800
++++ b/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/SecureIOUtils.java	Sat Nov 30 18:45:27 2013 -0800
+@@ -13,16 +13,17 @@
+  * distributed under the License is distributed on an "AS IS" BASIS,
+  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  * See the License for the specific language governing permissions and
+  * limitations under the License.
+  */
+ package org.apache.hadoop.io;
+ 
+ import ostrusted.quals.OsUntrusted;
++import ostrusted.quals.OsTrusted;
+ import java.io.File;
+ import java.io.FileInputStream;
+ import java.io.FileOutputStream;
+ import java.io.IOException;
+ import java.io.RandomAccessFile;
+ import java.util.Arrays;
+ 
+ import org.apache.hadoop.conf.Configuration;
+@@ -150,37 +151,41 @@
+    * system, verifying the expected user/group constraints if security is
+    * enabled.
+    * @param file absolute path of the file
+    * @param expectedOwner the expected user owner for the file
+    * @param expectedGroup the expected group owner for the file
+    * @throws IOException if an IO Error occurred or the user/group does not
+    * match if security is enabled
+    */
+-  public static @OsUntrusted FSDataInputStream openFSDataInputStream(@OsUntrusted File file,
++  public static @OsUntrusted FSDataInputStream openFSDataInputStream(@OsTrusted File file,
+       @OsUntrusted
+       String expectedOwner, @OsUntrusted String expectedGroup) throws IOException {
+     if (!UserGroupInformation.isSecurityEnabled()) {
+-      return rawFilesystem.open(new @OsUntrusted Path(file.getAbsolutePath()));
++      @SuppressWarnings("ostrusted:cast.unsafe")
++      @OsTrusted String abspath = (@OsTrusted String) file.getAbsolutePath();
++      return rawFilesystem.open(new @OsUntrusted Path(abspath));
+     }
+     return forceSecureOpenFSDataInputStream(file, expectedOwner, expectedGroup);
+   }
+ 
+   /**
+    * Same as openFSDataInputStream except that it will run even if security is
+    * off. This is used by unit tests.
+    */
+   @VisibleForTesting
+   protected static @OsUntrusted FSDataInputStream forceSecureOpenFSDataInputStream(
+-      @OsUntrusted
++      @OsTrusted
+       File file,
+       @OsUntrusted
+       String expectedOwner, @OsUntrusted String expectedGroup) throws IOException {
++      @SuppressWarnings("ostrusted:cast.unsafe")
++      @OsTrusted String abspath = (@OsTrusted String) file.getAbsolutePath();
+     final @OsUntrusted FSDataInputStream in =
+-        rawFilesystem.open(new @OsUntrusted Path(file.getAbsolutePath()));
++        rawFilesystem.open(new @OsUntrusted Path(abspath));
+     @OsUntrusted
+     boolean success = false;
+     try {
+       @OsUntrusted
+       Stat stat = NativeIO.POSIX.getFstat(in.getFileDescriptor());
+       checkStat(file, stat.getOwner(), stat.getGroup(), expectedOwner,
+           expectedGroup);
+       success = true;
+@@ -237,30 +242,33 @@
+       return fis;
+     } finally {
+       if (!success) {
+         fis.close();
+       }
+     }
+   }
+ 
+-  private static @OsUntrusted FileOutputStream insecureCreateForWrite(@OsUntrusted File f,
++  private static @OsUntrusted FileOutputStream insecureCreateForWrite(@OsTrusted File f,
+       @OsUntrusted
+       int permissions) throws IOException {
+     // If we can't do real security, do a racy exists check followed by an
+     // open and chmod
+     if (f.exists()) {
+       throw new @OsUntrusted AlreadyExistsException("File " + f + " already exists");
+     }
+     @OsUntrusted
+     FileOutputStream fos = new @OsUntrusted FileOutputStream(f);
+     @OsUntrusted
+     boolean success = false;
+     try {
+-      rawFilesystem.setPermission(new @OsUntrusted Path(f.getAbsolutePath()),
++
++      @SuppressWarnings("ostrusted:cast.unsafe")
++      @OsTrusted String abspath = (@OsTrusted String) file.getAbsolutePath();
++      rawFilesystem.setPermission(new @OsUntrusted Path(abspath),
+         new @OsUntrusted FsPermission((@OsUntrusted short)permissions));
+       success = true;
+       return fos;
+     } finally {
+       if (!success) {
+         fos.close();
+       }
+     }
+diff -r 96e69a0f420d hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/SequenceFile.java
+--- a/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/SequenceFile.java	Sat Nov 30 16:58:13 2013 -0800
++++ b/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/SequenceFile.java	Sat Nov 30 18:45:27 2013 -0800
+@@ -2931,16 +2931,17 @@
+      * @param inFiles the files to be sorted
+      * @param tempDir the directory where temp files are created during sort
+      * @param deleteInput should the input files be deleted as they are read?
+      * @return iterator the RawKeyValueIterator
+      */
+     public @OsUntrusted RawKeyValueIterator sortAndIterate(SequenceFile.@OsUntrusted Sorter this, @OsUntrusted Path @OsUntrusted [] inFiles, @OsUntrusted Path tempDir, 
+                                               @OsUntrusted
+                                               boolean deleteInput) throws IOException {
++      @SuppressWarnings("ostrusted") // Constructor ok.
+       @OsUntrusted
+       Path outFile = new @OsUntrusted Path(tempDir + Path.SEPARATOR + "all.2");
+       if (fs.exists(outFile)) {
+         throw new @OsUntrusted IOException("already exists: " + outFile);
+       }
+       this.inFiles = inFiles;
+       //outFile will basically be used as prefix for temp files in the cases
+       //where sort outputs multiple sorted segments. For the single segment
+@@ -3300,16 +3301,17 @@
+      * Merges the contents of files passed in Path[]
+      * @param inNames the array of path names
+      * @param tempDir the directory for creating temp files during merge
+      * @param deleteInputs true if the input files should be deleted when 
+      * unnecessary
+      * @return RawKeyValueIteratorMergeQueue
+      * @throws IOException
+      */
++  @SuppressWarnings("ostrusted") // Constructor ok.
+     public @OsUntrusted RawKeyValueIterator merge(SequenceFile.@OsUntrusted Sorter this, @OsUntrusted Path @OsUntrusted [] inNames, @OsUntrusted Path tempDir, 
+                                      @OsUntrusted
+                                      boolean deleteInputs) 
+       throws IOException {
+       //outFile will basically be used as prefix for temp files for the
+       //intermediate merge outputs           
+       this.outFile = new @OsUntrusted Path(tempDir + Path.SEPARATOR + "merged");
+       //get the segments from inNames
+diff -r 96e69a0f420d hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/SetFile.java
+--- a/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/SetFile.java	Sat Nov 30 16:58:13 2013 -0800
++++ b/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/SetFile.java	Sat Nov 30 18:45:27 2013 -0800
+@@ -15,16 +15,17 @@
+  * See the License for the specific language governing permissions and
+  * limitations under the License.
+  */
+ 
+ package org.apache.hadoop.io;
+ 
+ 
+ import ostrusted.quals.OsUntrusted;
++import ostrusted.quals.OsTrusted;
+ import java.io.IOException;
+ 
+ import org.apache.hadoop.classification.InterfaceAudience;
+ import org.apache.hadoop.classification.InterfaceStability;
+ import org.apache.hadoop.conf.Configuration;
+ import org.apache.hadoop.fs.FileSystem;
+ import org.apache.hadoop.fs.Path;
+ 
+@@ -54,17 +55,17 @@
+                   @OsUntrusted
+                   Class<@OsUntrusted ? extends @OsUntrusted WritableComparable> keyClass,
+                   SequenceFile.@OsUntrusted CompressionType compress)
+       throws IOException {
+       this(conf, fs, dirName, WritableComparator.get(keyClass), compress);
+     }
+ 
+     /** Create a set naming the element comparator and compression type. */
+-    public @OsUntrusted Writer(@OsUntrusted Configuration conf, @OsUntrusted FileSystem fs, @OsUntrusted String dirName,
++    public @OsUntrusted Writer(@OsUntrusted Configuration conf, @OsUntrusted FileSystem fs, @OsTrusted String dirName,
+                   @OsUntrusted
+                   WritableComparator comparator,
+                   SequenceFile.@OsUntrusted CompressionType compress) throws IOException {
+       super(conf, new @OsUntrusted Path(dirName), 
+             comparator(comparator), 
+             valueClass(NullWritable.class), 
+             compression(compress));
+     }
+@@ -80,17 +81,17 @@
+   public static class Reader extends MapFile.@OsUntrusted Reader {
+ 
+     /** Construct a set reader for the named set.*/
+     public @OsUntrusted Reader(@OsUntrusted FileSystem fs, @OsUntrusted String dirName, @OsUntrusted Configuration conf) throws IOException {
+       super(fs, dirName, conf);
+     }
+ 
+     /** Construct a set reader for the named set using the named comparator.*/
+-    public @OsUntrusted Reader(@OsUntrusted FileSystem fs, @OsUntrusted String dirName, @OsUntrusted WritableComparator comparator, @OsUntrusted Configuration conf)
++    public @OsUntrusted Reader(@OsUntrusted FileSystem fs, @OsTrusted String dirName, @OsUntrusted WritableComparator comparator, @OsUntrusted Configuration conf)
+       throws IOException {
+       super(new @OsUntrusted Path(dirName), conf, comparator(comparator));
+     }
+ 
+     // javadoc inherited
+     @Override
+     public @OsUntrusted boolean seek(SetFile.@OsUntrusted Reader this, @OsUntrusted WritableComparable key)
+       throws IOException {
